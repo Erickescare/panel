@@ -2,9 +2,9 @@
 	<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
 		<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile ">
 			<ul class="kt-menu__nav ">
-				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--here"><a href="./demo1/index.php" class="kt-menu__link"><span class="kt-menu__link-text">Dashboard</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--here"><a href="./index.php" class="kt-menu__link"><span class="kt-menu__link-text">Dashboard</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
-				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./demo1/tabla.php" class="kt-menu__link"><span class="kt-menu__link-text">Tabla</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./tabla.php" class="kt-menu__link"><span class="kt-menu__link-text">Tabla</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
 				<li id="tabla" class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Paginas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 					
