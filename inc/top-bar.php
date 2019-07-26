@@ -623,7 +623,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="./demo1/mi_salida.php" class="kt-notification__item">
+				<a href="./mi_salida.php" class="kt-notification__item">
 					<div class="kt-notification__item-icon">
 						<i class="flaticon-calendar-with-a-clock-time-tools"></i>
 					</div>
@@ -636,7 +636,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="./demo1/tabla.php" class="kt-notification__item">
+				<a href="./tabla.php" class="kt-notification__item">
 					<div class="kt-notification__item-icon">
 						<i class="flaticon2-cardiogram kt-font-warning"></i>
 					</div>
@@ -650,7 +650,7 @@
 					</div>
 				</a>
 				<div class="kt-notification__custom kt-space-between">
-					<a href="./demo1/login.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
+					<a href="./login.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
 				</div>
 			</div>
 			<!--end: Navigation -->
