@@ -1,6 +1,6 @@
 <div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 	<div class="kt-header__brand-logo">
-		<a href="./demo1/index.php">
+		<a href="./index.php">
 			<img alt="Logo" src="./assets/media/protexa/LogoBlanco.png" width="125px" class="kt-header__brand-logo-default" />
 			<img alt="Logo" src="./assets/media/protexa/ico72.png" width="45px" class="kt-header__brand-logo-sticky" />
 		</a>
@@ -13,7 +13,7 @@
 			<div class="dropdown-menu dropdown-menu-md">
 				<ul class="kt-nav kt-nav--bold kt-nav--md-space">
 					<li class="kt-nav__item">
-						<a class="kt-nav__link active" href="./demo1/soporte.php">
+						<a class="kt-nav__link active" href="./soporte.php">
 							<span class="kt-nav__link-icon"><i class="flaticon-letter-g"></i></span>
 							<span class="kt-nav__link-text">Soporte Google</span>
 						</a>
