@@ -64,9 +64,9 @@
 						</div>
 					</div>
 					<div class="kt-footer__menu">
-						<a href="./demo1/soporte.php">Soporte</a>
+						<a href="./soporte.php">Soporte</a>
 						<a href="#">Sitio Protexa</a>
-						<a href="./demo1/login.php">Salir <i class="flaticon-logout"></i></a>
+						<a href="./login.php">Salir <i class="flaticon-logout"></i></a>
 					</div>
 				</div>
 			</div>
