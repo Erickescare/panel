@@ -18,7 +18,7 @@
 								<!-- begin:: Content Head -->
 								<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 									<div class="kt-subheader__main">
-										<h3 class="kt-subheader__title">Soporte en Linea</h3>
+										<h3 class="kt-subheader__title">Soporte en Línea</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
 										<span class="kt-subheader__desc">Base de Datos -  Topicos</span>
 										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
