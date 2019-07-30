@@ -167,7 +167,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Recent</a>
+															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -190,7 +190,7 @@
 																	18
 																</span>
 																<a href="#" class="kt-widget19__comment">
-																	Comments
+																	Comentarios
 																</a>
 															</div>
 														</div>
@@ -199,7 +199,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Read More...</a>
+														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
@@ -215,7 +215,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Recent</a>
+															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -238,7 +238,7 @@
 																	18
 																</span>
 																<a href="#" class="kt-widget19__comment">
-																	Comments
+																	Comentarios
 																</a>
 															</div>
 														</div>
@@ -247,7 +247,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Read More...</a>
+														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
@@ -263,7 +263,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Recent</a>
+															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -286,7 +286,7 @@
 																	18
 																</span>
 																<a href="#" class="kt-widget19__comment">
-																	Comments
+																	Comentarios
 																</a>
 															</div>
 														</div>
@@ -295,7 +295,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Read More...</a>
+														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
