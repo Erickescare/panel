@@ -302,6 +302,215 @@
 											<!--end:: Widgets/Blog-->
 										</div>
 									</div>
+									<div class="row">
+										<div class="col-xl-4">
+											<div class="kt-notification kt-notification--fit">
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-multimedia-2 kt-font-success"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Gmail
+														</div>
+														<div class="kt-notification__item-time">
+															2 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-multimedia-2 kt-font-brand"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Gmail
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-multimedia-2 kt-font-danger"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Gmail
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-multimedia-2 kt-font-warning"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Gmail
+														</div>
+														<div class="kt-notification__item-time">
+															5 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-multimedia-2 kt-font-info"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Gmail
+														</div>
+														<div class="kt-notification__item-time">
+															8 hrs ago
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-xl-4">
+											<div class="kt-notification kt-notification--fit">
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-warcraft kt-font-success"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topcis de Docs
+														</div>
+														<div class="kt-notification__item-time">
+															2 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-warcraft kt-font-brand"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topcis de Docs
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-warcraft kt-font-danger"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topcis de Docs
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-warcraft kt-font-warning"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topcis de Docs
+														</div>
+														<div class="kt-notification__item-time">
+															5 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-warcraft kt-font-info"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topcis de Docs
+														</div>
+														<div class="kt-notification__item-time">
+															8 hrs ago
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-xl-4">
+											<div class="kt-notification kt-notification--fit">
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-github kt-font-success"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Soporte
+														</div>
+														<div class="kt-notification__item-time">
+															2 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-github kt-font-brand"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Soporte
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-github kt-font-danger"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Soporte
+														</div>
+														<div class="kt-notification__item-time">
+															3 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-github kt-font-warning"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Soporte
+														</div>
+														<div class="kt-notification__item-time">
+															5 hrs ago
+														</div>
+													</div>
+												</a>
+												<a href="#" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="socicon-github kt-font-info"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title">
+															Topicos de Soporte
+														</div>
+														<div class="kt-notification__item-time">
+															8 hrs ago
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
