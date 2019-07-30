@@ -314,7 +314,7 @@
 															Topicos de Gmail
 														</div>
 														<div class="kt-notification__item-time">
-															2 hrs ago
+															hace 2 horas
 														</div>
 													</div>
 												</a>
@@ -327,7 +327,7 @@
 															Topicos de Gmail
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -340,7 +340,7 @@
 															Topicos de Gmail
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -353,7 +353,7 @@
 															Topicos de Gmail
 														</div>
 														<div class="kt-notification__item-time">
-															5 hrs ago
+															hace 5 horas
 														</div>
 													</div>
 												</a>
@@ -366,7 +366,7 @@
 															Topicos de Gmail
 														</div>
 														<div class="kt-notification__item-time">
-															8 hrs ago
+															hace 8 horas
 														</div>
 													</div>
 												</a>
@@ -383,7 +383,7 @@
 															Topcis de Docs
 														</div>
 														<div class="kt-notification__item-time">
-															2 hrs ago
+															hace 2 horas
 														</div>
 													</div>
 												</a>
@@ -396,7 +396,7 @@
 															Topcis de Docs
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -409,7 +409,7 @@
 															Topcis de Docs
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -422,7 +422,7 @@
 															Topcis de Docs
 														</div>
 														<div class="kt-notification__item-time">
-															5 hrs ago
+															hace 5 horas
 														</div>
 													</div>
 												</a>
@@ -435,7 +435,7 @@
 															Topcis de Docs
 														</div>
 														<div class="kt-notification__item-time">
-															8 hrs ago
+															hace 8 horas
 														</div>
 													</div>
 												</a>
@@ -452,7 +452,7 @@
 															Topicos de Soporte
 														</div>
 														<div class="kt-notification__item-time">
-															2 hrs ago
+															hace 2 horas
 														</div>
 													</div>
 												</a>
@@ -465,7 +465,7 @@
 															Topicos de Soporte
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -478,7 +478,7 @@
 															Topicos de Soporte
 														</div>
 														<div class="kt-notification__item-time">
-															3 hrs ago
+															hace 3 horas
 														</div>
 													</div>
 												</a>
@@ -491,7 +491,7 @@
 															Topicos de Soporte
 														</div>
 														<div class="kt-notification__item-time">
-															5 hrs ago
+															hace 5 horas
 														</div>
 													</div>
 												</a>
@@ -504,7 +504,7 @@
 															Topicos de Soporte
 														</div>
 														<div class="kt-notification__item-time">
-															8 hrs ago
+															hace 8 horas
 														</div>
 													</div>
 												</a>
