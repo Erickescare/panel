@@ -302,6 +302,7 @@
 											<!--end:: Widgets/Blog-->
 										</div>
 									</div>
+									<hr>
 									<div class="row">
 										<div class="col-xl-4">
 											<div class="kt-notification kt-notification--fit">
