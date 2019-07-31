@@ -68,7 +68,7 @@
 															</div>
 														</div>
 														<div class="kt-widget19__text">
-															<img src="./assets/media/google-g-suite-_-locaweb-corp.gif" width="85%" align="center"><br>
+															<img src="./assets/media/google-g-suite-_-locaweb-corp.gif" width="600px" align="center"><br>
                                                                     
                                 <div class="body">
                                 <p>Los correos electrónicos no leídos se muestran en <strong>negrita</strong>. Para abrir un correo electrónico, haz clic en él.</p>
