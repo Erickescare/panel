@@ -161,7 +161,7 @@
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/google-g-suite-_-locaweb-corp.gif)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/Google-Chrome.gif)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Introducing New Feature
 														</h3>
@@ -209,7 +209,7 @@
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/google-g-suite-_-locaweb-corp.gif)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/3-slack.gif)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Introducing New Feature
 														</h3>
