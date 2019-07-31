@@ -48,7 +48,7 @@
 													<div class="kt-widget19__wrapper">
 														<div class="kt-widget19__content">
 															<div class="kt-widget19__userpic">
-																<img src="./assets/media//users/user1.jpg" alt="">
+																<img src="./assets/media//users/100_12.jpg" alt="">
 															</div>
 															<div class="kt-widget19__info">
 																<a href="#" class="kt-widget19__username">
