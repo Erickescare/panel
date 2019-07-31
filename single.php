@@ -68,15 +68,21 @@
 															</div>
 														</div>
 														<div class="kt-widget19__text">
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis volutpat velit, ut faucibus diam feugiat et. Praesent eleifend id orci non accumsan. Cras aliquet ligula vitae risus varius, quis aliquam mauris mollis. Proin et odio eleifend, aliquet urna at, mollis tortor. Vivamus congue vehicula sodales. Ut ut eros nulla. Vivamus viverra posuere diam nec condimentum. Sed ornare eu ante eget molestie. Vestibulum enim arcu, pulvinar et ultrices id, dapibus in elit. In sit amet malesuada eros. Praesent pharetra ante id elit volutpat, ac condimentum ipsum congue. Suspendisse imperdiet efficitur feugiat. Morbi sagittis cursus magna, fermentum lobortis nisl. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-															<br>
-															<p>Maecenas scelerisque commodo finibus. Fusce auctor tempus lorem, ac auctor mauris ultrices ut. Fusce quis varius quam, sed mollis turpis. Integer sed dapibus odio. Donec lorem nisi, molestie tincidunt cursus ut, viverra at lorem. Praesent dui ipsum, varius nec faucibus eget, faucibus ut eros. Morbi consectetur neque volutpat turpis congue, finibus placerat quam fringilla. Praesent ac dolor et augue bibendum mollis.</p>
-															<br>
-															<p>Nam aliquam gravida quam at dictum. Duis ornare nibh ut ex facilisis pellentesque. Cras et dolor sed purus feugiat semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sit amet bibendum nunc, sit amet vulputate sem. Vivamus elit metus, lacinia quis convallis eu, semper et enim. Integer in ligula quam. Curabitur eu urna vitae mauris varius posuere.</p>
-															<br>
-															<p>Nulla pellentesque maximus nisi in vulputate. Sed semper, orci vestibulum pharetra elementum, mi ligula tempus mauris, in cursus felis enim mollis nisi. Praesent volutpat dignissim egestas. Nullam sed elit hendrerit, vehicula orci ac, mattis augue. Mauris at dapibus lectus, id cursus quam. Nunc vel est sed erat tincidunt posuere. Phasellus in egestas sapien. Mauris consequat, lacus sed fringilla dictum, purus orci finibus diam, et hendrerit urna mi vel turpis. Quisque a eros lacinia, accumsan orci ut, laoreet diam. Vivamus non sem vitae nulla imperdiet suscipit sed in libero. Nulla ut placerat quam. Ut lacinia risus in libero gravida, quis vestibulum felis mattis.</p>
-															<br>
-															<p>Nam tristique, nunc pulvinar ultricies maximus, lacus erat tincidunt nulla, sed feugiat dui nunc vitae tortor. Aenean venenatis lectus rutrum, efficitur sem id, gravida lacus. Aliquam sollicitudin porttitor enim id semper. Aenean posuere nulla at ultricies elementum. In iaculis id felis eu tincidunt. Ut interdum leo sit amet nisl sodales vehicula vel ut urna. Integer aliquet hendrerit sapien, nec luctus lorem iaculis eu. Donec sollicitudin massa eget est luctus porttitor. Nunc ac faucibus erat. Duis velit nibh, feugiat vitae orci eu, posuere tempor tellus. Fusce vel velit vitae arcu consectetur iaculis a varius nisi. Etiam feugiat eros in sodales dignissim. Praesent aliquam, risus eu varius fermentum, tellus ligula suscipit nisi, ac lacinia dui ex venenatis leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+															<center><img src="images/google-g-suite-_-locaweb-corp.gif" width="85%" align="center"></center><br>
+                                                                    
+                                <div class="body">
+                                <p>Los correos electrónicos no leídos se muestran en <strong>negrita</strong>. Para abrir un correo electrónico, haz clic en él.</p>
+                                <p>De forma predeterminada, las respuestas a los correos electrónicos se agrupan en conversaciones, lo que facilita su seguimiento y ahorra espacio en la bandeja de entrada.</p>
+                                <p>Si prefieres separar los correos electrónicos que tienes ahora de los próximos que recibas, puedes desactivar la vista de conversación.</p>
+                                <p><strong>Para desactivar la vista de conversación:</strong></p>
+                                <ol>
+                                <li>En la parte superior derecha, haz clic en el icono de la rueda dentada&nbsp;<i class="material-icons">settings</i> &gt;&nbsp;<strong>Configuración</strong>.</li>
+                                <li>En la pestaña <strong>General</strong>, desplázate hasta <strong>Vista de conversación</strong> y selecciona <strong>Inhabilitar vista de conversación</strong>.</li>
+                                <li>En la parte inferior, haz clic en <span class="button gray">Guardar cambios</span>.</li>
+                                </ol>
+                                <img src="https://gsuite.google.es/learning-center/assets/images/gmail/gmail-new-see-new-email.png?cache=319f08e">
+                                <p><strong class="note">Consejo:</strong> Para conseguir más espacio para tu correo electrónico, haz clic en el Menú&nbsp;<i class="material-icons">menu</i> para cerrar el panel izquierdo.</p>
+                                </div>
 														</div>
 													</div>
 												</div>
