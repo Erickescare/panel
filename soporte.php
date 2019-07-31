@@ -163,7 +163,7 @@
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
 													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/Google-Chrome.gif)">
 														<h3 class="kt-widget19__title kt-font-light">
-															Introducing New Feature
+															Ventjas de Google Chorme con G Suite
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
@@ -211,7 +211,7 @@
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
 													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/3-slack.gif)">
 														<h3 class="kt-widget19__title kt-font-light">
-															Introducing New Feature
+															Slack, la nueva herramienta de comunicación
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
@@ -259,7 +259,7 @@
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
 													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/google-g-suite-_-locaweb-corp.gif)">
 														<h3 class="kt-widget19__title kt-font-light">
-															Introducing New Feature
+															(CONSEJO) Ver los correos electrónicos nuevos | Modo Conversación
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
