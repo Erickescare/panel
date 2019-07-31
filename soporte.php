@@ -21,7 +21,7 @@
 										<h3 class="kt-subheader__title">Soporte en Línea</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
 										<span class="kt-subheader__desc">Base de Datos -  Topicos</span>
-										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
+										<!-- <a href="./single.php" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
 											Más
 										</a> -->
 									</div>
@@ -167,7 +167,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
+															<a href="./single.php" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -175,11 +175,11 @@
 													<div class="kt-widget19__wrapper">
 														<div class="kt-widget19__content">
 															<div class="kt-widget19__userpic">
-																<img src="./assets/media//users/user1.jpg" alt="">
+																<img src="./assets/media//users/100_12.jpg" alt="">
 															</div>
 															<div class="kt-widget19__info">
-																<a href="#" class="kt-widget19__username">
-																	Anna Krox
+																<a href="./single.php" class="kt-widget19__username">
+																	Erick Escareño
 																</a>
 																<span class="kt-widget19__time">
 																	UX/UI Designer, Google
@@ -189,7 +189,7 @@
 																<span class="kt-widget19__number kt-font-brand">
 																	18
 																</span>
-																<a href="#" class="kt-widget19__comment">
+																<a href="./single.php" class="kt-widget19__comment">
 																	Comentarios
 																</a>
 															</div>
@@ -199,7 +199,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
+														<a href="./single.php" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
@@ -215,7 +215,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
+															<a href="./single.php" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -223,11 +223,11 @@
 													<div class="kt-widget19__wrapper">
 														<div class="kt-widget19__content">
 															<div class="kt-widget19__userpic">
-																<img src="./assets/media//users/user1.jpg" alt="">
+																<img src="./assets/media//users/100_12.jpg" alt="">
 															</div>
 															<div class="kt-widget19__info">
-																<a href="#" class="kt-widget19__username">
-																	Anna Krox
+																<a href="./single.php" class="kt-widget19__username">
+																	Erick Escareño
 																</a>
 																<span class="kt-widget19__time">
 																	UX/UI Designer, Google
@@ -237,7 +237,7 @@
 																<span class="kt-widget19__number kt-font-brand">
 																	18
 																</span>
-																<a href="#" class="kt-widget19__comment">
+																<a href="./single.php" class="kt-widget19__comment">
 																	Comentarios
 																</a>
 															</div>
@@ -247,7 +247,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
+														<a href="./single.php" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
@@ -263,7 +263,7 @@
 														</h3>
 														<div class="kt-widget19__shadow"></div>
 														<div class="kt-widget19__labels">
-															<a href="#" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
+															<a href="./single.php" class="btn btn-label-light-o2 btn-bold btn-sm ">Reciente</a>
 														</div>
 													</div>
 												</div>
@@ -271,11 +271,11 @@
 													<div class="kt-widget19__wrapper">
 														<div class="kt-widget19__content">
 															<div class="kt-widget19__userpic">
-																<img src="./assets/media//users/user1.jpg" alt="">
+																<img src="./assets/media//users/100_12.jpg" alt="">
 															</div>
 															<div class="kt-widget19__info">
-																<a href="#" class="kt-widget19__username">
-																	Anna Krox
+																<a href="./single.php" class="kt-widget19__username">
+																	Erick Escareño
 																</a>
 																<span class="kt-widget19__time">
 																	UX/UI Designer, Google
@@ -285,7 +285,7 @@
 																<span class="kt-widget19__number kt-font-brand">
 																	18
 																</span>
-																<a href="#" class="kt-widget19__comment">
+																<a href="./single.php" class="kt-widget19__comment">
 																	Comentarios
 																</a>
 															</div>
@@ -295,7 +295,7 @@
 														</div>
 													</div>
 													<div class="kt-widget19__action">
-														<a href="#" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
+														<a href="./single.php" class="btn btn-sm btn-label-brand btn-bold">Leer más...</a>
 													</div>
 												</div>
 											</div>
@@ -306,7 +306,7 @@
 									<div class="row">
 										<div class="col-xl-4">
 											<div class="kt-notification kt-notification--fit">
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="flaticon-multimedia-2 kt-font-success"></i>
 													</div>
@@ -319,7 +319,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="flaticon-multimedia-2 kt-font-brand"></i>
 													</div>
@@ -332,7 +332,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="flaticon-multimedia-2 kt-font-danger"></i>
 													</div>
@@ -345,7 +345,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="flaticon-multimedia-2 kt-font-warning"></i>
 													</div>
@@ -358,7 +358,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="flaticon-multimedia-2 kt-font-info"></i>
 													</div>
@@ -375,7 +375,7 @@
 										</div>
 										<div class="col-xl-4">
 											<div class="kt-notification kt-notification--fit">
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-warcraft kt-font-success"></i>
 													</div>
@@ -388,7 +388,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-warcraft kt-font-brand"></i>
 													</div>
@@ -401,7 +401,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-warcraft kt-font-danger"></i>
 													</div>
@@ -414,7 +414,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-warcraft kt-font-warning"></i>
 													</div>
@@ -427,7 +427,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-warcraft kt-font-info"></i>
 													</div>
@@ -444,7 +444,7 @@
 										</div>
 										<div class="col-xl-4">
 											<div class="kt-notification kt-notification--fit">
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-github kt-font-success"></i>
 													</div>
@@ -457,7 +457,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-github kt-font-brand"></i>
 													</div>
@@ -470,7 +470,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-github kt-font-danger"></i>
 													</div>
@@ -483,7 +483,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-github kt-font-warning"></i>
 													</div>
@@ -496,7 +496,7 @@
 														</div>
 													</div>
 												</a>
-												<a href="#" class="kt-notification__item">
+												<a href="./single.php" class="kt-notification__item">
 													<div class="kt-notification__item-icon">
 														<i class="socicon-github kt-font-info"></i>
 													</div>
