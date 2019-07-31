@@ -86,8 +86,9 @@
 													</div>
 												</div>
 											</div>
-												<!--end::Portlet-->
+											<!--end::Portlet-->
 											</div>
+											<!--begin::Sidebar-->
 											<div class="col-xl-3">
 												<div class="kt-portlet kt-portlet--solid-brand kt-portlet--height-fluid">
 													<div class="kt-portlet__head">
@@ -110,6 +111,7 @@
 													</div>
 												</div>
 											</div>
+											<!--end::Sidebar-->
 										</div>
 									</div>
 
