@@ -1,4 +1,3 @@
-
 <?php
 include("conexion.php");
 ?>
@@ -166,18 +165,22 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 									<!--begin: Datatable -->
 									<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
 										<tr>
-						                    <th>Candidato</th>
-											<th>Fecha de solicitud</th>
-						                    <th>Descargar CV</th>
-						                    <th>Fuente</th>
-											<th>Estado</th>
-											<th>Acción</th>
+											<th>ID</th>
+						                    <th>ID</th>
+						                    <th>user_login</th>
+						                    <th>user_nicename</th>
+						                    <th>user_email</th>
+						                    <th>user_registered</th>
+						                    <th>user_activation_key</th>
+						                    <th>user_status</th>
+						                    <th>display_name</th>
+						                    <th>Action</th>
 										</tr>
 										<?php
 										if($filter){
-											$sql = mysqli_query($con, "SELECT * FROM wp_posts WHERE iwj_application='$filter' ORDER BY post_modified ASC");
+											$sql = mysqli_query($con, "SELECT * FROM wp_users WHERE user_status='$filter' ORDER BY ID ASC");
 										}else{
-											$sql = mysqli_query($con, "SELECT * FROM wp_posts ORDER BY post_modified ASC");
+											$sql = mysqli_query($con, "SELECT * FROM wp_users ORDER BY ID ASC");
 										}
 										if(mysqli_num_rows($sql) == 0){
 											echo '<tr><td colspan="8">No hay datos.</td></tr>';
@@ -187,28 +190,17 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 												echo '
 												<tr>
 													<td>'.$no.'</td>
-													<td>'.$row['codigo'].'</td>
-													<td><a href="profile.php?nik='.$row['codigo'].'"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> '.$row['nombres'].'</a></td>
-						                            <td>'.$row['lugar_nacimiento'].'</td>
-						                            <td>'.$row['fecha_nacimiento'].'</td>
-													<td>'.$row['telefono'].'</td>
-						                            <td>'.$row['puesto'].'</td>
-													<td>';
-													if($row['estado'] == '1'){
-														echo '<span class="label label-success">Fijo</span>';
-													}
-						                            else if ($row['estado'] == '2' ){
-														echo '<span class="label label-info">Contratado</span>';
-													}
-						                            else if ($row['estado'] == '3' ){
-														echo '<span class="label label-warning">Outsourcing</span>';
-													}
-												echo '
-													</td>
+													<td>'.$row['ID'].'</td>
+						                            <td>'.$row['user_login'].'</td>
+						                            <td>'.$row['user_nicename'].'</td>
+						                            <td>'.$row['user_email'].'</td>
+						                            <td>'.$row['user_registered'].'</td>
+						                            <td>'.$row['user_activation_key'].'</td>
+						                            <td>'.$row['user_status'].'</td>
+						                            <td>'.$row['display_name'].'</td>
 													<td>
-
-														<a href="edit.php?nik='.$row['codigo'].'" title="Editar datos" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-														<a href="index.php?aksi=delete&nik='.$row['codigo'].'" title="Eliminar" onclick="return confirm(\'Esta seguro de borrar los datos '.$row['nombres'].'?\')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+														<a href="edit.php?nik='.$row['ID'].'" title="Editar datos" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+														<a href="index.php?aksi=delete&nik='.$row['ID'].'" title="Eliminar" onclick="return confirm(\'Esta seguro de borrar los datos '.$row['user_nicename'].'?\')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
 													</td>
 												</tr>
 												';
