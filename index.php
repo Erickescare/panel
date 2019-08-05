@@ -22,7 +22,7 @@
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
 										<span class="kt-subheader__desc">#GPX-0001</span>
 										<a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
-											Add New
+											Nuevo Panel
 										</a>
 									</div>
 									<div class="kt-subheader__toolbar">

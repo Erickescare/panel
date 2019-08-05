@@ -165,7 +165,7 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 									<!--begin: Datatable -->
 									<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
 										<tr>
-											<th>ID</th>
+											<th></th>
 						                    <th>ID</th>
 						                    <th>user_login</th>
 						                    <th>user_nicename</th>
@@ -174,7 +174,6 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 						                    <th>user_activation_key</th>
 						                    <th>user_status</th>
 						                    <th>display_name</th>
-						                    <th>Action</th>
 										</tr>
 										<?php
 										if($filter){
@@ -198,10 +197,6 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 						                            <td>'.$row['user_activation_key'].'</td>
 						                            <td>'.$row['user_status'].'</td>
 						                            <td>'.$row['display_name'].'</td>
-													<td>
-														<a href="edit.php?nik='.$row['ID'].'" title="Editar datos" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-														<a href="index.php?aksi=delete&nik='.$row['ID'].'" title="Eliminar" onclick="return confirm(\'Esta seguro de borrar los datos '.$row['user_nicename'].'?\')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-													</td>
 												</tr>
 												';
 												$no++;
