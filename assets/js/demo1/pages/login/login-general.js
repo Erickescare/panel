@@ -93,12 +93,12 @@ var KTLoginGeneral = function() {
             btn.addClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', true);
 
             form.ajaxSubmit({
-                url: 'http://localhost/panel/demo1/index.php',
+                url: 'http://localhost/panel/index.php',
                 success: function(response, status, xhr, $form) {
                 	// similate 2s delay
                 	setTimeout(function() {
 	                    btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
-                        location.href = "http://localhost/panel/demo1/index.php";
+                        location.href = "http://localhost/panel/index.php";
 	                    //showErrorMsg(form, 'danger', 'Nombre de usuario o contraseña incorrecta. Inténtalo de nuevo.');
                     }, 2000);
                 }
