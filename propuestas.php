@@ -29,13 +29,61 @@
 								<!-- end:: Content Head -->
 									<!-- begin:: Content -->
 									<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-										<ol>
-											<li><a href="./tabla.php">Listado</a></li>
-											<li><a href="./login.php">Login</a></li>
-											<li><a href="./hora_salida.php">Mi hora de salida</a></li>
-										</ol>
-									</div>
+										<!--begin:: Widgets/Last Updates-->
+											<div class="kt-portlet kt-portlet--height-fluid">
+												<div class="kt-portlet__head">
+													<div class="kt-portlet__head-label">
+														<h3 class="kt-portlet__head-title">
+															Propuestas
+														</h3>
+													</div>
+												</div>
+												<div class="kt-portlet__body">
 
+													<!--begin::widget 12-->
+													<div class="kt-widget4">
+														<div class="kt-widget4__item">
+															<span class="kt-widget4__icon">
+																<i class="flaticon2-list-3 kt-font-info"></i>
+															</span>
+															<a href="./tabla.php" class="kt-widget4__title kt-widget4__title--light">
+																Tabla
+															</a>
+															<span class="kt-widget4__number kt-font-info">98%</span>
+														</div>
+														<div class="kt-widget4__item">
+															<span class="kt-widget4__icon">
+																<i class="flaticon2-power kt-font-success"></i>
+															</span>
+															<a href="./login.php" class="kt-widget4__title kt-widget4__title--light">
+																Login
+															</a>
+															<span class="kt-widget4__number kt-font-success">99%</span>
+														</div>
+														<div class="kt-widget4__item">
+															<span class="kt-widget4__icon">
+																<i class="flaticon2-hourglass-1 kt-font-danger"></i>
+															</span>
+															<a href="./mi_salida.php" class="kt-widget4__title kt-widget4__title--light">
+																Hora de Salida
+															</a>
+															<span class="kt-widget4__number kt-font-danger">85%</span>
+														</div>
+														<div class="kt-widget4__item">
+															<span class="kt-widget4__icon">
+																<i class="flaticon2-user-1 kt-font-primary"></i>
+															</span>
+															<a href="./mi_salid.php" class="kt-widget4__title kt-widget4__title--light">
+																Perfil
+															</a>
+															<span class="kt-widget4__number kt-font-primary">55%</span>
+														</div>
+													</div>
+													<!--end::Widget 12-->
+												</div>
+											</div>
+											<!--end:: Widgets/Last Updates-->
+									</div>
 									<!-- end:: Content -->
 							</div>
 						</div>
