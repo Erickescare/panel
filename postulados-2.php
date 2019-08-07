@@ -1,7 +1,6 @@
 <?php
 include("conexion.php");
-?>
-<?php
+
 $search            = isset( $_GET['search'] ) ? $_GET['search'] : '';
 $paged             = isset( $_GET['cpage'] ) ? $_GET['cpage'] : '1';
 $status            = isset( $_GET['status'] ) ? $_GET['status'] : '';
@@ -166,14 +165,13 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 									<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
 										<tr>
 											<th></th>
-						                    <th>ID</th>
-						                    <th>user_login</th>
-						                    <th>user_nicename</th>
-						                    <th>user_email</th>
-						                    <th>user_registered</th>
-						                    <th>user_activation_key</th>
-						                    <th>user_status</th>
-						                    <th>display_name</th>
+			                    <th>ID</th>
+			                    <th>user_login</th>
+			                    <th>user_nicename</th>
+			                    <th>user_email</th>
+			                    <th>user_registered</th>
+			                    <th>user_status</th>
+			                    <th>display_name</th>
 										</tr>
 										<?php
 										if($filter){
@@ -194,7 +192,6 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 						                            <td>'.$row['user_nicename'].'</td>
 						                            <td>'.$row['user_email'].'</td>
 						                            <td>'.$row['user_registered'].'</td>
-						                            <td>'.$row['user_activation_key'].'</td>
 						                            <td>'.$row['user_status'].'</td>
 						                            <td>'.$row['display_name'].'</td>
 												</tr>
