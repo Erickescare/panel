@@ -87,7 +87,7 @@
 											<h3 class="kt-login__title">Ingresar</h3>
 										</div>
 										<div class="kt-login__form">
-											<form class="kt-form" action="./demo1/check-login.php" method="post">
+											<form class="kt-form" action="./check-login.php" method="post">
 												<div class="form-group">
 													<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
 												</div>
@@ -113,7 +113,7 @@
 											<div class="kt-login__desc">Ingrese sus datos para crear su cuenta: </div>
 										</div>
 										<div class="kt-login__form">
-											<form method="post" action="./demo1/create-account.php" class="kt-form" action="">
+											<form method="post" action="./create-account.php" class="kt-form" action="">
 												<div class="form-group">
 													<input type="text" class="form-control" name="name" placeholder="Nombre" required>
 												</div>
