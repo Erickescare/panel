@@ -21,7 +21,7 @@
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title">Mi Perfil</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">#Mi hora de Salida</span>
+										<span class="kt-subheader__desc">Mi hora de Salida</span>
 									</div>
 								</div>
 								<!-- end:: Content Head -->
@@ -346,7 +346,7 @@
 																	<div class="kt-widget12__item">
 																		<div class="kt-widget12__info">
 																			<span class="kt-widget12__desc">Mi hora de salida:</span>
-																			<span class="kt-widget12__value"><?php echo date("H:i") ?></span>
+																			<span class="kt-widget12__value"><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></span>
 																		</div>
 																	</div>
 																</div>
@@ -367,7 +367,7 @@
 																	</div>
 																	<div class="kt-notification-v2__itek-wrapper">
 																		<div class="kt-notification-v2__item-title">
-																			<b><?php echo date("H:i") ?></b>
+																			<b><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></b>
 																		</div>
 																	</div>
 																</a>
