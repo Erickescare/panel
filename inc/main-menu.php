@@ -6,12 +6,10 @@
 				</li>
 				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./tabla.php" class="kt-menu__link"><span class="kt-menu__link-text">Tabla</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
-				<li id="tabla" class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Paginas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
-					
-				</li>
+				<li id="tabla" class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Paginas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a></li>
 				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reportes</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
-				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="./propuestas.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Propuestas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./propuestas.php" class="kt-menu__link"><span class="kt-menu__link-text">Propuestas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
 			</ul>
 		</div>

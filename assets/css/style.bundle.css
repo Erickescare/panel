@@ -19535,11 +19535,11 @@ strong {
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 40px;
-  right: 20px;
+  bottom: 50px;
+  left: 35px;
   cursor: pointer;
   z-index: 90;
-  background: #374afb;
+  background: #111111;
   -webkit-box-shadow: 0 0 15px 1px rgba(69, 65, 78, 0.2);
   box-shadow: 0 0 15px 1px rgba(69, 65, 78, 0.2);
   opacity: 0;

@@ -44,12 +44,12 @@
 													<div class="kt-widget4">
 														<div class="kt-widget4__item">
 															<span class="kt-widget4__icon">
-																<i class="flaticon2-list-3 kt-font-info"></i>
+																<i class="flaticon2-list-3 kt-font-success"></i>
 															</span>
 															<a href="./tabla.php" class="kt-widget4__title kt-widget4__title--light">
 																Tabla
 															</a>
-															<span class="kt-widget4__number kt-font-info">98%</span>
+															<span class="kt-widget4__number kt-font-success">98%</span>
 														</div>
 														<div class="kt-widget4__item">
 															<span class="kt-widget4__icon">
@@ -62,21 +62,30 @@
 														</div>
 														<div class="kt-widget4__item">
 															<span class="kt-widget4__icon">
-																<i class="flaticon2-hourglass-1 kt-font-danger"></i>
+																<i class="flaticon2-hourglass-1 kt-font-info"></i>
 															</span>
 															<a href="./mi_salida.php" class="kt-widget4__title kt-widget4__title--light">
 																Hora de Salida
 															</a>
-															<span class="kt-widget4__number kt-font-danger">85%</span>
+															<span class="kt-widget4__number kt-font-info">85%</span>
 														</div>
 														<div class="kt-widget4__item">
 															<span class="kt-widget4__icon">
-																<i class="flaticon2-user-1 kt-font-primary"></i>
+																<i class="flaticon2-user-1 kt-font-danger"></i>
 															</span>
 															<a href="./mi_salid.php" class="kt-widget4__title kt-widget4__title--light">
 																Perfil
 															</a>
-															<span class="kt-widget4__number kt-font-primary">55%</span>
+															<span class="kt-widget4__number kt-font-danger">55%</span>
+														</div>
+														<div class="kt-widget4__item">
+															<span class="kt-widget4__icon">
+																<i class="socicon-google kt-font-primary"></i>
+															</span>
+															<a href="./soporte.php" class="kt-widget4__title kt-widget4__title--light">
+																Soprte
+															</a>
+															<span class="kt-widget4__number kt-font-primary">75%</span>
 														</div>
 													</div>
 													<!--end::Widget 12-->
