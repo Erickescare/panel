@@ -32,6 +32,7 @@
 										<ol>
 											<li><a href="./tabla.php">Listado</a></li>
 											<li><a href="./login.php">Login</a></li>
+											<li><a href="./hora_salida.php">Mi hora de salida</a></li>
 										</ol>
 									</div>
 
