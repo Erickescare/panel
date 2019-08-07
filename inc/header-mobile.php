@@ -1,6 +1,6 @@
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
 	<div class="kt-header-mobile__logo">
-		<a href="demo2/index.html">
+		<a href="./index.html">
 			<img alt="Logo" src="./assets/media/protexa/ico57.png" />
 		</a>
 	</div>

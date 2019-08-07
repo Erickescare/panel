@@ -56,8 +56,8 @@
 		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Styles(used by all pages) -->
-		<link href="./assets/css/demo2/style.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo2/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
 	</head>

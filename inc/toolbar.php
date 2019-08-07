@@ -31,7 +31,7 @@
 			<div class="kt-demo-panel__item-preview">
 				<img src="./assets/media/demos/preview/demo1.jpg" alt="" />
 				<div class="kt-demo-panel__item-preview-overlay">
-					<a href="demo1/index.html" class="btn btn-brand btn-elevate " target="_blank">Preview</a>
+					<a href="./index.html" class="btn btn-brand btn-elevate " target="_blank">Preview</a>
 				</div>
 			</div>
 		</div>
