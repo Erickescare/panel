@@ -87,7 +87,7 @@
 											<h3 class="kt-login__title">Ingresar</h3>
 										</div>
 										<div class="kt-login__form">
-											<form class="kt-form" action="./check-login.php" method="post">
+											<form class="kt-form" action="">
 												<div class="form-group">
 													<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
 												</div>
@@ -102,7 +102,7 @@
 													<a href="javascript:;" id="kt_login_forgot">¿Olvidaste tu contraseña? </a>
 												</div>
 												<div class="kt-login__actions">
-													<button type="submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
+													<button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
 												</div>
 											</form>
 										</div>
@@ -264,10 +264,10 @@
 		<script src="./assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo2/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/demo1/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo2/pages/login/login-general.js" type="text/javascript"></script>
+		<script src="./assets/js/demo1/pages/login/login-general.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 	</body>
 	<!-- end::Body -->
