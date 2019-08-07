@@ -11,6 +11,8 @@
 				</li>
 				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reportes</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				</li>
+				<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Propuestas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+				</li>
 			</ul>
 		</div>
 		<div class="kt-header-toolbar">
