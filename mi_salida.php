@@ -137,7 +137,7 @@
 																</div>
 															</div>
 															<div class="kt-widget__items">
-																<a href="demo1/custom/apps/user/profile-1/overview.html" class="kt-widget__item kt-widget__item--active">
+																<a href="./custom/apps/user/profile-1/overview.html" class="kt-widget__item kt-widget__item--active">
 																	<span class="kt-widget__section">
 																		<span class="kt-widget__icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -152,7 +152,7 @@
 																		</span>
 																	</span>
 																</a>
-																<a href="demo1/custom/apps/user/profile-1/personal-information.html" class="kt-widget__item ">
+																<a href="./custom/apps/user/profile-1/personal-information.html" class="kt-widget__item ">
 																	<span class="kt-widget__section">
 																		<span class="kt-widget__icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -167,7 +167,7 @@
 																		</span>
 																	</span>
 																</a>
-																<a href="demo1/custom/apps/user/profile-1/account-information.html" class="kt-widget__item ">
+																<a href="./custom/apps/user/profile-1/account-information.html" class="kt-widget__item ">
 																	<span class="kt-widget__section">
 																		<span class="kt-widget__icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -182,7 +182,7 @@
 																		</span>
 																		</spandiv>
 																</a>
-																<a href="demo1/custom/apps/user/profile-1/change-password.html" class="kt-widget__item ">
+																<a href="./custom/apps/user/profile-1/change-password.html" class="kt-widget__item ">
 																	<span class="kt-widget__section">
 																		<span class="kt-widget__icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -199,7 +199,7 @@
 																	</span>
 																	<span class="kt-badge kt-badge--unified-danger kt-badge--sm kt-badge--rounded kt-badge--bolder">5</span>
 																</a>
-																<a href="demo1/custom/apps/user/profile-1/email-settings.html" class="kt-widget__item ">
+																<a href="./custom/apps/user/profile-1/email-settings.html" class="kt-widget__item ">
 																	<span class="kt-widget__section">
 																		<span class="kt-widget__icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -403,7 +403,7 @@
 		<!--end:: Global Mandatory Vendors -->
 		<?php include('inc/global-js.php') ?>
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo2/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Vendors(used by this page) -->
 		<script src="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
@@ -411,7 +411,7 @@
 		<script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 		<!--end::Page Vendors -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo2/pages/dashboard.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/dashboard.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 	</body>
 	<!-- end::Body -->

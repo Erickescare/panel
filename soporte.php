@@ -538,7 +538,7 @@
 		<?php include('inc/global-js.php') ?>
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo1/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Vendors(used by this page) -->
 		<script src="./assets/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
@@ -549,10 +549,10 @@
 		<script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 		<!--end::Page Vendors -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo1/pages/crud/datatables/basic/basic.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/crud/datatables/basic/basic.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/dashboard.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 	</body>
 	<!-- end::Body -->

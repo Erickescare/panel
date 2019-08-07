@@ -264,7 +264,7 @@
 		<script src="./assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo2/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="./assets/js/demo1/pages/login/login-general.js" type="text/javascript"></script>
