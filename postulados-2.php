@@ -174,8 +174,8 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 	                    <th>display_name</th>
 										</tr>
 										<?php
-										if($filter){
-											$sql = mysqli_query($con, "SELECT * FROM wp_users WHERE user_status='$filter' ORDER BY ID ASC");
+										if($filter){ 
+											$sql = mysqli_query($con, "SELECT * FROM wp_users ORDER BY ID ASC");
 										}else{
 											$sql = mysqli_query($con, "SELECT * FROM wp_users ORDER BY ID ASC");
 										}
