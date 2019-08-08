@@ -73,7 +73,7 @@
 															<span class="kt-widget4__icon">
 																<i class="flaticon2-user-1 kt-font-danger"></i>
 															</span>
-															<a href="./mi_salid.php" class="kt-widget4__title kt-widget4__title--light">
+															<a href="./mi_salida.php" class="kt-widget4__title kt-widget4__title--light">
 																Perfil
 															</a>
 															<span class="kt-widget4__number kt-font-danger">55%</span>

@@ -519,7 +519,7 @@
 													<p>Te damos la bienvenida a G&nbsp;Suite. Para empezar, inicia sesión en tu cuenta.</p>
 													<ol>
 													<li>Ve a <a href="http://www.google.com" target="_blank">www.google.com</a> y, en la esquina superior derecha, haz clic en <span class="button blue">Iniciar sesión</span>.</li>
-													<li>Introduce tu dirección de correo electrónico de G&nbsp;Suite (por ejemplo, juan@empresa.com) y tu contraseña.</li>
+													<li>Introduce tu dirección de correo electrónico de G&nbsp;Suite (por ejemplo, juan@protexa.com.mx) y tu contraseña.</li>
 													<li>(Opcional) Si utilizas varias cuentas de Google al mismo tiempo (por ejemplo, una cuenta personal y otra de trabajo), <a href="../../../learning-center/tips/gmail/#!/show-tip/sign-in-to-multiple-accounts">configura los perfiles de Chrome</a>&nbsp;para cambiar entre ellas rápidamente.</li>
 													</ol>
 													<p>Ahora que has iniciado sesión en tu cuenta de G&nbsp;Suite, podrás ver algunas características importantes que funcionan de la misma manera en distintos productos:</p>
