@@ -1,12 +1,7 @@
 <?php
 include("conexion.php");
 
-$search            = isset( $_GET['search'] ) ? $_GET['search'] : '';
-$paged             = isset( $_GET['cpage'] ) ? $_GET['cpage'] : '1';
-$status            = isset( $_GET['status'] ) ? $_GET['status'] : '';
-$job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
-?>
-<?php $pageTitle = 'Tablas'; include('inc/head.php') ?>
+$pageTitle = 'Tablas'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
