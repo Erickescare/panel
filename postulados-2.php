@@ -162,7 +162,7 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 								</div>
 								<div class="kt-portlet__body">
 									<!--begin: Datatable -->
-									<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
+									<table class="table table-striped- table-bordered table-hover" id="kt_table_1">
 										<tr>
 											<th></th>
 	                    <th>ID</th>
