@@ -165,13 +165,13 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 									<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_1">
 										<tr>
 											<th></th>
-			                    <th>ID</th>
-			                    <th>user_login</th>
-			                    <th>user_nicename</th>
-			                    <th>user_email</th>
-			                    <th>user_registered</th>
-			                    <th>user_status</th>
-			                    <th>display_name</th>
+	                    <th>ID</th>
+	                    <th>user_login</th>
+	                    <th>user_nicename</th>
+	                    <th>user_email</th>
+	                    <th>user_registered</th>
+	                    <th>user_status</th>
+	                    <th>display_name</th>
 										</tr>
 										<?php
 										if($filter){
@@ -188,12 +188,12 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 												<tr>
 													<td>'.$no.'</td>
 													<td>'.$row['ID'].'</td>
-						                            <td>'.$row['user_login'].'</td>
-						                            <td>'.$row['user_nicename'].'</td>
-						                            <td>'.$row['user_email'].'</td>
-						                            <td>'.$row['user_registered'].'</td>
-						                            <td>'.$row['user_status'].'</td>
-						                            <td>'.$row['display_name'].'</td>
+	                        <td>'.$row['user_login'].'</td>
+	                        <td>'.$row['user_nicename'].'</td>
+	                        <td>'.$row['user_email'].'</td>
+	                        <td>'.$row['user_registered'].'</td>
+	                        <td>'.$row['user_status'].'</td>
+	                        <td>'.$row['display_name'].'</td>
 												</tr>
 												';
 												$no++;
