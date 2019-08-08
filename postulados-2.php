@@ -174,8 +174,8 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 	                    <th>display_name</th>
 										</tr>
 										<?php
-										if($filter){ 
-											$sql = mysqli_query($con, "SELECT * FROM wp_users ORDER BY ID ASC");
+										if($filter){
+											$sql = mysqli_query($con, "SELECT * FROM wp_users WHERE user_status='$filter' ORDER BY ID ASC");
 										}else{
 											$sql = mysqli_query($con, "SELECT * FROM wp_users ORDER BY ID ASC");
 										}
@@ -228,7 +228,7 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 		<?php include('inc/global-js.php') ?>
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo2/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Vendors(used by this page) -->
 		<script src="./assets/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
@@ -239,10 +239,10 @@ $job_id            = isset( $_GET['job-id'] ) ? $_GET['job-id'] : '';
 		<script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 		<!--end::Page Vendors -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo2/pages/crud/datatables/basic/basic.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/crud/datatables/basic/basic.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo2/pages/dashboard.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/dashboard.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 	</body>
 	<!-- end::Body -->
