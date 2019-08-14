@@ -60,7 +60,7 @@
 						</a>
 						<div class="kt-footer__copyright">
 							2019&nbsp;&copy;&nbsp;
-							<a href="#">Grupo Protexa</a>
+							<a style="color: #ffb822;" href="#">Grupo Protexa</a>
 						</div>
 					</div>
 					<div class="kt-footer__menu">
