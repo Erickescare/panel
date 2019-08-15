@@ -23,7 +23,7 @@
 		</script>
 		<!--end::Fonts -->
 		<!--begin::Page Custom Styles(used by this page) -->
-		<link href="./assets/css/demo1/pages/general/login/login-6.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/pages/general/login/login-6.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Custom Styles -->
 		<!--begin:: Global Mandatory Vendors -->
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
@@ -56,13 +56,13 @@
 		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Styles(used by all pages) -->
-		<link href="./assets/css/demo1/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles -->
 		<!--begin::Layout Skins(used by all pages) -->
-		<link href="./assets/css/demo1/skins/header/base/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/brand/dark.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/aside/dark.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Skins -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
 	</head>
@@ -267,7 +267,7 @@
 		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="./assets/js/demo1/pages/login/login-general.js" type="text/javascript"></script>
+		<script src="./assets/js/pages/login/login-general.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 	</body>
 	<!-- end::Body -->
