@@ -61,4 +61,8 @@
 		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
+
+		<?php 
+		$activePage = basename($_SERVER['PHP_SELF'], ".php");
+		?>
 	</head>

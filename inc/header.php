@@ -11,8 +11,21 @@
 	</div>
 	<!-- begin: Header Menu -->
 	<div class="kt-header__bottom">
-		<div class="kt-container">			
-			<?php include('inc/main-menu.php') ?>			
+		<div class="kt-container">
+			<?php
+			{
+			    case "index":
+			    include("inc/main-menu.php");
+			    break;
+			     case "panel-rh":
+			    include("inc/main-menu-rh.php");
+			    break;
+			   default:
+			    include("inc/main-menu.php");
+			} 
+			?>
+			<?= ($activePage == 'index') ? include('inc/main-menu.php'); ?>
+			<?= ($activePage == 'panel-rh') ? include('inc/main-menu-rh.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->

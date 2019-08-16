@@ -8,20 +8,20 @@
 	<div class="kt-header__brand-nav">
 		<div class="dropdown">
 			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				Dashboard
+				Dashboards
 			</button>
 			<div class="dropdown-menu dropdown-menu-md">
 				<ul class="kt-nav kt-nav--bold kt-nav--md-space">
 					<li class="kt-nav__item">
-						<a class="kt-nav__link active" href="./soporte.php">
-							<span class="kt-nav__link-icon"><i class="flaticon-letter-g"></i></span>
-							<span class="kt-nav__link-text">Soporte Google</span>
+						<a class="kt-nav__link active" href="./panel-rh.php">
+							<span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+							<span class="kt-nav__link-text">Recursos Humanos</span>
 						</a>
 					</li>
 					<li class="kt-nav__item">
-						<a class="kt-nav__link active" href="#">
-							<span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
-							<span class="kt-nav__link-text">Recursos Humanos</span>
+						<a class="kt-nav__link active" href="./soporte.php">
+							<span class="kt-nav__link-icon"><i class="flaticon-letter-g"></i></span>
+							<span class="kt-nav__link-text">Soporte Google</span>
 						</a>
 					</li>
 					<li class="kt-nav__item">

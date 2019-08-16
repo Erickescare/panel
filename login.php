@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<!-- begin::Head -->
 	<head>
 		<!--begin::Base Path (base relative path for assets of this page) -->
