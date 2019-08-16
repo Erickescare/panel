@@ -12,20 +12,8 @@
 	<!-- begin: Header Menu -->
 	<div class="kt-header__bottom">
 		<div class="kt-container">
-			<?php
-			{
-			    case "index":
-			    include("inc/main-menu.php");
-			    break;
-			     case "panel-rh":
-			    include("inc/main-menu-rh.php");
-			    break;
-			   default:
-			    include("inc/main-menu.php");
-			} 
-			?>
-			<?= ($activePage == 'index') ? include('inc/main-menu.php'); ?>
-			<?= ($activePage == 'panel-rh') ? include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == 'localhost/panel/index.php') include('inc/main-menu.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == 'localhost/panel/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->
