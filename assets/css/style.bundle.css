@@ -41,7 +41,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-  @import url("https://gsuite.google.es/learning-center/assets/css/learning-center.min.css");
+  /*@import url("https://gsuite.google.es/learning-center/assets/css/learning-center.min.css");*/
 
   @font-face {
   font-family: 'Material Icons';

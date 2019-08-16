@@ -1,12 +1,15 @@
-<div id="kt_header_mobile" class="kt-header__brand kt-header-mobile  kt-header-mobile--fixed ">
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
 	<div class="kt-header-mobile__logo">
 		<a href="./index.php">
 			<img alt="Logo" src="./assets/media/protexa/ico57.png" />
 		</a>
 	</div>
-	<div class="kt-header__brand-nav">
+	<div class="kt-header__brand kt-header__brand-nav">
 		<div class="dropdown">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="    background-color: #ffb822;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    color: #ebedf2;">
 				<?php echo "$pageTitle"; ?>
 			</button>
 			<div class="dropdown-menu dropdown-menu-md">
@@ -58,7 +61,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="kt-header-mobile__toolbar">
 		<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
 		<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
