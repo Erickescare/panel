@@ -8,7 +8,7 @@
 	<div class="kt-header__brand-nav">
 		<div class="dropdown">
 			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				Dashboards
+				<?php echo "$pageTitle"; ?>
 			</button>
 			<div class="dropdown-menu dropdown-menu-md">
 				<ul class="kt-nav kt-nav--bold kt-nav--md-space">

@@ -12,8 +12,8 @@
 	<!-- begin: Header Menu -->
 	<div class="kt-header__bottom">
 		<div class="kt-container">
-			<?php if ($_SERVER["REQUEST_URI"] == 'localhost/panel/index.php') include('inc/main-menu.php'); ?>
-			<?php if ($_SERVER["REQUEST_URI"] == 'localhost/panel/panel-rh.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/index.php') include('inc/main-menu.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->
