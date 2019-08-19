@@ -18,12 +18,9 @@
 								<!-- begin:: Content Head -->
 								<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 									<div class="kt-subheader__main">
-										<h3 class="kt-subheader__title">Titulo</h3>
+										<h3 class="kt-subheader__title">Mi Perfil</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">Sub-Titulo</span>
-										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
-											Más
-										</a> -->
+										<span class="kt-subheader__desc">Editar Perfil</span>
 									</div>
 								</div>
 								<!-- end:: Content Head -->
