@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Mi Perfil';  include('inc/head.php') ?>
+<?php $pageTitle = 'Mi hora de salida';  include('inc/head.php') ?>
 <?php date_default_timezone_set('America/Monterrey');  ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
@@ -21,7 +21,7 @@
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title">Mi Perfil</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc"></span>
+										<span class="kt-subheader__desc">Mi hora de Salida</span>
 									</div>
 								</div>
 								<!-- end:: Content Head -->
