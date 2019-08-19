@@ -11,7 +11,7 @@
 						<i class="flaticon2-correct kt-font-success"></i>
 					</a>
 					<span class="kt-widget__subtitle">
-						Desarollo Web
+						Desarrollo Web
 					</span>
 				</div>
 				<div class="kt-widget__action">

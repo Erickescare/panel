@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Mi hora de salida';  include('inc/head.php') ?>
+<?php $pageTitle = 'Mi Perfil';  include('inc/head.php') ?>
 <?php date_default_timezone_set('America/Monterrey');  ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->

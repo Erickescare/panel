@@ -15,10 +15,14 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/index.php') include('inc/main-menu.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/perfil.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/mi-salida.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/editar-perfil.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/soporte.php') include('inc/main-menu-soporte.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/index.php') include('inc/main-menu.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/perfil.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/mi-salida.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/editar-perfil.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/soporte.php') include('inc/main-menu-soporte.php'); ?>
 		</div>
 	</div>
