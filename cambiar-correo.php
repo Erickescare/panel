@@ -60,25 +60,25 @@
 														<li class="kt-nav__item">
 															<a href="#" class="kt-nav__link">
 																<i class="kt-nav__link-icon flaticon2-drop"></i>
-																<span class="kt-nav__link-text">Activity</span>
+																<span class="kt-nav__link-text">Actividad</span>
 															</a>
 														</li>
 														<li class="kt-nav__item">
 															<a href="#" class="kt-nav__link">
 																<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
-																<span class="kt-nav__link-text">FAQ</span>
+																<span class="kt-nav__link-text">Preguntas frecuentes</span>
 															</a>
 														</li>
 														<li class="kt-nav__item">
 															<a href="#" class="kt-nav__link">
 																<i class="kt-nav__link-icon flaticon2-link"></i>
-																<span class="kt-nav__link-text">Settings</span>
+																<span class="kt-nav__link-text">Configuración</span>
 															</a>
 														</li>
 														<li class="kt-nav__item">
 															<a href="#" class="kt-nav__link">
 																<i class="kt-nav__link-icon flaticon2-new-email"></i>
-																<span class="kt-nav__link-text">Support</span>
+																<span class="kt-nav__link-text">Soporte</span>
 																<span class="kt-nav__link-badge">
 																	<span class="kt-badge kt-badge--success">5</span>
 																</span>
@@ -109,7 +109,7 @@
 											<div class="kt-portlet kt-portlet--height-fluid">
 												<div class="kt-portlet__head">
 													<div class="kt-portlet__head-label">
-														<h3 class="kt-portlet__head-title">Email Notifications <small>control when and how often Metronic sends emails to you</small></h3>
+														<h3 class="kt-portlet__head-title">Las notificaciones por correo electrónico<small>controlan cuándo y con qué frecuencia Protexa le envía correos electrónicos.</small></h3>
 													</div>
 												</div>
 												<form class="kt-form kt-form--label-right">
@@ -119,11 +119,11 @@
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Setup Email Notification:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Configurar notificación por correo electrónico: </h3>
 																	</div>
 																</div>
 																<div class="form-group form-group-sm row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Email Notification</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Notificación por correo electrónico </label>
 																	<div class="col-lg-9 col-xl-6">
 																		<span class="kt-switch">
 																			<label>
@@ -134,7 +134,7 @@
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Send Copy To Personal Email</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Enviar copia a correo electrónico personal </label>
 																	<div class="col-lg-9 col-xl-6">
 																		<span class="kt-switch">
 																			<label>
@@ -152,42 +152,42 @@
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Activity Related Emails:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Correos electrónicos relacionados con la actividad: </h3>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">When To Email</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Cuándo enviar un correo electrónico </label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="kt-checkbox-list">
 																			<label class="kt-checkbox">
-																				<input type="checkbox"> You have new notifications.
+																				<input type="checkbox"> Tienes nuevas notificaciones.
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox"> You're sent a direct message
+																				<input type="checkbox"> Recibiste un mensaje directo
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox" checked="checked"> Someone adds you as a connection
+																				<input type="checkbox" checked="checked"> Alguien te agrega como conexión
 																				<span></span>
 																			</label>
 																		</div>
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">When To Escalate Emails</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Cuándo escalar correos electrónicos </label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="kt-checkbox-list">
 																			<label class="kt-checkbox kt-checkbox--brand">
-																				<input type="checkbox"> Upon new order.
+																				<input type="checkbox"> Sobre nuevo orden.
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox kt-checkbox--brand">
-																				<input type="checkbox"> New membership approval
+																				<input type="checkbox"> Nueva aprobación de membresía
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox kt-checkbox--brand">
-																				<input type="checkbox" checked="checked"> Member registration
+																				<input type="checkbox" checked="checked"> Registro de miembro
 																				<span></span>
 																			</label>
 																		</div>
@@ -201,31 +201,31 @@
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Updates From Keenthemesthemes:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Actualizaciones de Protexa: </h3>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Email You With</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Enviarle un correo electrónico con </label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="kt-checkbox-list">
 																			<label class="kt-checkbox">
-																				<input type="checkbox"> News about Keenthemes products and feature updates
+																				<input type="checkbox"> Noticias sobre los productos Prrotxa y actualizaciones de funciones
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox"> Tips on getting more out of Keen
+																				<input type="checkbox"> Consejos para sacar más provecho de Prrotxa
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox" checked="checked"> Things you missed since you last logged into Keen
+																				<input type="checkbox" checked="checked"> Cosas que te perdiste desde la última vez que iniciaste sesión en Prrotxa
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox" checked="checked"> News about Metronic on partner products and other services
+																				<input type="checkbox" checked="checked"> Noticias sobre Protexa sobre productos asociados y otros servicios
 																				<span></span>
 																			</label>
 																			<label class="kt-checkbox">
-																				<input type="checkbox" checked="checked"> Tips on Metronic business products
+																				<input type="checkbox" checked="checked"> Consejos sobre productos comerciales de Protexa
 																				<span></span>
 																			</label>
 																		</div>
@@ -240,8 +240,8 @@
 																<div class="col-lg-3 col-xl-3">
 																</div>
 																<div class="col-lg-9 col-xl-9">
-																	<button type="reset" class="btn btn-brand btn-bold">Change Password</button>&nbsp;
-																	<button type="reset" class="btn btn-secondary">Cancel</button>
+																	<button type="reset" class="btn btn-brand btn-bold">Guardar</button>&nbsp;
+																	<button type="reset" class="btn btn-secondary">Cancelar</button>
 																</div>
 															</div>
 														</div>

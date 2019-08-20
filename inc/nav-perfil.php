@@ -24,7 +24,7 @@
 			<div class="kt-widget__content">
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Email:</span>
-					<a href="#" class="kt-widget__data">erick.escareno@protexa.com.mx</a>
+					<a href="mailto:erick.escareno@protexa.com.mx" class="kt-widget__data">erick.escareno@protexa.com.mx</a>
 				</div>
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Phone:</span>
@@ -130,7 +130,7 @@
 						</span>
 					</span>
 				</a>
-				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Coming soon..." data-placement="right">
+				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -145,7 +145,7 @@
 						</span>
 					</span>
 				</a>
-				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Coming soon..." data-placement="right">
+				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -160,7 +160,7 @@
 					</span>
 					<span class="kt-badge kt-badge--unified-brand kt-badge--inline kt-badge--bolder">New</span>
 				</a>
-				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Coming soon..." data-placement="right">
+				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">

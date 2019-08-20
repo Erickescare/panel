@@ -172,7 +172,7 @@
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Customer Info:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Información del cliente:</h3>
 																	</div>
 																</div>
 																<div class="form-group row">
@@ -191,55 +191,55 @@
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">First Name</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Primer nombre</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Nick">
+																		<input class="form-control" type="text" value="Erick">
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Last Name</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Apellido</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Bold">
+																		<input class="form-control" type="text" value="Escareño">
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Company Name</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Nombre de empresa</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Loop Inc.">
-																		<span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span>
+																		<input class="form-control" type="text" value="Protexa">
+																		<span class="form-text text-muted">Si desea que sus facturas se dirijan a una empresa. Déjelo en blanco para usar su nombre completo.</span>
 																	</div>
 																</div>
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Contact Info:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Datos de contacto:</h3>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Contact Phone</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Teléfono de contacto</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="input-group">
 																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
-																			<input type="text" class="form-control" value="+35278953712" placeholder="Phone" aria-describedby="basic-addon1">
+																			<input type="text" class="form-control" value="+8121071332" placeholder="Phone" aria-describedby="basic-addon1">
 																		</div>
-																		<span class="form-text text-muted">We'll never share your email with anyone else.</span>
+																		<span class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</span>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Email Address</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Dirección de correo electrónico</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="input-group">
 																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-at"></i></span></div>
-																			<input type="text" class="form-control" value="nick.bold@loop.com" placeholder="Email" aria-describedby="basic-addon1">
+																			<input type="text" class="form-control" value="erick.escareno@protexa.com.mx" placeholder="Email" aria-describedby="basic-addon1">
 																		</div>
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Company Site</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Sitio de la compañía</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="input-group">
-																			<input type="text" class="form-control" placeholder="Username" value="loop">
-																			<div class="input-group-append"><span class="input-group-text">.com</span></div>
+																			<input type="text" class="form-control" placeholder="Username" value="protexa">
+																			<div class="input-group-append"><span class="input-group-text">.com.mx</span></div>
 																		</div>
 																	</div>
 																</div>
@@ -252,8 +252,8 @@
 																<div class="col-lg-3 col-xl-3">
 																</div>
 																<div class="col-lg-9 col-xl-9">
-																	<button type="reset" class="btn btn-success">Submit</button>&nbsp;
-																	<button type="reset" class="btn btn-secondary">Cancel</button>
+																	<button type="reset" class="btn btn-success">Guardar</button>&nbsp;
+																	<button type="reset" class="btn btn-secondary">Cancelar</button>
 																</div>
 															</div>
 														</div>
