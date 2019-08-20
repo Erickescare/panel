@@ -51,7 +51,7 @@
 						</span>
 					</span>
 				</a>
-				<a href="./mi-salida.php" class="kt-widget__item <?= ($activePage == 'mi-salida') ? 'kt-widget__item--active':''; ?>">
+				<a href="./mi-salida.php" style="cursor: no-drop;" class="kt-widget__item <?= ($activePage == 'mi-salida') ? 'kt-widget__item--active':''; ?>" data-toggle="kt-tooltip" title="Acitvo 4:15 PM" data-placement="right" >
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -66,6 +66,7 @@
 							Mi Hora de Salida
 						</span>
 					</span>
+					<span class="kt-badge kt-badge--unified-brand kt-badge--inline kt-badge--bolder">New</span>
 				</a>
 				<a href="./editar-perfil.php" class="kt-widget__item <?= ($activePage == 'editar-perfil') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
