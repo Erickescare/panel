@@ -83,7 +83,7 @@
 						</span>
 					</span>
 				</a>
-				<a href="./editar-perfil.php" class="kt-widget__item <?= ($activePage == 'perfil-info') ? 'kt-widget__item--active':''; ?>">
+<!-- 				<a href="./editar-perfil.php" class="kt-widget__item <?= ($activePage == 'perfil-info') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -97,8 +97,8 @@
 							Información de la cuenta
 						</span>
 						</spandiv>
-				</a>
-				<a href="demo1/custom/apps/user/profile-1/change-password.html" class="kt-widget__item ">
+				</a> -->
+				<a href="./cambiar-contrasena.php" class="kt-widget__item <?= ($activePage == 'cambiar-contrasena') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -115,7 +115,7 @@
 					</span>
 					<span class="kt-badge kt-badge--unified-danger kt-badge--sm kt-badge--rounded kt-badge--bolder">5</span>
 				</a>
-				<a href="demo1/custom/apps/user/profile-1/email-settings.html" class="kt-widget__item ">
+				<a href="./cambiar-correo.php" class="kt-widget__item <?= ($activePage == 'cambiar-correo') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
