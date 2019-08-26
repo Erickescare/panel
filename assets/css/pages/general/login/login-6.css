@@ -96,7 +96,7 @@
             .kt-login.kt-login--v6 .kt-login__aside .kt-login__wrapper .kt-login__container .kt-login__extra a:hover {
               -webkit-transition: color 0.3s ease;
               transition: color 0.3s ease;
-              color: #5d78ff; }
+              color: #ffb822; }
       .kt-login.kt-login--v6 .kt-login__aside .kt-login__wrapper .kt-login__account {
         text-align: center; }
         .kt-login.kt-login--v6 .kt-login__aside .kt-login__wrapper .kt-login__account .kt-login__account-msg {
@@ -112,7 +112,7 @@
           .kt-login.kt-login--v6 .kt-login__aside .kt-login__wrapper .kt-login__account .kt-login__account-link:hover {
             -webkit-transition: color 0.3s ease;
             transition: color 0.3s ease;
-            color: #5d78ff; }
+            color: #ffb822; }
   .kt-login.kt-login--v6 .btn {
     height: 46px;
     padding-left: 3rem;

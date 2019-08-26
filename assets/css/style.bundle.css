@@ -164,7 +164,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #2739c1;
+    color: #ffa500;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -2483,7 +2483,7 @@ fieldset:disabled a.btn {
   color: #ffb822;
   text-decoration: none; }
   .btn-link:hover {
-    color: #2739c1;
+    color: #ffa500;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline;
@@ -4028,7 +4028,7 @@ input[type="button"].btn-block {
   border: 1px solid #ebedf2; }
   .page-link:hover {
     z-index: 2;
-    color: #2739c1;
+    color: #ffa500;
     text-decoration: none;
     background-color: #ebedf2;
     border-color: #ebedf2; }
@@ -7966,7 +7966,7 @@ button.bg-dark:focus {
   color: #ffb822 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #2739c1 !important; }
+  color: #ffa500 !important; }
 
 .text-secondary {
   color: #e1e1ef !important; }
@@ -8676,8 +8676,8 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffffff; }
   .btn-brand:hover {
     color: #fff;
-    background-color: #1228fa;
-    border-color: #051dfa; }
+    background-color: #fbab1a;
+    border-color: #fbab1a; }
   .btn-brand:focus, .btn-brand.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(85, 101, 252, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(85, 101, 252, 0.5); }
@@ -8688,7 +8688,7 @@ a.text-dark:hover, a.text-dark:focus {
   .btn-brand:not(:disabled):not(.disabled):active, .btn-brand:not(:disabled):not(.disabled).active,
   .show > .btn-brand.dropdown-toggle {
     color: #fff;
-    background-color: #051dfa;
+    background-color: #fbab1a;
     border-color: #051bee; }
     .btn-brand:not(:disabled):not(.disabled):active:focus, .btn-brand:not(:disabled):not(.disabled).active:focus,
     .show > .btn-brand.dropdown-toggle:focus {
@@ -9843,7 +9843,7 @@ input.btn.btn-label {
     color: #ffffff; }
 
 .btn.btn-label-brand {
-  background-color: rgba(55, 74, 251, 0.1);
+  background-color: #191919;
   color: #ffa500;
   cursor: text !important; }
 
@@ -27979,9 +27979,9 @@ body.swal2-height-auto {
   .kt-link.kt-link--brand {
     color: #ffa500; }
     .kt-link.kt-link--brand:hover {
-      color: #051dfa; }
+      color: #fbab1a; }
       .kt-link.kt-link--brand:hover:after {
-        border-bottom: 1px solid #051dfa;
+        border-bottom: 1px solid #fbab1a;
         opacity: 0.3; }
   .kt-link.kt-link--light {
     color: #ffffff; }

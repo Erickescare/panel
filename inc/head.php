@@ -5,7 +5,9 @@
 		<!--begin::Base Path -->
 		<base href="./">
 		<!--end::Base Path -->
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
 		<title><?php echo $pageTitle ?> | Basic Examples</title>
 		<meta name="description" content="Basic datatables examples">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

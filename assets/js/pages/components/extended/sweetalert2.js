@@ -89,16 +89,17 @@ var KTSweetAlert2Demo = function() {
 
         $('#kt_sweetalert_demo_8').click(function(e) {
             swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+                title: '¿Estás seguro?',
+                text: "¡No podrás revertir esto!",
                 type: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, delete it!'
+                confirmButtonText: 'Sí, ¡bórralo!'
             }).then(function(result) {
                 if (result.value) {
                     swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
+                        HTML: "submit"
+                        'Eliminado!',
+                        'Ha sido eliminado.',
                         'success'
                     )
                 }

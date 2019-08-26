@@ -48,7 +48,7 @@
 															<div class="kt-widget__content">
 																<div class="kt-widget__head">
 																	<a href="#" class="kt-widget__username">
-																		Jason Muller
+																		Erick Daniel Escareño López
 																		<i class="flaticon2-correct"></i>
 																	</a>
 																	<div class="kt-widget__action">
@@ -57,9 +57,9 @@
 																	</div>
 																</div>
 																<div class="kt-widget__subhead">
-																	<a href="#"><i class="flaticon2-new-email"></i>jason@siastudio.com</a>
-																	<a href="#"><i class="flaticon2-calendar-3"></i>PR Manager </a>
-																	<a href="#"><i class="flaticon2-placeholder"></i>Melbourne</a>
+																	<a href="#"><i class="flaticon2-new-email"></i>erick.escareno@protexa.com.mx</a>
+																	<a href="#"><i class="flaticon2-calendar-3"></i>Diseño Web </a>
+																	<a href="#"><i class="flaticon2-placeholder"></i>Monterrey </a>
 																</div>
 																<div class="kt-widget__info">
 																	<div class="kt-widget__desc">

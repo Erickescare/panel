@@ -1,22 +1,29 @@
+<?php
+require_once "inc/config.php";
+$sql = "SELECT * FROM users";
+if($result = mysqli_query($link, $sql)){
+if(mysqli_num_rows($result) > 0){
+if($row = mysqli_fetch_array($result)){
+?>
 <!--begin::Widget -->
 	<div class="kt-widget kt-widget--user-profile-1">
 		<div class="kt-widget__head">
 			<div class="kt-widget__media">
-				<img src="./assets/media/users/100_1.jpg" alt="image">
+				<img src="<?php	echo $row['avatar'];?>" alt="image">
 			</div>
 			<div class="kt-widget__content">
 				<div class="kt-widget__section">
 					<a href="#" class="kt-widget__username">
-						Erick Escareño
+						<?php	echo $row['name']; echo " "; echo $row['apellidos']; ?>
 						<i class="flaticon2-correct kt-font-success"></i>
 					</a>
 					<span class="kt-widget__subtitle">
-						Desarrollo Web
+						<?php	echo $row['puesto'];?>
 					</span>
 				</div>
 				<div class="kt-widget__action">
-					<button type="button" class="btn btn-info btn-sm">chat</button>&nbsp;
-					<button type="button" class="btn btn-success btn-sm">follow</button>
+					<button type="button" class="btn btn-info btn-sm">Chat</button>&nbsp;
+					<button type="button" class="btn btn-success btn-sm">Follow</button>
 				</div>
 			</div>
 		</div>
@@ -24,11 +31,11 @@
 			<div class="kt-widget__content">
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Email:</span>
-					<a href="mailto:erick.escareno@protexa.com.mx" class="kt-widget__data">erick.escareno@protexa.com.mx</a>
+					<a href="mailto:<?php echo $row['email'];?>" class="kt-widget__data"><?php echo $row['email'];?></a>
 				</div>
 				<div class="kt-widget__info">
-					<span class="kt-widget__label">Phone:</span>
-					<a href="#" class="kt-widget__data">8121071332</a>
+					<span class="kt-widget__label">Teléfono:</span>
+					<a href="tel:<?php echo $row['telefono'];?>" class="kt-widget__data"><?php echo $row['telefono'];?></a>
 				</div>
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Ext.:</span>
@@ -68,7 +75,7 @@
 					</span>
 					<span class="kt-badge kt-badge--unified-brand kt-badge--inline kt-badge--bolder">New</span>
 				</a>
-				<a href="./editar-perfil.php" class="kt-widget__item <?= ($activePage == 'editar-perfil') ? 'kt-widget__item--active':''; ?>">
+				<a href="./editar-perfil.php?id=1" class="kt-widget__item <?= ($activePage == 'editar-perfil') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -130,7 +137,7 @@
 						</span>
 					</span>
 				</a>
-				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
+				<a href="./servicios-vacaciones.php?id=1" class="kt-widget__item <?= ($activePage == 'servicios-vacaciones') ? 'kt-widget__item--active':''; ?>" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -141,7 +148,7 @@
 								</g>
 							</svg> </span>
 						<span class="kt-widget__desc">
-							Tarjetas de crédito guardadas
+							Vacaciones
 						</span>
 					</span>
 				</a>
@@ -178,5 +185,10 @@
 			</div>
 		</div>
 	</div>
-
+<?php 
+}
+mysqli_free_result($result);
+} 
+}
+?>
 	<!--end::Widget -->

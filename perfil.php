@@ -1,4 +1,7 @@
-<?php $pageTitle = 'Mi Perfil';  include('inc/head.php') ?>
+<?php $pageTitle = 'Mi Perfil';  include('inc/head.php');
+require_once "inc/config.php";
+$sql = "SELECT * FROM users";
+?>
 <?php date_default_timezone_set('America/Monterrey');  ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
@@ -179,37 +182,57 @@
 																			<span class="kt-widget12__value">41444</span>
 																		</div>
 																	</div>
-																	<div class="kt-widget12__item">
-																		<div class="kt-widget12__info">
-																			<span class="kt-widget12__desc">Mi hora de salida:</span>
-																			<span class="kt-widget12__value"><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></span>
-																		</div>
-																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="kt-portlet__head">
-															<div class="kt-portlet__head-label">
-																<h3 class="kt-portlet__head-title">
-																	Mi hora de Salida
-																</h3>
-															</div>
-														</div>
-														<div class="kt-portlet__body">
-															<div class="kt-notification-v2">
-																<a href="#" class="kt-notification-v2__item">
-																	<div class="kt-notification-v2__item-icon">
-																		<i class="flaticon-calendar-with-a-clock-time-tools kt-font-success"></i>
-																	</div>
-																	<div class="kt-notification-v2__itek-wrapper">
-																		<div class="kt-notification-v2__item-title">
-																			<b><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></b>
-																		</div>
-																	</div>
-																</a>
-															</div>
-															<div class="kt-separator kt-separator--space-lg kt-separator--border-dashed"></div>
-														</div>
+														<?php
+														// Attempt select query execution
+														if($result = mysqli_query($link, $sql)){
+																if(mysqli_num_rows($result) > 0){
+																		echo "<table class='table table-bordered table-striped'>";
+																				echo "<thead>";
+																						echo "<tr>";
+																								echo "<th>#</th>";
+																								echo "<th>Num. Empleado</th>";
+																								echo "<th>Nombre</th>";
+																								echo "<th>Apellidos</th>";
+																								echo "<th>Telefono</th>";
+																								echo "<th>Email</th>";
+																								echo "<th>Ciudad</th>";
+																								echo "<th>Accion</th>";
+																						echo "</tr>";
+																				echo "</thead>";
+																				echo "<tbody>";
+																				while($row = mysqli_fetch_array($result)){
+																						echo "<tr>";
+																								echo "<td>" . $row['id'] . "</td>";
+																								echo "<td>" . $row['numempleado'] . "</td>";
+																								echo "<td>" . $row['name'] . "</td>";
+																								echo "<td>" . $row['apellidos'] . "</td>";
+																								echo "<td>" . $row['telefono'] . "</td>";
+																								echo "<td>" . $row['email'] . "</td>";
+																								echo "<td>" . $row['ciudad'] . "</td>";
+																								echo "<td>";
+																										echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'>R</a>";
+																										echo "<a href='editar-perfil.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'>E</a>";
+																										echo "<a href='borrar-perfil.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'>X</a>";
+																								echo "</td>";
+																						echo "</tr>";
+																				}
+																				echo "</tbody>";
+																		echo "</table>";
+																		// Free result set
+																		mysqli_free_result($result);
+																} else{
+																		echo "<p class='lead'><em>No se encontraron registros.</em></p>";
+																}
+														} else{
+																echo "ERROR: No se pudo ejecutar $sql. " . mysqli_error($link);
+														}
+				 
+														// Close connection
+														mysqli_close($link);
+														?>
 													</div>
 													<!--end:: Widgets/Order Statistics-->
 												</div>

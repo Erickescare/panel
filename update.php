@@ -3,8 +3,8 @@
 require_once "inc/config.php";
  
 // Definir variables e inicializar con valores vacíos.
-$name = $apellidos = $ciudad = $telefono = $email = "";
-$name_err = $apellidos_err = $ciudad_err = $telefono_err = $email_err = "";
+$name = $apellidos = $ciudad = "";
+$name_err = $apellidos_err = $ciudad_err = "";
  
 // Procesar datos del formulario cuando se envía el formulario
 if(isset($_POST["id"]) && !empty($_POST["id"])){
@@ -14,9 +14,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 	// Nombre Validar
 	$input_name = trim($_POST["name"]);
 	if(empty($input_name)){
-		$name_err = "Por favor, introduzca un nombre ";
+		$name_err = "Please enter a name.";
 	} elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-		$name_err = "Por favor ingrese un nombre valido.";
+		$name_err = "Please enter a valid name.";
 	} else{
 		$name = $input_name;
 	}
@@ -24,7 +24,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 	// Validar apellidos
 	$input_apellidos = trim($_POST["apellidos"]);
 	if(empty($input_apellidos)){
-		$apellidos_err = "Por favor, introduzca un apellido. ";
+		$apellidos_err = "Please enter an apellidos.";     
 	} else{
 		$apellidos = $input_apellidos;
 	}
@@ -32,45 +32,26 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 	// Validar ciudad
 	$input_ciudad = trim($_POST["ciudad"]);
 	if(empty($input_ciudad)){
-		$ciudad_err = "Por favor ingrese el monto de la ciudad. ";
+		$ciudad_err = "Please enter the ciudad amount.";     
 	} elseif(!is_string($input_ciudad)){
-		$ciudad_err = "Ingrese un valor entero positivo ";
+		$ciudad_err = "Please enter a positive integer value.";
 	} else{
 		$ciudad = $input_ciudad;
 	}
-
-	// Validar Telefono
-	$input_telefono = trim($_POST["telefono"]);
-	if(empty($input_telefono)){
-		$telefono_err = "Por favor, introduzca un Telefono. ";
-	} else{
-		$telefono = $input_telefono;
-	}
-
-	// Validar email
-	$input_email = trim($_POST["email"]);
-	if(empty($input_email)){
-		$email_err = "Por favor, introduzca un email. ";
-	} else{
-		$email = $input_email;
-	}
-
-
+	
 	// Verifique los errores de entrada antes de insertar en la base de datos
-	if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err) && empty($telefono_err) && empty($email_err)){
+	if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err)){
 		// Prepare una declaración de actualización
-		$sql = "UPDATE users SET name=?, apellidos=?, ciudad=?, telefono=?, email=? WHERE id=?";
+		$sql = "UPDATE users SET name=?, apellidos=?, ciudad=? WHERE id=?";
 		 
 		if($stmt = mysqli_prepare($link, $sql)){
 			// Vincula las variables a la declaración preparada como parámetros
-			mysqli_stmt_bind_param($stmt, "sssssi", $param_name, $param_apellidos, $param_ciudad, $param_telefono,  $param_email, $param_id);
+			mysqli_stmt_bind_param($stmt, "sssi", $param_name, $param_apellidos, $param_ciudad, $param_id);
 			
 			// Establecer parámetros
 			$param_name = $name;
 			$param_apellidos = $apellidos;
 			$param_ciudad = $ciudad;
-			$param_telefono = $telefono;
-			$param_email = $email;
 			$param_id = $id;
 			
 			// Intentar ejecutar la declaración preparada
@@ -79,7 +60,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 				header("location: perfil.php");
 				exit();
 			} else{
-				echo "Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+				echo "Something went wrong. Please try again later.";
 			}
 		}
 		 
@@ -116,9 +97,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 					$name = $row["name"];
 					$apellidos = $row["apellidos"];
 					$ciudad = $row["ciudad"];
-					$telefono = $row["telefono"];
-					$email = $row["email"];
-					$avatar = $row["avatar"];
 				} else{
 					// La URL no contiene una identificación válida. Redireccionar a la página de error
 					header("location: error.php");
@@ -126,7 +104,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 				}
 				
 			} else{
-				echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+				echo "Oops! Something went wrong. Please try again later.";
 			}
 		}
 		
@@ -142,15 +120,23 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 }
 ?>
 <?php $pageTitle = 'Editar mi perfil'; include('inc/head.php') ?>
+	<!-- end::Head -->
+	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
+		<!-- begin:: Page -->
+		<!-- begin:: Header Mobile -->
 		<?php include('inc/header-mobile.php') ?>
+		<!-- end:: Header Mobile -->
 		<div class="kt-grid kt-grid--hor kt-grid--root">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
+					<!-- begin:: Header -->
 					<?php include('inc/header.php') ?>
+					<!-- end:: Header -->
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-grid--stretch">
 						<div class="kt-container kt-body  kt-grid kt-grid--ver" id="kt_body">
 							<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+								<!-- begin:: Content Head -->
 								<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title">Editar mi perfil</h3>
@@ -158,12 +144,19 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 										<span class="kt-subheader__desc">Editar Perfil</span>
 									</div>
 								</div>
+								<!-- end:: Content Head -->
+								<!-- begin:: Content -->
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+							<!--Begin::App-->
 							<div class="kt-grid kt-grid--desktop kt-grid--ver kt-grid--ver-desktop kt-app">
+								<!--Begin:: App Aside Mobile Toggle-->
 								<button class="kt-app__aside-close" id="kt_user_profile_aside_close">
 									<i class="la la-close"></i>
 								</button>
+								<!--End:: App Aside Mobile Toggle-->
+								<!--Begin:: App Aside-->
 								<div class="kt-grid__item kt-app__toggle kt-app__aside" id="kt_user_profile_aside">
+									<!--begin:: Widgets/Applications/User/Profile1-->
 									<div class="kt-portlet ">
 										<div class="kt-portlet__head  kt-portlet__head--noborder">
 											<div class="kt-portlet__head-label">
@@ -180,7 +173,10 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 											<?php include ('inc/nav-perfil.php'); ?>
 										</div>
 									</div>
+									<!--end:: Widgets/Applications/User/Profile1-->
 								</div>
+								<!--End:: App Aside-->
+								<!--Begin:: App Content-->
 								<div class="kt-grid__item kt-grid__item--fluid kt-app__content">
 									<div class="row">
 										<div class="col-xl-12">
@@ -204,7 +200,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																	<label class="col-xl-3 col-lg-3 col-form-label">Avatar</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="kt-avatar kt-avatar--outline kt-avatar--circle" id="kt_apps_user_add_avatar">
-																			<div class="kt-avatar__holder" style="background-image: url(<?php echo $avatar; ?>);"></div>
+																			<div class="kt-avatar__holder" style="background-image: url(&quot;http://keenthemes.com/metronic/preview/default/custom/user/assets/media/users/100_1.jpg&quot;);"></div>
 																			<label class="kt-avatar__upload" data-toggle="kt-tooltip" title="" data-original-title="Change avatar">
 																				<i class="fa fa-pen"></i>
 																				<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
@@ -242,25 +238,23 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																		<h3 class="kt-section__title kt-section__title-sm">Datos de contacto:</h3>
 																	</div>
 																</div>
-																<div class="form-group row <?php echo (!empty($telefono_err)) ? 'has-error' : ''; ?>">
+																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Teléfono de contacto</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="input-group">
 																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
-																			<input type="tel" name="telefono" class="form-control" value="<?php echo $telefono; ?>" placeholder="Phone" aria-describedby="basic-addon1">
+																			<input type="text" class="form-control" value="+8121071332" placeholder="Phone" aria-describedby="basic-addon1">
 																		</div>
-																		<span class="help-block"><?php echo $telefono_err;?></span>
 																		<span class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</span>
 																	</div>
 																</div>
-																<div class="form-group row <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Dirección de correo electrónico</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<div class="input-group">
 																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-at"></i></span></div>
-																			<input type="email" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="Email" aria-describedby="basic-addon1">
+																			<input type="text" class="form-control" value="erick.escareno@protexa.com.mx" placeholder="Email" aria-describedby="basic-addon1">
 																		</div>
-																		<span class="help-block"><?php echo $email_err;?></span>
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
@@ -272,6 +266,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																		</div>
 																	</div>
 																</div>
+																
 															</div>
 														</div>
 													</div>
@@ -293,27 +288,51 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 										</div>
 									</div>
 								</div>
+								<!--End:: App Content-->
 							</div>
+							<!--End::App-->
 						</div>
+						<!-- end:: Content -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- begin:: Footer -->
 	<?php include('inc/footer.php') ?>
+	<!-- end:: Footer -->           
 	</div>
+	<!-- end:: Page -->
 	<?php include('inc/quick-panel.php') ?>
+	<!-- begin::Scrolltop -->
 	<div id="kt_scrolltop" class="kt-scrolltop">
 	<i class="fa fa-arrow-up"></i>
 	</div>
+	<!-- end::Scrolltop -->
+	<!-- begin::Global Config(global config for global JS sciprts) -->
+	<!-- end::Global Config -->
+	<!--begin:: Global Mandatory Vendors -->
 	<?php include('inc/mansoryjs.php') ?>
+	<!--end:: Global Mandatory Vendors -->
 	<?php include('inc/global-js.php') ?>
+	<!--end:: Global Optional Vendors -->
+	<!--begin::Global Theme Bundle(used by all pages) -->
 	<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
+	<!--end::Global Theme Bundle -->
+	<!--begin::Page Vendors(used by this page) -->
 	<script src="./assets/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
+	<!--end::Page Vendors -->
+	<!--begin::Page Vendors(used by this page) -->
 	<script src="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 	<script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
 	<script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
+	<!--end::Page Vendors -->
+	<!--begin::Page Scripts(used by this page) -->
 	<script src="./assets/js/pages/crud/datatables/basic/basic.js" type="text/javascript"></script>
+	<!--end::Page Scripts -->
+	<!--begin::Page Scripts(used by this page) -->
 	<script src="./assets/js/pages/dashboard.js" type="text/javascript"></script>
+	<!--end::Page Scripts -->
 	</body>
+	<!-- end::Body -->
 </html>

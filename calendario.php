@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Titulo'; include('inc/head.php') ?>
+<?php $pageTitle = 'Calendario CC'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -20,7 +20,7 @@
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title"><?php echo $pageTitle; ?></h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">Sub-Titulo</span>
+										<span class="kt-subheader__desc">Crecer Ciendo</span>
 										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
 											Más
 										</a> -->
@@ -29,9 +29,11 @@
 								<!-- end:: Content Head -->
 								<!-- begin:: Content -->
 								<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-									Content goes here...
-								</div>
+									<div class="row">
+										<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23F09300&amp;ctz=America%2FMexico_City&amp;src=cHJvdGV4YS5jb20ubXhfdG0yZzk2dmtjZzZkc2Y2ZHNmdGJicWk4aTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;title=Crecer%20Creciendo&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+									</div>
 								<!-- end:: Content -->
+								</div>
 							</div>
 						</div>
 					</div>

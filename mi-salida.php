@@ -166,35 +166,6 @@
 																</div>
 															</div>
 														</div>
-														<div class="kt-portlet__body kt-portlet__body--fluid">
-															<div class="kt-widget12">
-																<div class="kt-widget12__content">
-																	<div class="kt-widget12__item">
-																		<div class="kt-widget12__info">
-																			<span class="kt-widget12__desc">Hoy es:</span>
-																			<span class="kt-widget12__value"><?php echo date('d M Y'); ?></span>
-																		</div>
-																		<div class="kt-widget12__info">
-																			<span class="kt-widget12__desc">Mi ID</span>
-																			<span class="kt-widget12__value">41444</span>
-																		</div>
-																	</div>
-																	<div class="kt-widget12__item">
-																		<div class="kt-widget12__info">
-																			<span class="kt-widget12__desc">Hora de Salida:</span>
-																			<span class="kt-widget12__value"><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="kt-portlet__head">
-															<div class="kt-portlet__head-label">
-																<h3 class="kt-portlet__head-title">
-																	Hora de Salida
-																</h3>
-															</div>
-														</div>
 														<div class="kt-portlet__body">
 															<div class="kt-notification-v2">
 																<a href="#" class="kt-notification-v2__item">

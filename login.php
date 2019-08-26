@@ -1,3 +1,83 @@
+<?php
+// Include config file
+require_once "inc/config.php";
+ 
+// Definir variables e inicializar con valores vacíos.
+$email = $numempleado = $password = $telefono = "";
+$email_err = $numempleado_err = $password_err = $telefono_err = "";
+ 
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+	// Validar email
+    $input_email = trim($_POST["email"]);
+    if(empty($input_email)){
+        $email_err = "Por favor, introduzca un email. ";
+    } else{
+        $email = $input_email;
+    }
+    
+    // Validar apellidos
+    $input_numempleado = trim($_POST["numempleado"]);
+    if(empty($input_numempleado)){
+        $numempleado_err = "Por favor, introduzca un apellido. ";
+    } else{
+        $numempleado = $input_numempleado;
+    }
+    
+    // Validar password
+    $input_password = trim($_POST["password"]);
+    if(empty($input_password)){
+        $password_err = "Por favor ingrese el monto de la password. ";
+    } elseif(!is_string($input_password)){
+        $password_err = "Ingrese un valor entero positivo ";
+    } else{
+        $password = $input_password;
+    }
+
+    // Validar Telefono
+    $input_telefono = trim($_POST["telefono"]);
+    if(empty($input_telefono)){
+        $telefono_err = "Por favor, introduzca un Telefono. ";
+    } else{
+        $telefono = $input_telefono;
+    }
+
+
+    
+    // Check input errors before inserting in database
+    if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err)){
+        // Prepare an insert statement
+        $sql = "INSERT INTO users (email, numempleado, password, telefono) VALUES (?, ?, ?, ?)";
+         
+        if($stmt = mysqli_prepare($link, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "ssss", $param_email, $param_numempleado, $param_password, $param_telefono);
+            
+            // Establecer parámetros
+			$param_email = $email;
+			$param_numempleado = $numempleado;
+			$param_password = $password;
+			$param_telefono = $telefono;
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Records created successfully. Redirect to landing page
+                header("location: index.php");
+                exit();
+            } else{
+                echo "Something went wrong. Please try again later.";
+            }
+        }
+         
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+    
+    // Close connection
+    mysqli_close($link);
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<!-- begin::Head -->
@@ -113,19 +193,22 @@
 											<div class="kt-login__desc">Ingrese sus datos para crear su cuenta: </div>
 										</div>
 										<div class="kt-login__form">
-											<form method="post" action="./create-account.php" class="kt-form" action="">
+											<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 												<div class="form-group">
-													<input type="text" class="form-control" name="name" placeholder="Nombre" required>
+													<input type="text" name="numempleado" class="form-control" value="<?php echo $numempleado; ?>" placeholder="Numero de Empleado">
 												</div>
 												<div class="form-group">
-													<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+													<input type="email" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="Email">
 												</div>
 												<div class="form-group">
-													<input type="password" class="form-control" name="password" placeholder="Contraseña" required>
+													<input type="password" name="password" class="form-control" value="<?php echo $password; ?>" placeholder="Contraseña">
+												</div>
+												<div class="form-group">
+													<input type="tel" name="telefono" class="form-control" value="<?php echo $telefono; ?>" placeholder="Telfono" aria-describedby="basic-addon1">
 												</div>
 												<div class="kt-login__extra">
 													<label class="kt-checkbox">
-														<input type="checkbox" name="agree">  Acepto los <a href="#"> términos y condiciones </a>.
+														<input type="checkbox" name="agree" required>  Acepto los <a href="#"> términos y condiciones </a>.
 														<span></span>
 													</label>
 												</div>
