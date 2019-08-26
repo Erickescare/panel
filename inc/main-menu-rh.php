@@ -67,7 +67,7 @@
 							<span class="kt-menu__link-text">Aplicar a un puesto</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
-							<a href="javascript:;" class="kt-menu__link">
+							<a href="./calendario.php" class="kt-menu__link">
 							<span class="kt-menu__link-text">Calendario de Capacitación</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
