@@ -3,8 +3,8 @@
 require_once "inc/config.php";
  
 // Definir variables e inicializar con valores vacíos.
-$name = $apellidos = $ciudad = $telefono = $email = "";
-$name_err = $apellidos_err = $ciudad_err = $telefono_err = $email_err = "";
+$name = $apellidos = $ciudad = $telefono = $email = $puesto = "";
+$name_err = $apellidos_err = $ciudad_err = $telefono_err = $email_err = $puesto_err = "";
  
 // Procesar datos del formulario cuando se envía el formulario
 if(isset($_POST["id"]) && !empty($_POST["id"])){
@@ -55,15 +55,23 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 		$email = $input_email;
 	}
 
+	// Validar email
+	$input_puesto = trim($_POST["puesto"]);
+	if(empty($input_puesto)){
+		$puesto_err = "Por favor, introduzca un puesto. ";
+	} else{
+		$puesto = $input_puesto;
+	}
+
 
 	// Verifique los errores de entrada antes de insertar en la base de datos
 	if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err) && empty($telefono_err) && empty($email_err)){
 		// Prepare una declaración de actualización
-		$sql = "UPDATE users SET name=?, apellidos=?, ciudad=?, telefono=?, email=? WHERE id=?";
+		$sql = "UPDATE users SET name=?, apellidos=?, ciudad=?, telefono=?, email=?, puesto=? WHERE id=?";
 		 
 		if($stmt = mysqli_prepare($link, $sql)){
 			// Vincula las variables a la declaración preparada como parámetros
-			mysqli_stmt_bind_param($stmt, "sssssi", $param_name, $param_apellidos, $param_ciudad, $param_telefono,  $param_email, $param_id);
+			mysqli_stmt_bind_param($stmt, "ssssssi", $param_name, $param_apellidos, $param_ciudad, $param_telefono,  $param_email, $param_puesto, $param_id);
 			
 			// Establecer parámetros
 			$param_name = $name;
@@ -71,6 +79,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 			$param_ciudad = $ciudad;
 			$param_telefono = $telefono;
 			$param_email = $email;
+			$param_puesto = $puesto;
 			$param_id = $id;
 			
 			// Intentar ejecutar la declaración preparada
@@ -119,6 +128,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 					$telefono = $row["telefono"];
 					$email = $row["email"];
 					$avatar = $row["avatar"];
+					$puesto = $row["puesto"];
 				} else{
 					// La URL no contiene una identificación válida. Redireccionar a la página de error
 					header("location: error.php");
@@ -234,7 +244,14 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																	<div class="col-lg-9 col-xl-6">
 																		<input type="text" name="ciudad" class="form-control" value="<?php echo $ciudad; ?>">
 																	</div>
-																	<span class="help-block"><?php echo $ciudad_err;?></span>
+																	<span class="help-block"><?php echo $puesto_err;?></span>
+																</div>
+																<div class="form-group row <?php echo (!empty($puesto_err)) ? 'has-error' : ''; ?>">
+																	<label class="col-xl-3 col-lg-3 col-form-label">Puesto</label>
+																	<div class="col-lg-9 col-xl-6">
+																		<input type="text" name="puesto" class="form-control" value="<?php echo $puesto; ?>">
+																	</div>
+																	<span class="help-block"><?php echo $puesto_err;?></span>
 																</div>
 																<div class="row">
 																	<label class="col-xl-3"></label>

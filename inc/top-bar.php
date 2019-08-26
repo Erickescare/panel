@@ -597,7 +597,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="kt-notification__item">
+				<a href="./mensajes.php" class="kt-notification__item">
 					<div class="kt-notification__item-icon">
 						<i class="flaticon2-mail kt-font-warning"></i>
 					</div>

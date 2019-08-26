@@ -22,7 +22,7 @@ if($row = mysqli_fetch_array($result)){
 					</span>
 				</div>
 				<div class="kt-widget__action">
-					<button type="button" class="btn btn-info btn-sm">Chat</button>&nbsp;
+					<a href="./mensajes.php"><button type="button" class="btn btn-info btn-sm">Chat</button></a>&nbsp;
 					<button type="button" class="btn btn-success btn-sm">Follow</button>
 				</div>
 			</div>
