@@ -1,3 +1,104 @@
+<?php
+// Incluir archivo de configuración
+require_once "inc/config.php";
+ 
+// Definir variables e inicializar con valores vacíos.
+$password = "";
+$password_err = "";
+ 
+// Procesar datos del formulario cuando se envía el formulario
+if(isset($_POST["id"]) && !empty($_POST["id"])){
+	// Obtener valor de entrada oculto
+	$id = $_POST["id"];
+	
+	// Nombre Validar
+	$input_password = trim($_POST["password"]);
+	if(empty($input_password)){
+		$password_err = "Por favor, introduzca un nombre ";
+	} elseif(!filter_var($input_password, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
+		$password_err = "Por favor ingrese un nombre valido.";
+	} else{
+		$password = $input_password;
+	}
+	
+
+
+	// Verifique los errores de entrada antes de insertar en la base de datos
+	if(empty($password_err)){
+		// Prepare una declaración de actualización
+		$sql = "UPDATE users SET password=? WHERE id=?";
+		 
+		if($stmt = mysqli_prepare($link, $sql)){
+			// Vincula las variables a la declaración preparada como parámetros
+			mysqli_stmt_bind_param($stmt, "si", $param_password);
+			
+			// Establecer parámetros
+			$param_password = $password;
+
+			
+			// Intentar ejecutar la declaración preparada
+			if(mysqli_stmt_execute($stmt)){
+				// Registros actualizados con éxito. Redirigir a la página de destino
+				header("location: perfil.php");
+				exit();
+			} else{
+				echo "Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+			}
+		}
+		 
+		// Declaración cerrada
+		mysqli_stmt_close($stmt);
+	}
+	
+	// Conexión cercana
+} else{
+	// Verifique la existencia del parámetro id antes de seguir procesando
+	if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
+		// Obtener parámetro de URL
+		$id =  trim($_GET["id"]);
+		
+		// Prepare una declaración de selección
+		$sql = "SELECT * FROM users WHERE id = ?";
+		if($stmt = mysqli_prepare($link, $sql)){
+			// Vincula las variables a la declaración preparada como parámetros
+			mysqli_stmt_bind_param($stmt, "i", $param_id);
+			
+			// Establecer parámetros
+			$param_id = $id;
+			
+			// Intentar ejecutar la declaración preparada
+			if(mysqli_stmt_execute($stmt)){
+				$result = mysqli_stmt_get_result($stmt);
+	
+				if(mysqli_num_rows($result) == 1){
+					/* Fetch result row as an associative array. Since the result set
+					contains only one row, we don't need to use while loop */
+					$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+					
+					// Recuperar valor de campo individual
+					$password = $row["password"];
+				} else{
+					// La URL no contiene una identificación válida. Redireccionar a la página de error
+					header("location: error.php");
+					exit();
+				}
+				
+			} else{
+				echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+			}
+		}
+		
+		// Declaración cerrada
+		mysqli_stmt_close($stmt);
+		
+		// Conexión cercana
+		}  else{
+		// La URL no contiene el parámetro id. Redireccionar a la página de error
+		header("location: error.php");
+		exit();
+	}
+}
+?>
 <?php $pageTitle = 'Titulo'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
@@ -158,7 +259,7 @@
 														</div>
 													</div>
 												</div>
-												<form class="kt-form kt-form--label-right">
+												<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
 													<div class="kt-portlet__body">
 														<div class="kt-section kt-section--first">
 															<div class="kt-section__body">
@@ -180,20 +281,20 @@
 																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Contraseña actual</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" class="form-control" value="" placeholder="Contraseña actual">
+																		<input type="password" name="password" class="form-control" value="" placeholder="Contraseña actual">
 																		<a href="#" class="kt-link kt-font-sm kt-font-bold kt-margin-t-5">¿Olvidó su contraseña?</a>
 																	</div>
 																</div>
 																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Nueva contraseña</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" class="form-control" value="" placeholder="Nueva contraseña">
+																		<input type="password" name="password" class="form-control" value="" placeholder="Nueva contraseña">
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Verificar contraseña</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" class="form-control" value="" placeholder="Verificar contraseña">
+																		<input type="password" name="password" class="form-control" value="" placeholder="Verificar contraseña">
 																	</div>
 																</div>
 															</div>
@@ -205,7 +306,7 @@
 																<div class="col-lg-3 col-xl-3">
 																</div>
 																<div class="col-lg-9 col-xl-9">
-																	<button type="reset" class="btn btn-brand btn-bold">Guardar</button>&nbsp;
+																	<button type="submit" class="btn btn-brand btn-bold">Guardar</button>&nbsp;
 																	<button type="reset" class="btn btn-secondary">Cancelar</button>
 																</div>
 															</div>

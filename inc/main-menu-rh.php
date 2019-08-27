@@ -91,7 +91,7 @@
 							<span class="kt-menu__link-text">Mi expediente</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
-							<a href="./servicios-vacaciones.php?id=1" class="kt-menu__link">
+							<a href="./servicios-vacaciones.php?id=41444" class="kt-menu__link">
 							<span class="kt-menu__link-text">Vacaciones</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
@@ -157,6 +157,11 @@
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
 							<a href="javascript:;" class="kt-menu__link">
 							<span class="kt-menu__link-text">Inscripciones</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+						</li>
+						<hr>
+						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+							<a href="./crear-evento.php" class="kt-menu__link">
+							<span class="kt-menu__link-text">Crear Evento</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 					</ul>
 				</div>

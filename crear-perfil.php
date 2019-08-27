@@ -85,6 +85,90 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
+
+// Definir variables e inicializar con valores vacíos.
+$name = $apellidos = $ciudad = $telefono = $email = "";
+$name_err = $apellidos_err = $ciudad_err = $telefono_err = $email_err = "";
+ 
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+   // Nombre Validar
+    $input_name = trim($_POST["name"]);
+    if(empty($input_name)){
+        $name_err = "Por favor, introduzca un nombre ";
+    } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
+        $name_err = "Por favor ingrese un nombre valido.";
+    } else{
+        $name = $input_name;
+    }
+    
+    // Validar apellidos
+    $input_apellidos = trim($_POST["apellidos"]);
+    if(empty($input_apellidos)){
+        $apellidos_err = "Por favor, introduzca un apellido. ";
+    } else{
+        $apellidos = $input_apellidos;
+    }
+    
+    // Validar ciudad
+    $input_ciudad = trim($_POST["ciudad"]);
+    if(empty($input_ciudad)){
+        $ciudad_err = "Por favor ingrese el monto de la ciudad. ";
+    } elseif(!is_string($input_ciudad)){
+        $ciudad_err = "Ingrese un valor entero positivo ";
+    } else{
+        $ciudad = $input_ciudad;
+    }
+
+    // Validar Telefono
+    $input_telefono = trim($_POST["telefono"]);
+    if(empty($input_telefono)){
+        $telefono_err = "Por favor, introduzca un Telefono. ";
+    } else{
+        $telefono = $input_telefono;
+    }
+
+    // Validar email
+    $input_email = trim($_POST["email"]);
+    if(empty($input_email)){
+        $email_err = "Por favor, introduzca un email. ";
+    } else{
+        $email = $input_email;
+    }
+    
+    // Check input errors before inserting in database
+    if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err)){
+        // Prepare an insert statement
+        $sql = "INSERT INTO registros_eventos (name, apellidos, ciudad, telefono, email) VALUES (?, ?, ?, ?, ?)";
+         
+        if($stmt = mysqli_prepare($link, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "sssss", $param_name, $param_apellidos, $param_ciudad, $param_telefono,  $param_email);
+            
+            // Establecer parámetros
+			$param_name = $name;
+			$param_apellidos = $apellidos;
+			$param_ciudad = $ciudad;
+			$param_telefono = $telefono;
+			$param_email = $email;
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Records created successfully. Redirect to landing page
+                header("location: crear-perfil.php");
+                exit();
+            } else{
+                echo "Something went wrong. Please try again later.";
+            }
+        }
+         
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+    
+    // Close connection
+    mysqli_close($link);
+}
 ?>
 <?php $pageTitle = 'Editar mi perfil'; include('inc/head.php') ?>
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
