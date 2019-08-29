@@ -216,7 +216,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 											<div class="kt-login__desc">Ingrese sus datos para crear su cuenta: </div>
 										</div>
 										<div class="kt-login__form">
-											<!-- <form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+											<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 												<div class="form-group">
 													<input type="text" name="numempleado" class="form-control" value="<?php echo $numempleado; ?>" placeholder="Numero de Empleado">
 												</div>
@@ -239,7 +239,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 													<button type="submit" class="btn btn-brand btn-pill btn-elevate"> Registrarse </button>
 													<button id="kt_login_signup_cancel" class="btn btn-outline-brand btn-pill">Cancelar </button>
 												</div>
-											</form> -->
+											</form>
 										</div>
 									</div>
 									<div class="kt-login__forgot">
