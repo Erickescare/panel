@@ -65,6 +65,6 @@
 
 		<?php 
 		$activePage = basename($_SERVER['PHP_SELF'], ".php");
-		$pagina_anterior = basename($_SERVER['HTTP_REFERER']);
+		//$pagina_anterior = basename($_SERVER['HTTP_REFERER']);
 		?>
 	</head>

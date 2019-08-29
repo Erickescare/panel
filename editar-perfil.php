@@ -300,7 +300,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																<div class="col-lg-9 col-xl-9">
 																	<input type="hidden" name="id" value="<?php echo $id; ?>"/>
 																	<input type="submit" class="btn btn-primary" value="Guardar">
-																	<a href="perfil.php" class="btn btn-default">Cancelar</a>
+																	<a href="javascript:window.history.back();" class="btn btn-default">Cancelar</a>
 																</div>
 															</div>
 														</div>

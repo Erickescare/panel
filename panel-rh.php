@@ -83,11 +83,11 @@
 														<div class="kt-widget__bottom">
 															<div class="kt-widget__item">
 																<div class="kt-widget__icon">
-																	<i class="flaticon-piggy-bank"></i>
+																	<i class="flaticon-presentation-1"></i>
 																</div>
 																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Ganancias</span>
-																	<span class="kt-widget__value"><span>$</span>249,500</span>
+																	<span class="kt-widget__title">Cursos</span>
+																	<span class="kt-widget__value">Ver Cursos</span>
 																</div>
 															</div>
 															<div class="kt-widget__item">
@@ -119,11 +119,11 @@
 															</div>
 															<div class="kt-widget__item">
 																<div class="kt-widget__icon">
-																	<i class="flaticon-chat-1"></i>
+																	<i class="flaticon-event-calendar-symbol"></i>
 																</div>
 																<div class="kt-widget__details">
-																	<span class="kt-widget__title">648 Comentarios</span>
-																	<a href="#" class="kt-widget__value kt-font-brand">Ver</a>
+																	<span class="kt-widget__title">Calendario</span>
+																	<a href="#" class="kt-widget__value kt-font-brand">Mis eventos</a>
 																</div>
 															</div>
 															<div class="kt-widget__item">

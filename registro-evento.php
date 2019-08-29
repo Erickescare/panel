@@ -44,9 +44,31 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 			echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
 		}
 	}
+
+	// Check input errors before inserting in database
+    if(empty($id_evento_err) && empty($userid_err)){
+        // Prepare an insert statement
+        $sql = "INSERT INTO registro_eventos (id_evento, userid) VALUES (?, ?)";
+         
+        if($stmt = mysqli_prepare($link, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "ss", $param_id_evento, $param_userid);
+            
+            // Establecer parámetros
+						$param_id_evento = $id_evento;
+						$param_userid = $userid;
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Records created successfully. Redirect to landing page
+                header("location: panel-rh.php");
+                exit();
+            } else{
+                echo "Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+            }
+        }
+    }
 	
-	// Declaración cerrada
-	mysqli_stmt_close($stmt);
 	
 	// Conexión cercana
 	}  else{
@@ -54,7 +76,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 	header("location: error.php");
 	exit();
 }
-
+$pagina_anterior = basename($_SERVER['HTTP_REFERER']);
 ?>
 <?php $pageTitle = 'Registrarse al Evento'; include('inc/head.php') ?>
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -118,14 +140,14 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Evento</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input disabled="" type="text" name="puesto" class="form-control" value="<?php echo $pagina_anterior; ?>">
+																		<input disabled="" type="text" name="id_evento" class="form-control" value="<?php echo $pagina_anterior; ?>">
 																	</div>
 																	<span class="help-block"></span>
 																</div>
 																<div class="form-group row">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Nombre</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input hidden="" type="text" name="name" class="form-control" value="<?php echo $id; ?>">
+																		<input hidden="" type="text" name="userid" class="form-control" value="<?php echo $id; ?>">
 																		<input disabled="" type="text" name="name" class="form-control" value="<?php echo $name; ?>">
 																	</div>
 																	<span class="help-block"></span>
@@ -190,7 +212,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																	<input type="hidden" name="id" value="<?php echo $id; ?>"/>
 																	<input type="submit" class="btn btn-primary" value="Registrarse">
 																	<a href="javascript:window.history.back();" class="btn btn-default">Cancelar</a>
-																	<a href="./editar-perfil.php" class="btn btn-warning-line" style="float: right;">Editar Perfil</a>
+																	<a href="./editar-perfil.php?id=41444" class="btn btn-warning-line" style="float: right;">Editar Perfil</a>
 																</div>
 															</div>
 														</div>

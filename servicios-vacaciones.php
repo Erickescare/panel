@@ -25,7 +25,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                 
                 // Retrieve individual field value
                 $name = $row["name"];
-                $numempleado = $row["numempleado"];
+                $id = $row["id"];
                 $apellidos = $row["apellidos"];
                 $ciudad = $row["ciudad"];
                 $avatar = $row["avatar"];
@@ -178,7 +178,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																	<div class="kt-widget12__item">
 																		<div class="kt-widget12__info">
 																			<p class="form-control-static">
-																				Numero de Empleado: <b><?php echo $row["numempleado"]; ?></b> 
+																				Numero de Empleado: <b><?php echo $row["id"]; ?></b> 
 																				<br><br>Nombre Completo: <b><?php echo $row["name"]; ?><?php echo " "; ?><?php echo $row["apellidos"]; ?></b> 
 																				<br><br>Puesto: <b><?php echo $row["puesto"]; ?></b>
 																				<br><br>Correo: <b><?php echo $row["email"]; ?></b>
@@ -193,7 +193,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																			echo "<table class='table table-bordered table-striped'>";
 																					echo "<thead>";
 																						echo "<tr>";
-																							echo "<th>N. Servicio</th>";
+																							echo "<th>N. Empleado</th>";
 																							echo "<th>Referencia</th>";
 																							echo "<th>Fecha de Solicitud</th>";
 																							echo "<th>Fecha Inicio</th>";
@@ -207,7 +207,6 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																					while($row = mysqli_fetch_array($result)){
 																						echo "<tr>";
 																							echo "<td>" . $row['id'] . "</td>";
-																							echo "<td>" . $row['numempleado'] . "</td>";
 																							echo "<td>" . $row['name'] . "</td>";
 																							echo "<td>" . $row['apellidos'] . "</td>";
 																							echo "<td>" . $row['telefono'] . "</td>";

@@ -1,7 +1,4 @@
-<?php $pageTitle = 'Mi Perfil';  include('inc/head.php');
-require_once "inc/config.php";
-$sql = "SELECT * FROM users";
-?>
+<?php $pageTitle = 'Mi Perfil';  include('inc/head.php');?>
 <?php date_default_timezone_set('America/Monterrey');  ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
@@ -73,7 +70,7 @@ $sql = "SELECT * FROM users";
 												<div class="kt-portlet__head">
 													<div class="kt-portlet__head-label">
 														<h3 class="kt-portlet__head-title">
-															Estadísticas de pedidos
+															Estadísticas de CC
 														</h3>
 													</div>
 												</div>
@@ -82,21 +79,21 @@ $sql = "SELECT * FROM users";
 														<div class="kt-widget12__content">
 															<div class="kt-widget12__item">
 																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Impuestos anuales EMS</span>
-																	<span class="kt-widget12__value">$400,000</span>
+																	<span class="kt-widget__title">Cursos</span>
+																	<span class="kt-widget__value">Ver Cursos</span>
 																</div>
 																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Fecha de revisión de finanzas</span>
-																	<span class="kt-widget12__value">July 24,2019</span>
+																	<span class="kt-widget12__desc">Último Curso</span>
+																	<span class="kt-widget12__value">Julio 24,2019</span>
 																</div>
 															</div>
 															<div class="kt-widget12__item">
 																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Ingresos promedio</span>
-																	<span class="kt-widget12__value">$60M</span>
+																	<span class="kt-widget12__desc">Último Evento</span>
+																	<span class="kt-widget12__value">Fuera de la Caja</span>
 																</div>
 																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Margen de ingresos</span>
+																	<span class="kt-widget12__desc">Crecer Creciendo</span>
 																	<div class="kt-widget12__progress">
 																		<div class="progress kt-progress--sm">
 																			<div class="progress-bar kt-bg-brand" role="progressbar" style="width: 40%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -380,7 +377,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Bob
@@ -435,7 +432,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																			</p>
 																			<a href="#" class="kt-widget2__username">
 																				Por Sean
@@ -604,7 +601,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Bob
@@ -714,7 +711,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Sean
@@ -883,7 +880,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Bob
@@ -993,7 +990,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Sean
@@ -1048,7 +1045,7 @@ $sql = "SELECT * FROM users";
 																	</div>
 																	<div class="kt-widget2__info">
 																		<a href="#" class="kt-widget2__title">
-																			Informe financiero completo para Emirates Airlines
+																			Informe financiero completo para
 																		</a>
 																		<a href="#" class="kt-widget2__username">
 																			Por Bob

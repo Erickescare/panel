@@ -168,16 +168,32 @@
 														</div>
 														<div class="kt-portlet__body">
 															<div class="kt-notification-v2">
-																<a href="#" class="kt-notification-v2__item">
-																	<div class="kt-notification-v2__item-icon">
-																		<i class="flaticon-calendar-with-a-clock-time-tools kt-font-success"></i>
+																<div class="row">
+																	<div class="col-md-6">
+																		<a href="#" class="kt-notification-v2__item">
+																			<div class="kt-notification-v2__item-icon">
+																				<i class="flaticon-clock-1 kt-font-success"></i>
+																			</div>
+																			<div class="kt-notification-v2__itek-wrapper">
+																				<div class="kt-notification-v2__item-title">
+																					<b>Entrada : <?php $date = new DateTime(); $date->modify('-8 hours'); echo $date->format('g:i a'); ?></b>
+																				</div>
+																			</div>
+																		</a>
 																	</div>
-																	<div class="kt-notification-v2__itek-wrapper">
-																		<div class="kt-notification-v2__item-title">
-																			<b><?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></b>
-																		</div>
+																	<div class="col-md-6">
+																		<a href="#" class="kt-notification-v2__item">
+																			<div class="kt-notification-v2__item-icon">
+																				<i class="flaticon-clock-1 kt-font-success"></i>
+																			</div>
+																			<div class="kt-notification-v2__itek-wrapper">
+																				<div class="kt-notification-v2__item-title">
+																					<b>Salida : <?php $date = new DateTime(); $date->modify('+8 hours'); echo $date->format('g:i a'); ?></b>
+																				</div>
+																			</div>
+																		</a>
 																	</div>
-																</a>
+																</div>
 															</div>
 															<div class="kt-separator kt-separator--space-lg kt-separator--border-dashed"></div>
 														</div>
