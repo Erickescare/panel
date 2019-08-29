@@ -67,24 +67,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 								<button class="kt-app__aside-close" id="kt_user_profile_aside_close">
 									<i class="la la-close"></i>
 								</button>
-								<div class="kt-grid__item kt-app__toggle kt-app__aside" id="kt_user_profile_aside">
-									<div class="kt-portlet ">
-										<div class="kt-portlet__head  kt-portlet__head--noborder">
-											<div class="kt-portlet__head-label">
-												<h3 class="kt-portlet__head-title">
-												</h3>
-											</div>
-											<div class="kt-portlet__head-toolbar">
-												<a href="#" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown">
-													<i class="flaticon-more-1"></i>
-												</a>
-											</div>
-										</div>
-										<div class="kt-portlet__body kt-portlet__body--fit-y">
-											<?php include ('inc/nav-perfil.php'); ?>
-										</div>
-									</div>
-								</div>
 								<div class="kt-grid__item kt-grid__item--fluid kt-app__content">
 									<div class="row">
 										<div class="col-xl-12">
@@ -131,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	                                </div>
 	                            </div>
 	                        </div>
-	                    </form>
+	                   	 </form>
 											</div>
 										</div>
 									</div>
