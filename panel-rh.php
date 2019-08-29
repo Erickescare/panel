@@ -83,24 +83,6 @@
 														<div class="kt-widget__bottom">
 															<div class="kt-widget__item">
 																<div class="kt-widget__icon">
-																	<i class="flaticon-presentation-1"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Cursos</span>
-																	<span class="kt-widget__value">Ver Cursos</span>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-pie-chart"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Crecer Creciendo</span>
-																	<span class="kt-widget__value">80<span>%</span></span>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
 																	<i class="flaticon-confetti"></i>
 																</div>
 																<div class="kt-widget__details">
@@ -115,6 +97,24 @@
 																<div class="kt-widget__details">
 																	<span class="kt-widget__title">73 Tareas</span>
 																	<a href="#" class="kt-widget__value kt-font-brand">Ver</a>
+																</div>
+															</div>
+															<div class="kt-widget__item">
+																<div class="kt-widget__icon">
+																	<i class="flaticon-pie-chart"></i>
+																</div>
+																<div class="kt-widget__details">
+																	<span class="kt-widget__title">Crecer Creciendo</span>
+																	<span class="kt-widget__value">80<span>%</span></span>
+																</div>
+															</div>
+															<div class="kt-widget__item">
+																<div class="kt-widget__icon">
+																	<i class="flaticon-presentation-1"></i>
+																</div>
+																<div class="kt-widget__details">
+																	<span class="kt-widget__title">Cursos</span>
+																	<a href="#" class="kt-widget__value kt-font-brand">Ver Cursos</a>
 																</div>
 															</div>
 															<div class="kt-widget__item">
