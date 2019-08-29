@@ -52,8 +52,8 @@
 																		<i class="flaticon2-correct"></i>
 																	</a>
 																	<div class="kt-widget__action">
-																		<button type="button" class="btn btn-label-success btn-sm btn-upper">Ask</button>&nbsp;
-																		<button type="button" class="btn btn-brand btn-sm btn-upper">Jornal</button>
+																		<button type="button" class="btn btn-label-success btn-sm btn-upper">DM</button>&nbsp;
+																		<button type="button" class="btn btn-brand btn-sm btn-upper">Informar</button>
 																	</div>
 																</div>
 																<div class="kt-widget__subhead">
@@ -311,7 +311,7 @@
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product4.jpg)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product6.jpg)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Filosofía y Valores
 														</h3>
@@ -333,7 +333,7 @@
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product4.jpg)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product13.jpg)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Ética
 														</h3>

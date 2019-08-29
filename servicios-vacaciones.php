@@ -217,6 +217,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 																								echo "<a href='editar-perfil.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'>E </a>";
 																								echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'>X </a>";
 																							echo "</td>";
+																							echo "<td> Comentarios </td>";
 																						echo "</tr>";
 																					}
 																					echo "</tbody>";

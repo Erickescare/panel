@@ -11,11 +11,11 @@
 				<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
 					<ul class="kt-menu__subnav">							
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
-							<a href="https://protexa-web.herokuapp.com/nosotros.php" class="kt-menu__link">
+							<a href="https://protexa-web.herokuapp.com/nosotros.php" target="_blank" class="kt-menu__link">
 							<span class="kt-menu__link-text">Filosofía y Valores</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
-							<a href="https://protexa-web.herokuapp.com/nosotros.php" class="kt-menu__link">
+							<a href="https://protexa-web.herokuapp.com/nosotros.php" target="_blank" class="kt-menu__link">
 							<span class="kt-menu__link-text">Código de Ética</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 						</li>
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
