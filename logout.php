@@ -1,9 +1,14 @@
-/* Destroy current user session */
-
 <?php
+// Initialize the session
 session_start();
-session_unset($_SESSION['email']);
+ 
+// Unset all of the session variables
+$_SESSION = array();
+ 
+// Destroy the session.
 session_destroy();
-
-header('location: login.html');
+ 
+// Redirect to login page
+header("location: login.php");
+exit;
 ?>

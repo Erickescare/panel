@@ -98,7 +98,7 @@ var KTLoginGeneral = function() {
                 	// similate 2s delay
                 	setTimeout(function() {
 	                    btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
-                        location.href = "http://localhost/panel/index.php";
+                        //location.href = "http://localhost/panel/index.php";
 	                    //showErrorMsg(form, 'danger', 'Nombre de usuario o contraseña incorrecta. Inténtalo de nuevo.');
                     }, 2000);
                 }

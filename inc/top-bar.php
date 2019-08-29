@@ -650,7 +650,7 @@
 					</div>
 				</a>
 				<div class="kt-notification__custom kt-space-between">
-					<a href="./login.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
+					<a href="./logout.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
 				</div>
 			</div>
 			<!--end: Navigation -->

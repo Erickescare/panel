@@ -1,81 +1,90 @@
 <?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: index.php");
+    exit;
+}
+ 
 // Include config file
 require_once "inc/config.php";
  
-// Definir variables e inicializar con valores vacíos.
-$email = $numempleado = $password = $telefono = "";
-$email_err = $numempleado_err = $password_err = $telefono_err = "";
+// Define variables and initialize with empty values
+$id = $password = "";
+$id_err = $password_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-	// Validar email
-    $input_email = trim($_POST["email"]);
-    if(empty($input_email)){
-        $email_err = "Por favor, introduzca un email. ";
+ 
+    // Check if id is empty
+    if(empty(trim($_POST["id"]))){
+        $id_err = "Por favor, introduzca la identificación.";
     } else{
-        $email = $input_email;
+        $id = trim($_POST["id"]);
     }
     
-    // Validar apellidos
-    $input_numempleado = trim($_POST["numempleado"]);
-    if(empty($input_numempleado)){
-        $numempleado_err = "Por favor, introduzca un apellido. ";
+    // Check if password is empty
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Por favor, introduzca su contraseña.";
     } else{
-        $numempleado = $input_numempleado;
+        $password = trim($_POST["password"]);        
     }
     
-    // Validar password
-    $input_password = trim($_POST["password"]);
-    if(empty($input_password)){
-        $password_err = "Por favor ingrese el monto de la password. ";
-    } elseif(!is_string($input_password)){
-        $password_err = "Ingrese un valor entero positivo ";
-    } else{
-        $password = $input_password;
-    }
-
-    // Validar Telefono
-    $input_telefono = trim($_POST["telefono"]);
-    if(empty($input_telefono)){
-        $telefono_err = "Por favor, introduzca un Telefono. ";
-    } else{
-        $telefono = $input_telefono;
-    }
-
-
-    
-    // Check input errors before inserting in database
-    if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err)){
-        // Prepare an insert statement
-        $sql = "INSERT INTO users (email, numempleado, password, telefono) VALUES (?, ?, ?, ?)";
-         
+    // Validate credentials
+    if(empty($id_err) && empty($password_err)){
+        // Prepare a select statement
+        $sql = "SELECT id, password FROM users WHERE id = ?";
+        
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssss", $param_email, $param_numempleado, $param_password, $param_telefono);
+            mysqli_stmt_bind_param($stmt, "i", $param_id);
             
-            // Establecer parámetros
-			$param_email = $email;
-			$param_numempleado = $numempleado;
-			$param_password = $password;
-			$param_telefono = $telefono;
+            // Set parameters
+            $param_id = $id;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
-                // Records created successfully. Redirect to landing page
-                header("location: index.php");
-                exit();
+                // Store result
+                mysqli_stmt_store_result($stmt);
+                
+                // Check if id exists, if yes then verify password
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                    // Bind result variables
+                    mysqli_stmt_bind_result($stmt, $id, $hashed_password);                                       
+                    if(mysqli_stmt_fetch($stmt)){
+                    	$hashed_password = password_hash($hashed_password, PASSWORD_DEFAULT);                    
+                        if(password_verify($password, $hashed_password)){
+                            // Password is correct, so start a new session
+                            session_start();
+                            
+                            // Store data in session variables
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            
+                            // Redirect user to welcome page
+                            header("location: index.php");
+                        } else{
+                            // Display an error message if password is not valid
+                            $password_err = "La contraseña que has introducido no es válida.";
+                        }
+                    }
+                } else{
+                    // Display an error message if id doesn't exist
+                    $id_err = "Por favor, introduzca la identificación.";
+                }
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Por favor, introduzca la identificación.";
             }
         }
-         
+        
         // Close statement
-        mysqli_stmt_close($stmt);
+        //mysqli_stmt_close($stmt);
     }
     
     // Close connection
-    mysqli_close($link);
+    //mysqli_close($link);
 }
 ?>
 <!DOCTYPE html>
@@ -167,9 +176,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 											<h3 class="kt-login__title">Ingresar</h3>
 										</div>
 										<div class="kt-login__form">
-											<form class="kt-form" action="">
+											<form class="kt-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+									            <div class="form-group <?php echo (!empty($id_err)) ? 'has-error' : ''; ?>">
+									                <input placeholder="Num. Empleado" type="text" name="id" class="form-control" value="<?php echo $id; ?>">
+									                <span class="help-block"><?php echo $id_err; ?></span>
+									            </div>    
+									            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+									                <input placeholder="Contraseña (****)" type="password" name="password" class="form-control">
+									                <span class="help-block"><?php echo $password_err; ?></span>
+									            </div>
+									            <div class="kt-login__actions">
+									                <button type="submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
+									            </div>
+									            <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
+									        </form>
+<!-- 											<form " action="">
 												<div class="form-group">
-													<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
+													<input class="form-control" type="text" placeholder="Num. Empleado" name="usermane" autocomplete="on">
 												</div>
 												<div class="form-group">
 													<input class="form-control form-control-last" type="password" placeholder="Password" name="password">
@@ -182,9 +205,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 													<a href="javascript:;" id="kt_login_forgot">¿Olvidaste tu contraseña? </a>
 												</div>
 												<div class="kt-login__actions">
-													<button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
+													<button type="submit" id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
 												</div>
-											</form>
+											</form> -->
 										</div>
 									</div>
 									<div class="kt-login__signup">
@@ -193,7 +216,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 											<div class="kt-login__desc">Ingrese sus datos para crear su cuenta: </div>
 										</div>
 										<div class="kt-login__form">
-											<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+											<!-- <form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 												<div class="form-group">
 													<input type="text" name="numempleado" class="form-control" value="<?php echo $numempleado; ?>" placeholder="Numero de Empleado">
 												</div>
@@ -216,7 +239,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 													<button type="submit" class="btn btn-brand btn-pill btn-elevate"> Registrarse </button>
 													<button id="kt_login_signup_cancel" class="btn btn-outline-brand btn-pill">Cancelar </button>
 												</div>
-											</form>
+											</form> -->
 										</div>
 									</div>
 									<div class="kt-login__forgot">
