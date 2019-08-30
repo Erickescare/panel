@@ -198,9 +198,9 @@
 					</ul>
 				</div>
 			</li>
-			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
+			<li class="disabled kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
 			<span class="kt-menu__link-text">Biblioteca Digital</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a></li>
-			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
+			<li class="disabled kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
 			<span class="kt-menu__link-text">Directorio</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a></li>
 		</ul>
 	</div>
