@@ -33,7 +33,7 @@
 					</ul>
 				</div>
 			</li>			
-			<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'noticias') ? 'kt-menu__item--here':''; ?>" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+			<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == '') ? 'kt-menu__item--here':''; ?>" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
 				<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 				<span class="kt-menu__link-text">Noticias</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
@@ -53,11 +53,15 @@
 					</ul>
 				</div>
 			</li>
-			<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'crecer-creciendo') ? 'kt-menu__item--here':''; ?> <?= ($activePage == 'vacantes') ? 'kt-menu__item--here':''; ?> " data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+			<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'noticias-cc') ? 'kt-menu__item--here':''; ?> <?= ($activePage == 'vacantes') ? 'kt-menu__item--here':''; ?> " data-ktmenu-submenu-toggle="click" aria-haspopup="true">
 				<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 				<span class="kt-menu__link-text">Crecer Creciendo</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
-					<ul class="kt-menu__subnav">							
+					<ul class="kt-menu__subnav">
+						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+							<a href="./noticias-cc.php" class="kt-menu__link">
+							<span class="kt-menu__link-text">Noticias</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+						</li>						
 						<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
 							<a href="javascript:;" class="kt-menu__link">
 							<span class="kt-menu__link-text">Job Posting</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
@@ -81,7 +85,7 @@
 					</ul>
 				</div>
 			</li>
-			<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'servicios') ? 'kt-menu__item--here':''; ?> <?= ($activePage == 'perfil') ? 'kt-menu__item--here':''; ?>" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+			<li class="disabled kt-menu__item kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'servicios') ? 'kt-menu__item--here':''; ?> <?= ($activePage == 'perfil') ? 'kt-menu__item--here':''; ?>" data-ktmenu-submenu-toggle="click" aria-haspopup="true" disabled>
 				<a href="javascript:;" class="kt-menu__link kt-menu__toggle">
 				<span class="kt-menu__link-text">Servicios Al Personal</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 				<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
@@ -194,9 +198,9 @@
 					</ul>
 				</div>
 			</li>
-			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="./propuestas.php" class="kt-menu__link">
+			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
 			<span class="kt-menu__link-text">Biblioteca Digital</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a></li>
-			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="./propuestas.php" class="kt-menu__link">
+			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel <?= ($activePage == 'comunidad') ? 'kt-menu__item--here':''; ?>"><a href="javascript:;" class="kt-menu__link">
 			<span class="kt-menu__link-text">Directorio</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a></li>
 		</ul>
 	</div>
@@ -221,4 +225,3 @@
 		</div>
 	</div>
 </div>
-

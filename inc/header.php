@@ -20,6 +20,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/soporte.php') include('inc/main-menu-soporte.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/vacantes.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/mensajes.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/noticias-cc.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/index.php') include('inc/main-menu.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/perfil.php') include('inc/main-menu-rh.php'); ?>
@@ -28,6 +29,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/soporte.php') include('inc/main-menu-soporte.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/vacantes.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/mensajes.php') include('inc/main-menu-rh.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/noticias-cc.php') include('inc/main-menu-rh.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->

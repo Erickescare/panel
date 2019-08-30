@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Initialize the session
 session_start();
  
@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
             
-            // Set parameters
+           // Set parameters
             $param_id = $id;
             
             // Attempt to execute the prepared statement
@@ -52,9 +52,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if id exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $hashed_password);                                       
+                    mysqli_stmt_bind_result($stmt, $id, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
-                    	$hashed_password = password_hash($hashed_password, PASSWORD_DEFAULT);                    
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
@@ -72,10 +71,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     }
                 } else{
                     // Display an error message if id doesn't exist
-                    $id_err = "Por favor, introduzca la identificación.";
+                    $id_err = "No se encontró cuenta con esa identificación.";
                 }
             } else{
-                echo "Por favor, introduzca la identificación.";
+                echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
             }
         }
         
@@ -86,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     //mysqli_close($link);
 }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="es">
 	<!-- begin::Head -->

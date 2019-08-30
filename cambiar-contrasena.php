@@ -1,105 +1,65 @@
+
+<?php $pageTitle = 'Cambiar Contraseña'; include('inc/head.php') ?>
 <?php
-// Incluir archivo de configuración
+// Include config file
 require_once "inc/config.php";
  
-// Definir variables e inicializar con valores vacíos.
-$password = "";
-$password_err = "";
+// Define variables and initialize with empty values
+$new_password = $confirm_password = "";
+$new_password_err = $confirm_password_err = "";
  
-// Procesar datos del formulario cuando se envía el formulario
-if(isset($_POST["id"]) && !empty($_POST["id"])){
-	// Obtener valor de entrada oculto
-	$id = $_POST["id"];
-	
-	// Nombre Validar
-	$input_password = trim($_POST["password"]);
-	if(empty($input_password)){
-		$password_err = "Por favor, introduzca un nombre ";
-	} elseif(!filter_var($input_password, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
-		$password_err = "Por favor ingrese un nombre valido.";
-	} else{
-		$password = $input_password;
-	}
-	
-
-
-	// Verifique los errores de entrada antes de insertar en la base de datos
-	if(empty($password_err)){
-		// Prepare una declaración de actualización
-		$sql = "UPDATE users SET password=? WHERE id=?";
-		 
-		if($stmt = mysqli_prepare($link, $sql)){
-			// Vincula las variables a la declaración preparada como parámetros
-			mysqli_stmt_bind_param($stmt, "si", $param_password);
-			
-			// Establecer parámetros
-			$param_password = $password;
-
-			
-			// Intentar ejecutar la declaración preparada
-			if(mysqli_stmt_execute($stmt)){
-				// Registros actualizados con éxito. Redirigir a la página de destino
-				header("location: perfil.php");
-				exit();
-			} else{
-				echo "Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
-			}
-		}
-		 
-		// Declaración cerrada
-		mysqli_stmt_close($stmt);
-	}
-	
-	// Conexión cercana
-} else{
-	// Verifique la existencia del parámetro id antes de seguir procesando
-	if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
-		// Obtener parámetro de URL
-		$id =  trim($_GET["id"]);
-		
-		// Prepare una declaración de selección
-		$sql = "SELECT * FROM users WHERE id = ?";
-		if($stmt = mysqli_prepare($link, $sql)){
-			// Vincula las variables a la declaración preparada como parámetros
-			mysqli_stmt_bind_param($stmt, "i", $param_id);
-			
-			// Establecer parámetros
-			$param_id = $id;
-			
-			// Intentar ejecutar la declaración preparada
-			if(mysqli_stmt_execute($stmt)){
-				$result = mysqli_stmt_get_result($stmt);
-	
-				if(mysqli_num_rows($result) == 1){
-					/* Fetch result row as an associative array. Since the result set
-					contains only one row, we don't need to use while loop */
-					$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-					
-					// Recuperar valor de campo individual
-					$password = $row["password"];
-				} else{
-					// La URL no contiene una identificación válida. Redireccionar a la página de error
-					header("location: error.php");
-					exit();
-				}
-				
-			} else{
-				echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
-			}
-		}
-		
-		// Declaración cerrada
-		mysqli_stmt_close($stmt);
-		
-		// Conexión cercana
-		}  else{
-		// La URL no contiene el parámetro id. Redireccionar a la página de error
-		header("location: error.php");
-		exit();
-	}
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+    // Validate new password
+    if(empty(trim($_POST["new_password"]))){
+        $new_password_err = "Por favor ingrese la nueva contraseña.";     
+    } elseif(strlen(trim($_POST["new_password"])) < 4){
+        $new_password_err = "La contraseña debe tener al menos 4 caracteres.";
+    } else{
+        $new_password = trim($_POST["new_password"]);
+    }
+    
+    // Validate confirm password
+    if(empty(trim($_POST["confirm_password"]))){
+        $confirm_password_err = "Por favor confirme la contraseña.";
+    } else{
+        $confirm_password = trim($_POST["confirm_password"]);
+        if(empty($new_password_err) && ($new_password != $confirm_password)){
+            $confirm_password_err = "La contraseña no coincidió.";
+        }
+    }
+        
+    // Check input errors before updating the database
+    if(empty($new_password_err) && empty($confirm_password_err)){
+        // Prepare an update statement
+        $sql = "UPDATE users SET password = ? WHERE id = ?";
+        
+        if($stmt = mysqli_prepare($link, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
+            
+            // Set parameters
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_id = $_SESSION["id"];
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Password updated successfully. Destroy the session, and redirect to login page
+                session_destroy();
+                header("location: index.php");
+                exit();
+            } else{
+                echo "¡Uy! Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+            }
+        }
+        
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+    
 }
 ?>
-<?php $pageTitle = 'Titulo'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -119,9 +79,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 								<!-- begin:: Content Head -->
 								<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 									<div class="kt-subheader__main">
-										<h3 class="kt-subheader__title">Titulo</h3>
+										<h3 class="kt-subheader__title">Cambiar Contraseña</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">Sub-Titulo</span>
+										<span class="kt-subheader__desc">Nueva Contraseña</span>
 										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
 											Más
 										</a> -->
@@ -212,58 +172,12 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 													<div class="kt-portlet__head-label">
 														<h3 class="kt-portlet__head-title">Cambiar contraseña<small>cambia o restablece la contraseña de tu cuenta</small></h3>
 													</div>
-													<div class="kt-portlet__head-toolbar kt-hidden">
-														<div class="kt-portlet__head-toolbar">
-															<div class="dropdown dropdown-inline">
-																<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																	<i class="la la-sellsy"></i>
-																</button>
-																<div class="dropdown-menu dropdown-menu-right">
-																	<ul class="kt-nav">
-																		<li class="kt-nav__section kt-nav__section--first">
-																			<span class="kt-nav__section-text">Acciones rápidas</span>
-																		</li>
-																		<li class="kt-nav__item">
-																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon flaticon2-graph-1"></i>
-																				<span class="kt-nav__link-text">Estadísticas</span>
-																			</a>
-																		</li>
-																		<li class="kt-nav__item">
-																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon flaticon2-calendar-4"></i>
-																				<span class="kt-nav__link-text">Eventos</span>
-																			</a>
-																		</li>
-																		<li class="kt-nav__item">
-																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon flaticon2-layers-1"></i>
-																				<span class="kt-nav__link-text">Informes</span>
-																			</a>
-																		</li>
-																		<li class="kt-nav__item">
-																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon flaticon2-bell-1o"></i>
-																				<span class="kt-nav__link-text">Notificaciones</span>
-																			</a>
-																		</li>
-																		<li class="kt-nav__item">
-																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon flaticon2-file-1"></i>
-																				<span class="kt-nav__link-text">Archivos</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</div>
 												</div>
-												<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
+												<form class="kt-form kt-form--label-right" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 													<div class="kt-portlet__body">
 														<div class="kt-section kt-section--first">
 															<div class="kt-section__body">
-																<div class="alert alert-solid-danger alert-bold fade show kt-margin-t-20 kt-margin-b-40" role="alert">
+																<!-- <div class="alert alert-solid-danger alert-bold fade show kt-margin-t-20 kt-margin-b-40" role="alert">
 																	<div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
 																	<div class="alert-text">Configure las contraseñas de los usuarios para que caduquen periódicamente. Los usuarios necesitarán una advertencia de que sus contraseñas caducarán, o podrían bloquearse inadvertidamente. Fuera del sistema!</div>
 																	<div class="alert-close">
@@ -271,30 +185,25 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																			<span aria-hidden="true"><i class="la la-close"></i></span>
 																		</button>
 																	</div>
-																</div>
+																</div> -->
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
 																		<h3 class="kt-section__title kt-section__title-sm">Cambie o recupere su contraseña:</h3>
 																	</div>
 																</div>
-																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Contraseña actual</label>
-																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" name="password" class="form-control" value="" placeholder="Contraseña actual">
-																		<a href="#" class="kt-link kt-font-sm kt-font-bold kt-margin-t-5">¿Olvidó su contraseña?</a>
-																	</div>
-																</div>
-																<div class="form-group row">
+																<div class="form-group row <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Nueva contraseña</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" name="password" class="form-control" value="" placeholder="Nueva contraseña">
+																		<input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>" placeholder="Nueva contraseña">
+																		<span class="help-block"><?php echo $new_password_err; ?></span>
 																	</div>
 																</div>
-																<div class="form-group form-group-last row">
+																<div class="form-group form-group-last row <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
 																	<label class="col-xl-3 col-lg-3 col-form-label">Verificar contraseña</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="password" name="password" class="form-control" value="" placeholder="Verificar contraseña">
+																		<input type="password" name="confirm_password" class="form-control" value="" placeholder="Verificar contraseña">
+																		 <span class="help-block"><?php echo $confirm_password_err; ?></span>
 																	</div>
 																</div>
 															</div>

@@ -55,7 +55,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 		$email = $input_email;
 	}
 
-	// Validar email
+	// Validar puesto
 	$input_puesto = trim($_POST["puesto"]);
 	if(empty($input_puesto)){
 		$puesto_err = "Por favor, introduzca un puesto. ";

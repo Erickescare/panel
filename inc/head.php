@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Initialize the session
 session_start();
  
@@ -7,7 +7,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="mx">
 	<!-- begin::Head -->
@@ -72,6 +72,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
+		<style>
+		.disabled{
+		    pointer-events:none;
+		    opacity:0.7;
+		}
+		</style>
 
 		<?php 
 		$activePage = basename($_SERVER['PHP_SELF'], ".php");
