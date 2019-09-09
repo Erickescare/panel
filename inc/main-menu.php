@@ -2,6 +2,13 @@
 <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
 	<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile ">
 		<ul class="kt-menu__nav ">
+			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--here"><a href="./index.php" class="kt-menu__link"><span class="kt-menu__link-text">Principal</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+			</li>
+			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./panel-rh.php" class="kt-menu__link"><span class="kt-menu__link-text">Recursos Humanos</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+			</li>
+			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./soporte.php" class="kt-menu__link"><span class="kt-menu__link-text">Soporte</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+		</ul>
+		<!-- <ul class="kt-menu__nav ">
 			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--here"><a href="./index.php" class="kt-menu__link"><span class="kt-menu__link-text">Dashboard</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 			</li>
 			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./tabla.php" class="kt-menu__link"><span class="kt-menu__link-text">Tabla</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
@@ -11,7 +18,7 @@
 			</li>
 			<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"><a href="./propuestas.php" class="kt-menu__link"><span class="kt-menu__link-text">Propuestas</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 			</li>
-		</ul>
+		</ul> -->
 	</div>
 	<div class="kt-header-toolbar">
 		<div class="kt-quick-search" id="kt_quick_search_default">

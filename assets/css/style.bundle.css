@@ -34447,3 +34447,228 @@ body {
         .kt-footer .kt-footer__bottom .kt-footer__wrapper .kt-footer__menu a:first-child {
           padding-left: 0;
           margin-left: 0; } }
+.kt-ribbon {
+  position: relative; }
+  .kt-ribbon .kt-ribbon__target {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: #5d78ff;
+    color: #ffffff; }
+    .kt-ribbon .kt-ribbon__target > .kt-ribbon__inner {
+      z-index: -1;
+      position: absolute;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    .kt-ribbon .kt-ribbon__target:after {
+      border-color: #0021c3; }
+  .kt-ribbon--ver .kt-ribbon__target {
+    padding: 5px 10px;
+    width: 36px;
+    height: 46px;
+    text-align: center; }
+  .kt-ribbon--shadow .kt-ribbon__target {
+    -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4); }
+  .kt-ribbon.kt-ribbon--round.kt-ribbon--top .kt-ribbon__target {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+  .kt-ribbon.kt-ribbon--round.kt-ribbon--bottom .kt-ribbon__target {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .kt-ribbon.kt-ribbon--round.kt-ribbon--left .kt-ribbon__target {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .kt-ribbon.kt-ribbon--round.kt-ribbon--right .kt-ribbon__target {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .kt-ribbon--border-ver .kt-ribbon__target:after {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 5px; }
+  .kt-ribbon--border-hor .kt-ribbon__target:after {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    right: 0; }
+  .kt-ribbon--border-dash-ver .kt-ribbon__target:after {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 5px; }
+  .kt-ribbon--border-dash-hor .kt-ribbon__target:after {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    right: 0; }
+  .kt-ribbon--clip.kt-ribbon--left .kt-ribbon__target {
+    left: -10px; }
+    .kt-ribbon--clip.kt-ribbon--left .kt-ribbon__target .kt-ribbon__inner:before, .kt-ribbon--clip.kt-ribbon--left .kt-ribbon__target .kt-ribbon__inner:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-color: transparent !important;
+      bottom: -10px; }
+    .kt-ribbon--clip.kt-ribbon--left .kt-ribbon__target .kt-ribbon__inner:before {
+      border-width: 0 10px 10px 0;
+      border-right-color: #222 !important;
+      left: 0; }
+  .kt-ribbon--clip.kt-ribbon--right .kt-ribbon__target {
+    right: -10px; }
+    .kt-ribbon--clip.kt-ribbon--right .kt-ribbon__target .kt-ribbon__inner:before, .kt-ribbon--clip.kt-ribbon--right .kt-ribbon__target .kt-ribbon__inner:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-color: transparent !important;
+      bottom: -10px; }
+    .kt-ribbon--clip.kt-ribbon--right .kt-ribbon__target .kt-ribbon__inner:before {
+      border-width: 0 0 10px 10px;
+      border-left-color: #222 !important;
+      right: 0; }
+  .kt-ribbon--flag .kt-ribbon__target > .kt-ribbon__inner:after {
+    border-left: 18px solid;
+    border-right: 18px solid;
+    border-bottom: 1em solid transparent !important;
+    bottom: -1em;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0; }
+  .kt-ribbon--brand .kt-ribbon__target {
+    background-color: #5d78ff;
+    color: #ffffff; }
+    .kt-ribbon--brand .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--brand .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #5d78ff;
+      color: #ffffff; }
+      .kt-ribbon--brand .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #5d78ff;
+        border-right-color: #5d78ff; }
+  .kt-ribbon--light .kt-ribbon__target {
+    background-color: #ffffff;
+    color: #282a3c; }
+    .kt-ribbon--light .kt-ribbon__target:after {
+      border-color: rgba(40, 42, 60, 0.5); }
+    .kt-ribbon--light .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #ffffff;
+      color: #282a3c; }
+      .kt-ribbon--light .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #ffffff;
+        border-right-color: #ffffff; }
+  .kt-ribbon--dark .kt-ribbon__target {
+    background-color: #282a3c;
+    color: #ffffff; }
+    .kt-ribbon--dark .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--dark .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #282a3c;
+      color: #ffffff; }
+      .kt-ribbon--dark .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #282a3c;
+        border-right-color: #282a3c; }
+  .kt-ribbon--primary .kt-ribbon__target {
+    background-color: #5867dd;
+    color: #ffffff; }
+    .kt-ribbon--primary .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--primary .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #5867dd;
+      color: #ffffff; }
+      .kt-ribbon--primary .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #5867dd;
+        border-right-color: #5867dd; }
+  .kt-ribbon--success .kt-ribbon__target {
+    background-color: #0abb87;
+    color: #ffffff; }
+    .kt-ribbon--success .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--success .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #0abb87;
+      color: #ffffff; }
+      .kt-ribbon--success .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #0abb87;
+        border-right-color: #0abb87; }
+  .kt-ribbon--info .kt-ribbon__target {
+    background-color: #5578eb;
+    color: #ffffff; }
+    .kt-ribbon--info .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--info .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #5578eb;
+      color: #ffffff; }
+      .kt-ribbon--info .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #5578eb;
+        border-right-color: #5578eb; }
+  .kt-ribbon--warning .kt-ribbon__target {
+    background-color: #ffb822;
+    color: #111111; }
+    .kt-ribbon--warning .kt-ribbon__target:after {
+      border-color: rgba(17, 17, 17, 0.5); }
+    .kt-ribbon--warning .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #ffb822;
+      color: #111111; }
+      .kt-ribbon--warning .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #ffb822;
+        border-right-color: #ffb822; }
+  .kt-ribbon--danger .kt-ribbon__target {
+    background-color: #fd397a;
+    color: #ffffff; }
+    .kt-ribbon--danger .kt-ribbon__target:after {
+      border-color: rgba(255, 255, 255, 0.5); }
+    .kt-ribbon--danger .kt-ribbon__target > .kt-ribbon__inner {
+      background-color: #fd397a;
+      color: #ffffff; }
+      .kt-ribbon--danger .kt-ribbon__target > .kt-ribbon__inner:after {
+        border-color: transparent;
+        border-left-color: #fd397a;
+        border-right-color: #fd397a; }
