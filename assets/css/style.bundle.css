@@ -4,6 +4,8 @@
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Desarrollo por Erick Escareño
+ * Una inciativa de Grupo Protexa
  */
 :root {
   --blue: #007bff;
@@ -41,7 +43,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-  /*@import url("https://gsuite.google.es/learning-center/assets/css/learning-center.min.css");*/
+  @import url("https://gsuite.google.es/learning-center/assets/css/learning-center.min.css");
 
   @font-face {
   font-family: 'Material Icons';
@@ -34447,6 +34449,7 @@ body {
         .kt-footer .kt-footer__bottom .kt-footer__wrapper .kt-footer__menu a:first-child {
           padding-left: 0;
           margin-left: 0; } }
+          .kt-footer .kt-footer__version{margin-left: 15px;color: #646c9a !important;}
 .kt-ribbon {
   position: relative; }
   .kt-ribbon .kt-ribbon__target {

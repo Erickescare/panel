@@ -1,4 +1,4 @@
-<?php  $PageTitleMaster = 'Titulo Masters'; $pageTitle = 'Titulo'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Soporte'; $pageTitle = 'Versiones'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -29,67 +29,15 @@
 								<!-- end:: Content Head -->
 								<!-- begin:: Content -->
 								<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-									<nav class="navbar navbar-inverse">
-									  <div class="container">
-									    <!-- Brand and toggle get grouped for better mobile display -->
-									    <div class="navbar-header">
-									      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									        <span class="sr-only">Toggle navigation</span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									      </button>
-									      <a class="navbar-brand" href="./">Carousel</a>
-									    </div>
-									    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									      <ul class="nav navbar-nav">
-									        <li><a href="./">Inicio</a></li>
-									        <li><a href="./admin" target="_blank">Administar</a></li>
-									      </ul>
-									    </div><!-- /.navbar-collapse -->
-									  </div><!-- /.container-fluid -->
-									</nav>
+									<p>Alfa (Α α) es la primera letra del alfabeto griego. En griego antiguo su nombre era alpha [ˈalpʰa], nombre que deriva de la antigua letra fenicia ʾalp 'buey'. Su origen gráfico es una cabeza de buey invertida, Las letras que surgieron de Alfa incluyen a la A latina y la A cirílica.</p>
 
-									<div class="container">
-									<div class="row">
-									<div class="col-md-12">
-									<?php if(count($images)>0):?>
-									<!-- aqui insertaremos el slider -->
-									<div id="carousel1" class="carousel slide" data-ride="carousel">
-									  <!-- Indicatodores -->
-									  <ol class="carousel-indicators">
-									<?php $cnt=0; foreach($images as $img):?>
-									    <li data-target="#carousel1" data-slide-to="0" class="<?php if($cnt==0){ echo 'active'; }?>"></li>
-									<?php $cnt++; endforeach; ?>
-									  </ol>
+									<p>Como es la primera letra del alfabeto, el alfa era usado para denotar el principio de algo, como opuesto de omega, que simbolizaba el fin. Por ejemplo, «Yo soy el Alfa y la Omega, el primero y el último, el que es, era y ha de venir" (Apocalipsis 22.13).</p>
 
-									  <!-- Contenedor de las imagenes -->
-									  <div class="carousel-inner" role="listbox">
-									<?php $cnt=0; foreach($images as $img):?>
-									    <div class="item <?php if($cnt==0){ echo 'active'; }?>">
-									      <img src="<?php echo 'admin/'.$img->folder.$img->src; ?>" alt="Imagen 1">
-									      <div class="carousel-caption"><?php echo $img->title; ?></div>
-									    </div>
-									<?php $cnt++; endforeach; ?>
-									  </div>
+									<a href="#">Ver detalles de actualizacion →</a>
 
-									  <!-- Controls -->
-									  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-									    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									    <span class="sr-only">Anterior</span>
-									  </a>
-									  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-									    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									    <span class="sr-only">Siguiente</span>
-									  </a>
+									<hr>
 
-									</div>
-									<?php else:?>
-									  <h4 class="alert alert-warning">No hay imagenes</h4>
-									<?php endif; ?>
-									</div>
-									</div>
-									</div>
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Alfabeto_griego_43.svg/700px-Alfabeto_griego_43.svg.png">
 								</div>
 								<!-- end:: Content -->
 							</div>

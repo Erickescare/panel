@@ -62,11 +62,15 @@
 							2019&nbsp;&copy;&nbsp;
 							<a style="color: #ffb822;" href="#">Grupo Protexa</a>
 						</div>
+
 					</div>
 					<div class="kt-footer__menu">
 						<a href="./soporte.php">Soporte</a>
 						<a href="#">Sitio Protexa</a>
 						<a href="./logout.php">Salir <i class="flaticon-logout"></i></a>
+						<div class="kt-footer__version">
+							<a href="./versiones.php">Vr. 0.01 Alpha α</a>
+						</div>
 					</div>
 				</div>
 			</div>
