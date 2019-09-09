@@ -43,7 +43,7 @@
 																<img src="./assets/media/users/100_1.jpg" alt="image">
 															</div>
 															<div class="kt-widget__pic kt-widget__pic--danger kt-font-danger kt-font-boldest kt-font-light kt-hidden">
-																JM
+																EE
 															</div>
 															<div class="kt-widget__content">
 																<div class="kt-widget__head">
