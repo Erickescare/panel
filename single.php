@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Titulo'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Soporte'; $pageTitle = 'Titulo'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">

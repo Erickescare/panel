@@ -1,5 +1,4 @@
-
-<?php $pageTitle = 'Cambiar Contraseña'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Cambiar Contraseña'; include('inc/head.php') ?>
 <?php
 // Include config file
 require_once "inc/config.php";

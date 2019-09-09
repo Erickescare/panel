@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Eventos'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Eventos'; include('inc/head.php') ?>
 <style type="text/css">
 	.borderevetos{
 	    border-bottom-style: inset;

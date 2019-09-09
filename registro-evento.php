@@ -78,7 +78,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 }
 $pagina_anterior = basename($_SERVER['HTTP_REFERER']);
 ?>
-<?php $pageTitle = 'Registrarse al Evento'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Registrarse al Evento'; include('inc/head.php') ?>
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 		<?php include('inc/header-mobile.php') ?>
 		<div class="kt-grid kt-grid--hor kt-grid--root">

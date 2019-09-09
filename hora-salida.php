@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Mi hora de salida'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Mi hora de salida'; include('inc/head.php') ?>
 	<!-- end::Head -->
 
 	<!-- begin::Body -->

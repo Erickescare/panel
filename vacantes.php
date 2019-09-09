@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Aplicar a un Puesto'; include('inc/head.php') ?>
+<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Aplicar a un Puesto'; include('inc/head.php') ?>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -20,7 +20,7 @@
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title"><?php echo $pageTitle; ?></h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">Jobs Positing</span>
+										<span class="kt-subheader__desc">Vacantes Recientes</span>
 										<!-- <a href="#" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
 											Más
 										</a> -->
@@ -112,11 +112,8 @@
 															</div>
 														</div>
 													</div>
-												</div>';
-									        // echo '<p><br />';
-									        // echo '</p>';
-									        // echo '<p></p>';
-									    }
+												  </div>';
+							    		    }
 									?>
 									</div>
 									<div class="row">
