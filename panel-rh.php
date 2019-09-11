@@ -204,14 +204,11 @@
 										 }
 										?>
 									</div>
-									</div>
-
 								</div>
-
+								</div>
 								<!--End::Section-->
 							</div>
-
-					<!-- end:: Content -->
+						<!-- end:: Content -->
 						</div>
 					</div>
 				</div>
