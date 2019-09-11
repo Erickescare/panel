@@ -1,4 +1,5 @@
-<?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Recursos Humanos';  include('inc/head.php') ?>
+<?php include "admin/db.php"; $images = get_imgs(); $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Recursos Humanos';  include('inc/head.php') ?>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
@@ -29,151 +30,56 @@
 								<!-- end:: Content Head -->
 									<!-- begin:: Content -->
 								<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-
 									<!--Begin::Section-->
 									<div class="row">
 										<div class="col-xl-12">
-
-											<!--begin:: Widgets/Applications/User/Profile3-->
 											<div class="kt-portlet kt-portlet--height-fluid">
-												<div class="kt-portlet__body">
-													<div class="kt-widget kt-widget--user-profile-3">
-														<div class="kt-widget__top">
-															<div class="kt-widget__media kt-hidden-">
-																<img src="./assets/media/users/100_1.jpg" alt="image">
-															</div>
-															<div class="kt-widget__pic kt-widget__pic--danger kt-font-danger kt-font-boldest kt-font-light kt-hidden">
-																EE
-															</div>
-															<div class="kt-widget__content">
-																<div class="kt-widget__head">
-																	<a href="#" class="kt-widget__username">
-																		Erick Daniel Escareño López
-																		<i class="flaticon2-correct"></i>
-																	</a>
-																	<div class="kt-widget__action">
-																		<button type="button" class="btn btn-label-success btn-sm btn-upper">DM</button>&nbsp;
-																		<button type="button" class="btn btn-brand btn-sm btn-upper">Informar</button>
-																	</div>
-																</div>
-																<div class="kt-widget__subhead">
-																	<a href="#"><i class="flaticon2-new-email"></i>erick.escareno@protexa.com.mx</a>
-																	<a href="#"><i class="flaticon2-calendar-3"></i>Diseño Web </a>
-																	<a href="#"><i class="flaticon2-placeholder"></i>Monterrey </a>
-																</div>
-																<div class="kt-widget__info">
-																	<div class="kt-widget__desc">
-																		I distinguish three main text objektive could be merely to inform people.
-																		<br> A second could be persuade people.You want people to bay objective
-																	</div>
-																	<div class="kt-widget__progress">
-																		<div class="kt-widget__text">
-																			Progreso
-																		</div>
-																		<div class="progress" style="height: 5px;width: 100%;">
-																			<div class="progress-bar kt-bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-																		</div>
-																		<div class="kt-widget__stats">
-																			78%
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="kt-widget__bottom">
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-confetti"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">18 Servicios</span>
-																	<a href="#" class="kt-widget__value kt-font-brand">Ver</a>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-file-2"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">73 Tareas</span>
-																	<a href="#" class="kt-widget__value kt-font-brand">Ver</a>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-pie-chart"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Crecer Creciendo</span>
-																	<span class="kt-widget__value">80<span>%</span></span>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-presentation-1"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Cursos</span>
-																	<a href="#" class="kt-widget__value kt-font-brand">Ver Cursos</a>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-event-calendar-symbol"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<span class="kt-widget__title">Calendario</span>
-																	<a href="#" class="kt-widget__value kt-font-brand">Mis eventos</a>
-																</div>
-															</div>
-															<div class="kt-widget__item">
-																<div class="kt-widget__icon">
-																	<i class="flaticon-network"></i>
-																</div>
-																<div class="kt-widget__details">
-																	<div class="kt-section__content kt-section__content--solid">
-																		<div class="kt-badge kt-badge__pics">
-																			<a href="#" class="kt-badge__pic" data-toggle="kt-tooltip" data-skin="brand" data-placement="top" title="" data-original-title="John Myer">
-																				<img src="./assets/media/users/100_7.jpg" alt="image">
-																			</a>
-																			<a href="#" class="kt-badge__pic" data-toggle="kt-tooltip" data-skin="brand" data-placement="top" title="" data-original-title="Alison Brandy">
-																				<img src="./assets/media/users/100_3.jpg" alt="image">
-																			</a>
-																			<a href="#" class="kt-badge__pic" data-toggle="kt-tooltip" data-skin="brand" data-placement="top" title="" data-original-title="Selina Cranson">
-																				<img src="./assets/media/users/100_2.jpg" alt="image">
-																			</a>
-																			<a href="#" class="kt-badge__pic" data-toggle="kt-tooltip" data-skin="brand" data-placement="top" title="" data-original-title="Luke Walls">
-																				<img src="./assets/media/users/100_13.jpg" alt="image">
-																			</a>
-																			<a href="#" class="kt-badge__pic" data-toggle="kt-tooltip" data-skin="brand" data-placement="top" title="" data-original-title="Micheal York">
-																				<img src="./assets/media/users/100_4.jpg" alt="image">
-																			</a>
-																			<a href="#" class="kt-badge__pic kt-badge__pic--last kt-font-brand">
-																				+7
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
+												<?php if(count($images)>0):?>
+												<!-- aqui insertaremos el slider -->
+												<div id="carousel1" class="carousel slide" data-ride="carousel">
+												  <!-- Indicatodores -->
+												  <ol class="carousel-indicators">
+													<?php $cnt=0; foreach($images as $img):?>
+												    <li data-target="#carousel1" data-slide-to="0" class="<?php if($cnt==0){ echo 'active'; }?>"></li>
+													<?php $cnt++; endforeach; ?>
+												  </ol>
 
-											<!--end:: Widgets/Applications/User/Profile3-->
+												  <!-- Contenedor de las imagenes -->
+												  <div class="carousel-inner" role="listbox">
+													<?php $cnt=0; foreach($images as $img):?>
+												    <div class="item <?php if($cnt==0){ echo 'active'; }?>">
+												      <img src="<?php echo 'admin/'.$img->folder.$img->src; ?>" alt="Imagen 1">
+												      <div class="carousel-caption"><?php echo $img->title; ?></div>
+												    </div>
+													<?php $cnt++; endforeach; ?>
+												  </div>
+
+												  <!-- Controls -->
+												  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+												    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												    <span class="sr-only">Anterior</span>
+												  </a>
+												  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+												    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												    <span class="sr-only">Siguiente</span>
+												  </a>
+
+												</div>
+												<?php else:?>
+											  	<h4 class="alert alert-warning">No hay imagenes</h4>
+												<?php endif; ?>
+											</div>
 										</div>
 									</div>
-
 									<!--End::Section-->
 
 									<!--Begin::Section-->
 									<div class="row">
 										<div class="col-xl-4">
-
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product6.jpg)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/products/product6.jpg)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Filosofía y Valores
 														</h3>
@@ -191,11 +97,10 @@
 											<!--end:: Widgets/Blog-->
 										</div>
 										<div class="col-xl-4">
-
 											<!--begin:: Widgets/Blog-->
 											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 												<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
-													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media//products/product13.jpg)">
+													<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(./assets/media/products/product13.jpg)">
 														<h3 class="kt-widget19__title kt-font-light">
 															Ética
 														</h3>
@@ -223,7 +128,6 @@
 													</div>
 												</div>
 												<div class="kt-portlet__body">
-
 													<!--begin::Widget 7-->
 													<div class="kt-widget7 kt-widget7--skin-light">
 														<div class="kt-widget7__desc">
@@ -246,17 +150,60 @@
 															<a class="btn btn-success" href="#" role="button">Ver todos</a>
 														</div>
 													</div>
-
 													<!--end::Widget 7-->
 												</div>
 											</div>
-
 											<!--end:: Widgets/Announcements 1-->
 										</div>
 									</div>
-
 									<!--End::Section-->
-
+									<div class="row">
+										<?php
+										$uri = 'http://localhost/cursos/wp-json/wp/v2/posts?categories=105';
+										$json = file_get_contents($uri);
+										$posts= json_decode($json);
+										foreach ($posts as $post) { 
+										echo '<div class="col-xl-4">
+												<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+													<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+														<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url('. $post->better_featured_image->source_url .')">
+															<h3 class="kt-widget19__title kt-font-light">
+																<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+															</h3>
+															<div class="kt-widget19__shadow"></div>
+															<div class="kt-widget19__labels">
+																<a href="'. $post->link .'" class="btn btn-label-light-o2 btn-bold btn-sm ">'.$post->type.'</a>
+															</div>
+														</div>
+													</div>
+													<div class="kt-portlet__body">
+														<div class="kt-widget19__wrapper">
+															<div class="kt-widget19__content">
+																<div class="kt-widget19__userpic">
+																	<img src="http://localhost/trabajos/wp-content/uploads/2019/06/ico72-60x60.png" alt="">
+																</div>
+																<div class="kt-widget19__info">
+																	<h3 class="kt-widget19__title kt-font-light">
+																		<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+																	</h3>
+																	<span class="kt-widget19__time">
+																		<small><em>Publicado en '.$post->date.'</em></small>
+																	</span>
+																</div>
+															</div>
+															<div class="kt-widget19__text">
+																'.$post->excerpt->rendered.'
+															</div>
+														</div>
+														<div class="kt-widget19__action">
+															<a href="'. $post->link .'" target="_blank" class="btn btn-sm btn-label-brand btn-bold">Ver Nota</a>
+														</div>
+													</div>
+												</div>
+											</div>';
+										 }
+										?>
+									</div>
 									</div>
 
 								</div>

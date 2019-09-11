@@ -7,3 +7,5 @@
 <script src="./assets/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js" type="text/javascript"></script>
 <script src="./assets/vendors/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script>
 <script src="./assets/vendors/general/wnumb/wNumb.js" type="text/javascript"></script>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>

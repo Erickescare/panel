@@ -26,6 +26,7 @@
 		<!--end::Fonts -->
 		<!--begin::Page Vendors Styles(used by this page) -->
 		<link href="./assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 		<!--end::Page Vendors Styles -->
 		<!--begin:: Global Mandatory Vendors -->
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
