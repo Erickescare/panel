@@ -6,10 +6,7 @@
 	</div>
 	<div class="kt-header__brand kt-header__brand-nav">
 		<div class="dropdown">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="    background-color: #ffb822;
-    border: 0;
-    padding: 0.75rem 1.5rem;
-    color: #ebedf2;">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#ffb822;border:0;padding: 0.75rem 1.5rem;color:#ebedf2;">
 				<?php echo "$pageTitle"; ?>
 			</button>
 			<div class="dropdown-menu dropdown-menu-md">

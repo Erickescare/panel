@@ -39,7 +39,7 @@ $images = get_imgs();
 												<div class="row">
 													<div class="col-md-12">		
 											<h1>Subir imagenes o archivos</h1>
-											<form enctype="multipart/form-data" method="post" action="upload.php">
+											<form enctype="multipart/form-data" method="post" action="./admin/upload.php">
 
 									  <div class="form-group">
 									    <label for="exampleInputPassword1">Texto a mostrar</label>

@@ -3,7 +3,7 @@
 	<!-- begin::Head -->
 	<head>
 		<!--begin::Base Path -->
-		<base href="./">
+		<base href="../">
 		<!--end::Base Path -->
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
