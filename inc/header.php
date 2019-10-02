@@ -23,6 +23,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/noticias-cc.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/admin/index.php') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/admin/') include('inc/main-menu-admin.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/eventos-cc.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/index.php') include('inc/main-menu.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/perfil.php') include('inc/main-menu-rh.php'); ?>
@@ -34,6 +35,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/noticias-cc.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/admin/index.php') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/admin/') include('inc/main-menu-admin.php'); ?>
+			<?php if ($_SERVER["REQUEST_URI"] == '/eventos-cc.php') include('inc/main-menu-rh.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->

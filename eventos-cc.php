@@ -41,125 +41,53 @@
 								<!-- begin:: Content -->
 								<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
 									<div class="row">
-										<div class="col-lg-12">
-											<!--begin::Portlet-->
-											<div class="kt-portlet" id="kt_portlet">
-												<div class="kt-portlet__body">
-													<div class="row">
-													<?php
-													    global $text, $maxchar, $end;
-													    function substrwords($text, $maxchar, $end='...') {
-													        if (strlen($text) > $maxchar || $text == '') {
-													            $words = preg_split('/\s/', $text);      
-													            $output = '';
-													            $i      = 0;
-													            while (1) {
-													                $length = strlen($output)+strlen($words[$i]);
-													                if ($length > $maxchar) {
-													                    break;
-													                } else {
-													                    $output .= " " . $words[$i];
-													                    ++$i;
-													                }
-													            }
-													            $output .= $end;
-													        } else {
-													            $output = $text;
-													        }
-													        return $output;
-													    }
-
-													    $rss = new DOMDocument();
-													    $rss->load('http://localhost/cursos/eventos/feed/'); // <-- Change feed to your site
-													    $feed = array();
-													    foreach ($rss->getElementsByTagName('item') as $node) {
-													        $item = array ( 
-													            'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
-													            'description' => $node->getElementsByTagName('description')->item(0)->nodeValue,
-													            'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
-													            'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
-													            'date2' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
-													        );
-													        array_push($feed, $item);
-													    }
-
-													    $limit = 2; // <-- Change the number of posts shown
-													    for ($x=0; $x<$limit; $x++) {
-													    	setlocale(LC_ALL,"es_MX");
-													        $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
-													        $link = $feed[$x]['link'];
-													        $description = $feed[$x]['description'];
-													        $description = substrwords($description, 250);
-													        $date = strftime('%A %d', strtotime($feed[$x]['date']));
-													        $date2 = strftime('%B, %Y', strtotime($feed[$x]['date']));
-													        echo '<div class="col-lg-12">
-																	<div class="kt-portlet">
-																		<div class="kt-portlet__head kt-portlet__head--right kt-portlet__head--noborder  kt-ribbon kt-ribbon--clip kt-ribbon--left kt-ribbon--info">
-																			<div class="kt-ribbon__target" style="top: 12px;">
-																				<span class="kt-ribbon__inner"></span><span class="fec-gr">'. $date .'<br>'. $date2 .'
-																			</div>
-																			<hr>
-																			<div class="kt-portlet__head-label" style="align-self: center;">
-																				<h3 class="kt-portlet__head-title">
-																					<br>'. $title .'
-																				</h3>
-																			</div>
-																		</div>
-																		<div class="kt-portlet__body kt-portlet__body--fit-top">
-																			<br>'. $description .'
-																		</div>
-																		<div class="kt-callout__action">
-																			<a href="'. $link .'" class="btn btn-custom btn-bold btn-upper btn-font-sm btn-brand" style="margin-left: 20px;margin-bottom: 20px;">Acerca del Evento</a><button type="button" class="btn btn-custom btn-bold btn-upper btn-font-sm btn-brand" style="margin-left: 20px;margin-bottom: 20px;" data-toggle="modal" data-target="#kt_modal_6">Registro Rapido</button>
-																		</div>
-																	</div>
-																</div>
-																<hr>';
-														    }
-														?>
+										<?php
+										$uri = 'http://localhost/cursos/wp-json/wp/v2/mec-events';
+										$json = file_get_contents($uri);
+										$posts= json_decode($json);
+										foreach ($posts as $post) { 
+										echo '<div class="col-xl-4">
+										<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+											<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+												<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url('. $post->better_featured_image->source_url .')">
+													<h3 class="kt-widget19__title kt-font-light">
+														<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+													</h3>
+													<div class="kt-widget19__shadow"></div>
+													<div class="kt-widget19__labels">
+														<a href="'. $post->link .'" class="btn btn-label-light-o2 btn-bold btn-sm ">'.$post->type.'</a>
 													</div>
 												</div>
 											</div>
-										</div>
-									</div>
-									<!--end::Portlet-->
-									<!-- Modal -->
-									<div class="modal fade" id="kt_modal_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													</button>
+											<div class="kt-portlet__body">
+												<div class="kt-widget19__wrapper">
+													<div class="kt-widget19__content">
+														<div class="kt-widget19__userpic">
+															<img src="http://localhost/trabajos/wp-content/uploads/2019/06/ico72-60x60.png" alt="">
+														</div>
+														<div class="kt-widget19__info">
+															<h3 class="kt-widget19__title kt-font-light">
+																<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+															</h3>
+															<span class="kt-widget19__time">
+																<small><em>Publicado en '.$post->date.'</em></small>
+															</span>
+														</div>
+													</div>
+													<div class="kt-widget19__text">
+														'.$post->excerpt->rendered.'
+													</div>
 												</div>
-												<div class="modal-body">
-													<form action="registro-eventos.php" method="POST">
-													  <h2><em>Formulario de Registro</em></h2>  
-													     
-													      <label for="nombre">Nombre <span><em>(requerido)</em></span></label>
-													      <input type="text" name="name" class="form-input" required/>   
-													      <br>
-													      <label for="apellido">Apellido <span><em>(requerido)</em></span></label>
-													      <input type="text" name="apellidos" class="form-input" required/>         
-													      <br>
-													      <label for="email">Email <span><em>(requerido)</em></span></label>
-													      <input type="email" name="email" class="form-input" />
-													      <label for="email">Evento <span><em>(requerido)</em></span></label>
-													      <input type="email" name="email" class="form-input" />
-													     <center> <input class="form-btn" name="submit" type="submit" value="Suscribirse" /></center>
-													    </p>
-												  	</form>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Save changes</button>
+												<div class="kt-widget19__action">
+													<a href="'. $post->link .'" target="_blank" class="btn btn-sm btn-label-brand btn-bold">Ver Evento</a>
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
+									</div>';
+								 }
+								?>
 							</div>
 						</div>
-
 						<!-- end:: Content -->
 					</div>
 				</div>

@@ -560,11 +560,11 @@
 	<!--begin: User bar -->
 	<div class="kt-header__topbar-item kt-header__topbar-item--user">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px" aria-expanded="false">
-			<span class="kt-header__topbar-welcome">Hola,</span>
-			<span class="kt-header__topbar-username">{USER}</span>
+			<span class="kt-header__topbar-welcome">Bienvenido,</span>
+			<span class="kt-header__topbar-username"></span>
 			<img class="kt-hidden" alt="Pic" src="./assets/media/users/300_5.jpg">
 			<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-			<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden-">EE</span>
+			<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden-">RH</span>
 		</div>
 		<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 			<!--begin: Head -->
@@ -572,13 +572,13 @@
 				<div class="kt-user-card__avatar">
 					<img class="kt-hidden" alt="Pic" src="./assets/media/users/300_25.jpg" />
 					<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-					<span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">EE</span>
+					<span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">RH</span>
 				</div>
 				<div class="kt-user-card__name">
-					Erick Escareño
+					<!-- Erick Escareño -->
 				</div>
 				<div class="kt-user-card__badge">
-					<span class="btn btn-success btn-sm btn-bold btn-font-md">23 mensajes</span>
+					<!-- <span class="btn btn-success btn-sm btn-bold btn-font-md">23 mensajes</span> -->
 				</div>
 			</div>
 			<!--end: Head -->
