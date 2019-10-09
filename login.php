@@ -138,10 +138,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<link href="./assets/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 		<!--end:: Global Optional Vendors -->
 		<!--begin::Global Theme Styles(used by all pages) -->
 		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
@@ -189,7 +189,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 									            </div>
 									            <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
 									        </form>
-<!-- 											<form " action="">
+											<!--<form " action="">
 												<div class="form-group">
 													<input class="form-control" type="text" placeholder="Num. Empleado" name="usermane" autocomplete="on">
 												</div>

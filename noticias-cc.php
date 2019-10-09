@@ -43,7 +43,7 @@
 																<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
 															</h3>
 															<div class="kt-widget19__shadow"></div>
-															<div class="kt-widget19__labels">
+															<div style="display:none;" class="kt-widget19__labels">
 																<a href="'. $post->link .'" class="btn btn-label-light-o2 btn-bold btn-sm ">'.$post->type.'</a>
 															</div>
 														</div>
