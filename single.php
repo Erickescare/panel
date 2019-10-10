@@ -69,19 +69,19 @@
 														</div>
 														<div class="kt-widget19__text">
 															<img src="./assets/media/google-g-suite-_-locaweb-corp.gif" width="600px" align="center"><br>
-                                <div class="body">
-	                                <p>Los correos electrónicos no leídos se muestran en <strong>negrita</strong>. Para abrir un correo electrónico, haz clic en él.</p>
-	                                <p>De forma predeterminada, las respuestas a los correos electrónicos se agrupan en conversaciones, lo que facilita su seguimiento y ahorra espacio en la bandeja de entrada.</p>
-	                                <p>Si prefieres separar los correos electrónicos que tienes ahora de los próximos que recibas, puedes desactivar la vista de conversación.</p>
-	                                <p><strong>Para desactivar la vista de conversación:</strong></p>
-	                                <ol>
-	                                <li>En la parte superior derecha, haz clic en el icono de la rueda dentada&nbsp;<i class="material-icons">settings</i> &gt;&nbsp;<strong>Configuración</strong>.</li>
-	                                <li>En la pestaña <strong>General</strong>, desplázate hasta <strong>Vista de conversación</strong> y selecciona <strong>Inhabilitar vista de conversación</strong>.</li>
-	                                <li>En la parte inferior, haz clic en <span class="button gray">Guardar cambios</span>.</li>
-	                                </ol>
-	                                <img src="https://gsuite.google.es/learning-center/assets/images/gmail/gmail-new-see-new-email.png">
-	                                <p><strong class="note">Consejo:</strong> Para conseguir más espacio para tu correo electrónico, haz clic en el Menú&nbsp;<i class="material-icons">menu</i> para cerrar el panel izquierdo.</p>
-                                </div>
+																<div class="body">
+																	<p>Los correos electrónicos no leídos se muestran en <strong>negrita</strong>. Para abrir un correo electrónico, haz clic en él.</p>
+																	<p>De forma predeterminada, las respuestas a los correos electrónicos se agrupan en conversaciones, lo que facilita su seguimiento y ahorra espacio en la bandeja de entrada.</p>
+																	<p>Si prefieres separar los correos electrónicos que tienes ahora de los próximos que recibas, puedes desactivar la vista de conversación.</p>
+																	<p><strong>Para desactivar la vista de conversación:</strong></p>
+																	<ol>
+																	<li>En la parte superior derecha, haz clic en el icono de la rueda dentada&nbsp;<i class="material-icons">settings</i> &gt;&nbsp;<strong>Configuración</strong>.</li>
+																	<li>En la pestaña <strong>General</strong>, desplázate hasta <strong>Vista de conversación</strong> y selecciona <strong>Inhabilitar vista de conversación</strong>.</li>
+																	<li>En la parte inferior, haz clic en <span class="button gray">Guardar cambios</span>.</li>
+																	</ol>
+																	<img src="https://gsuite.google.es/learning-center/assets/images/gmail/gmail-new-see-new-email.png">
+																	<p><strong class="note">Consejo:</strong> Para conseguir más espacio para tu correo electrónico, haz clic en el Menú&nbsp;<i class="material-icons">menu</i> para cerrar el panel izquierdo.</p>
+																</div>
 														</div>
 													</div>
 												</div>
