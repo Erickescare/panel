@@ -1,10 +1,10 @@
-<!-- <?php
+<?php
 require_once "inc/config.php";
 $sql = "SELECT * FROM users";
 if($result = mysqli_query($link, $sql)){
 if(mysqli_num_rows($result) > 0){
 if($row = mysqli_fetch_array($result)){
-?> -->
+?>
 <!--begin::Widget -->
 	<div class="kt-widget kt-widget--user-profile-1">
 		<div class="kt-widget__head">

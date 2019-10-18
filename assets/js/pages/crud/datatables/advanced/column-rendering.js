@@ -2,7 +2,7 @@
 var KTDatatablesAdvancedColumnRendering = function() {
 
 	var initTable1 = function() {
-		var table = $('#kt_table_1');
+		var table = $('.kt_table_1');
 
 		// begin first table
 		table.DataTable({
@@ -74,9 +74,9 @@ var KTDatatablesAdvancedColumnRendering = function() {
                               <i class="la la-ellipsis-h"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
+                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Editar</a>
+                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Actualizar</a>
+                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generar Reporte</a>
                             </div>
                         </span>
                         <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
@@ -88,13 +88,13 @@ var KTDatatablesAdvancedColumnRendering = function() {
 					targets: 4,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'kt-badge--brand'},
-							2: {'title': 'Delivered', 'class': ' kt-badge--danger'},
-							3: {'title': 'Canceled', 'class': ' kt-badge--primary'},
-							4: {'title': 'Success', 'class': ' kt-badge--success'},
-							5: {'title': 'Info', 'class': ' kt-badge--info'},
-							6: {'title': 'Danger', 'class': ' kt-badge--danger'},
-							7: {'title': 'Warning', 'class': ' kt-badge--warning'},
+							1: {'title': 'En proceso', 'class': 'kt-badge--brand'},
+							2: {'title': 'En espera', 'class': ' kt-badge--danger'},
+							3: {'title': 'Resuelto', 'class': ' kt-badge--primary'},
+							4: {'title': 'Hecho', 'class': ' kt-badge--success'},
+							5: {'title': 'Informacion', 'class': ' kt-badge--info'},
+							6: {'title': 'Peligro', 'class': ' kt-badge--danger'},
+							7: {'title': 'Advertencia', 'class': ' kt-badge--warning'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;
@@ -106,9 +106,9 @@ var KTDatatablesAdvancedColumnRendering = function() {
 					targets: 5,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'En Proceso Unico', 'state': 'danger'},
+							2: {'title': 'Al por menor', 'state': 'primary'},
+							3: {'title': 'Directo', 'state': 'success'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;

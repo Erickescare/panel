@@ -118,6 +118,65 @@
 										 }
 										?>
 									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<center><a href="http://localhost/cursos/" target="_blank"><span class="btn btn-primary btn-wide">Ver más Noticias</span></a></center>
+										</div>
+									</div>
+									<hr><br>
+									<div class="row">
+										<?php
+										$uri = 'http://localhost/cursos/wp-json/wp/v2/mec-events?per_page=2';
+										$json = file_get_contents($uri);
+										$posts= json_decode($json);
+										foreach ($posts as $post) { 
+										echo '<div class="col-xl-4">
+										<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+											<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+												<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url('. $post->better_featured_image->source_url .')">
+													<h3 class="kt-widget19__title kt-font-light">
+														<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+													</h3>
+													<div class="kt-widget19__shadow"></div>
+													<div style="display:none;" class="kt-widget19__labels">
+														<a href="'. $post->link .'" class="btn btn-label-light-o2 btn-bold btn-sm">'.$post->status.'</a>
+													</div>
+												</div>
+											</div>
+											<div class="kt-portlet__body">
+												<div class="kt-widget19__wrapper">
+													<div class="kt-widget19__content">
+														<div class="kt-widget19__userpic">
+															<img src="http://localhost/trabajos/wp-content/uploads/2019/06/ico72-60x60.png" alt="">
+														</div>
+														<div class="kt-widget19__info">
+															<h3 class="kt-widget19__title kt-font-light">
+																<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
+															</h3>
+															<span class="kt-widget19__time">
+																<small><em>Publicado en '. $post->date .'</em></small>
+															</span>
+														</div>
+													</div>
+													<div class="kt-widget19__text">
+														'. $post->excerpt->rendered .'
+													</div>
+												</div>
+												<div class="kt-widget19__action">
+													<a href="'. $post->link .'" target="_blank" class="btn btn-sm btn-label-brand btn-bold">Ver Evento</a>
+												</div>
+											</div>
+										</div>
+									</div>';
+								 }
+								?>
+								<div class="col-xl-4">
+									<video id="video1" width="100%" autoplay loop>
+								  <source src="http://localhost/panel/assets/media/splash.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+									</video>
+								<div>
+							</div>
 								</div>
 								</div>
 								<!--End::Section-->
@@ -152,6 +211,28 @@
 	<!--begin::Page Scripts(used by this page) -->
 	<script src="./assets/js/pages/dashboard.js" type="text/javascript"></script>
 	<!--end::Page Scripts -->
+	<script> 
+	var myVideo = document.getElementById("video1"); 
+
+	function playPause() { 
+	  if (myVideo.paused) 
+	    myVideo.play(); 
+	  else 
+	    myVideo.pause(); 
+	} 
+
+	function makeBig() { 
+	    myVideo.width = 560; 
+	} 
+
+	function makeSmall() { 
+	    myVideo.width = 320; 
+	} 
+
+	function makeNormal() { 
+	    myVideo.width = 420; 
+	} 
+	</script> 
 </body>
 <!-- end::Body -->
 </html>

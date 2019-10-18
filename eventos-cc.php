@@ -70,12 +70,12 @@
 																<strong><a href="'. $post->link .'" target="_blank" title="'. $post->title->rendered .'">'. $post->title->rendered .'</a></strong>
 															</h3>
 															<span class="kt-widget19__time">
-																<small><em>Publicado en '.$post->date.'</em></small>
+																<small><em>Publicado en '. $post->date .'</em></small>
 															</span>
 														</div>
 													</div>
 													<div class="kt-widget19__text">
-														'.$post->excerpt->rendered.'
+														'. $post->excerpt->rendered .'
 													</div>
 												</div>
 												<div class="kt-widget19__action">

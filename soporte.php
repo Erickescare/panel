@@ -20,7 +20,7 @@
 									<div class="kt-subheader__main">
 										<h3 class="kt-subheader__title">Soporte en Línea</h3>
 										<span class="kt-subheader__separator kt-subheader__separator--v"></span>
-										<span class="kt-subheader__desc">Base de Datos -  Topicos</span>
+										<span class="kt-subheader__desc">Base de Datos - Topicos</span>
 										<!-- <a href="./single.php" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
 											Más
 										</a> -->
