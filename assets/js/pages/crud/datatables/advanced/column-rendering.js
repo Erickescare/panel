@@ -11,7 +11,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
 			columnDefs: [
 				{
 					targets: 0,
-					title: 'Agent',
+					title: 'Agente',
 					render: function(data, type, full, meta) {
 						var number = KTUtil.getRandomInt(1, 14);
 						var user_img = '100_' + number + '.jpg';
@@ -65,7 +65,7 @@ var KTDatatablesAdvancedColumnRendering = function() {
 				},
 				{
 					targets: -1,
-					title: 'Actions',
+					title: 'Acción',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return `
