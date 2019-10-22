@@ -175,8 +175,6 @@
 								  <source src="http://localhost/panel/assets/media/splash.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 									</video>
-								<div>
-							</div>
 								</div>
 								</div>
 								<!--End::Section-->
