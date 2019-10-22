@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="mx">
-	<!-- begin::Head -->
 	<head>
-		<!--begin::Base Path -->
 		<base href="./">
-		<!--end::Base Path -->
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-		<title><?php echo $pageTitle ?> | Ejemplos Panel Protexa</title>
-		<meta name="description" content="Ejemplos Panel Protexa">
+		<title><?php echo $pageTitle ?> | Panel Protexa</title>
+		<meta name="description" content="Panel Protexa">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--begin::Fonts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
 			WebFont.load({
@@ -23,15 +19,9 @@
 				}
 			});
 		</script>
-		<!--end::Fonts -->
-		<!--begin::Page Vendors Styles(used by this page) -->
 		<link href="./assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
-		<!--end::Page Vendors Styles -->
-		<!--begin:: Global Mandatory Vendors -->
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
-		<!--end:: Global Mandatory Vendors -->
-		<!--begin:: Global Optional Vendors -->
 		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
@@ -58,11 +48,8 @@
 		<link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-		<!--end:: Global Optional Vendors -->
-		<!--begin::Global Theme Styles(used by all pages) -->
 		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Theme Styles -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
 		<style>
 		.disabled{
