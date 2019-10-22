@@ -8,8 +8,8 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-		<title><?php echo $pageTitle ?> | Basic Examples</title>
-		<meta name="description" content="Basic datatables examples">
+		<title><?php echo $pageTitle ?> | Ejemplos Panel Protexa</title>
+		<meta name="description" content="Ejemplos Panel Protexa">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!--begin::Fonts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
