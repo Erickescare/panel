@@ -28,7 +28,7 @@
 									<div class="kt-subheader__toolbar">
 										<div class="kt-subheader__wrapper">
 											<a href="javascript:void(0);" class="btn kt-subheader__btn-daterange" id="kt_dashboard_daterangepicker" data-toggle="kt-tooltip" title="Seleccione el rango de fechas" data-placement="left">
-												<span class="kt-subheader__btn-daterange-title" id="kt_dashboard_daterangepicker_title">Today</span>&nbsp;
+												<span class="kt-subheader__btn-daterange-title" id="kt_dashboard_daterangepicker_title">Hoy</span>&nbsp;
 												<span class="kt-subheader__btn-daterange-date" id="kt_dashboard_daterangepicker_date">Aug 16</span>
 												<i class="flaticon2-calendar-1"></i>
 											</a>
