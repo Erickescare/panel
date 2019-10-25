@@ -84,7 +84,6 @@
 																	<polygon style="fill:#518EF8;" points="512,333.399 429.339,478.266 82.713,479.21 165.891,334.343 345.204,333.851 "/>
 																	<polygon style="fill:#3A5BBC;" points="82.713,479.21 227.749,334.173 165.891,334.343 "/>
 																	<polygon style="fill:#FBBB00;" points="512,333.399 322.76,294.31 345.204,333.851 "/>
-
 																	</svg> </span>
 																	<span class="kt-widget17__subtitle">
 																		Drive
