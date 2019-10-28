@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 													<!--begin::Nav-->
 													<ul class="kt-nav">
 														<li class="kt-nav__head">
-															Export Options
+															Exportar
 															<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
 														</li>
 														<li class="kt-nav__separator"></li>
