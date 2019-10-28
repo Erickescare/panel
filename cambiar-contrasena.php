@@ -202,7 +202,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 																	<label class="col-xl-3 col-lg-3 col-form-label">Verificar contraseña</label>
 																	<div class="col-lg-9 col-xl-6">
 																		<input type="password" name="confirm_password" class="form-control" value="" placeholder="Verificar contraseña">
-																		 <span class="help-block"><?php echo $confirm_password_err; ?></span>
+																		<span class="help-block"><?php echo $confirm_password_err; ?></span>
 																	</div>
 																</div>
 															</div>
