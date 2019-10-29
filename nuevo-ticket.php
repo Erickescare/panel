@@ -56,7 +56,7 @@
 															</div>
 														</div>
 														<div class="form-group row">
-															<label for="example-search-input" class="col-2 col-form-label">Buscar</label>
+															<label for="example-search-input" class="col-2 col-form-label">Servicio</label>
 															<div class="col-10">
 																<input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
 															</div>
@@ -125,6 +125,12 @@
 															<label for="example-color-input" class="col-2 col-form-label">Color</label>
 															<div class="col-10">
 																<input class="form-control" type="color" value="#563d7c" id="example-color-input">
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="example-color-input" class="col-2 col-form-label">Comentarios</label>
+															<div class="col-10">
+																<textarea class="form-control" type="color" value="#563d7c" id="example-color-input" rows="5"></textarea>
 															</div>
 														</div>
 														<div class="form-group row">
