@@ -31,51 +31,51 @@
 								<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
 									<div class="row">
 									<?php
-									    global $text, $maxchar, $end;
-									    function substrwords($text, $maxchar, $end='...') {
-									        if (strlen($text) > $maxchar || $text == '') {
-									            $words = preg_split('/\s/', $text);      
-									            $output = '';
-									            $i      = 0;
-									            while (1) {
-									                $length = strlen($output)+strlen($words[$i]);
-									                if ($length > $maxchar) {
-									                    break;
-									                } else {
-									                    $output .= " " . $words[$i];
-									                    ++$i;
-									                }
-									            }
-									            $output .= $end;
-									        } else {
-									            $output = $text;
-									        }
-									        return $output;
-									    }
+										global $text, $maxchar, $end;
+										function substrwords($text, $maxchar, $end='...') {
+											if (strlen($text) > $maxchar || $text == '') {
+												$words = preg_split('/\s/', $text);      
+												$output = '';
+												$i      = 0;
+												while (1) {
+													$length = strlen($output)+strlen($words[$i]);
+													if ($length > $maxchar) {
+														break;
+													} else {
+														$output .= " " . $words[$i];
+														++$i;
+													}
+												}
+												$output .= $end;
+											} else {
+												$output = $text;
+											}
+											return $output;
+										}
 
-									    $rss = new DOMDocument();
-									    $rss->load('http://localhost/trabajos/?feed=job_feed'); // <-- Change feed to your site
-									    $feed = array();
-									    foreach ($rss->getElementsByTagName('item') as $node) {
-									        $item = array ( 
-									            'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
-									            'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
-									            'type' => $node->getElementsByTagName('type')->item(0)->nodeValue,
-									            'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
-									            'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
-									        );
-									        array_push($feed, $item);
-									    }
+										$rss = new DOMDocument();
+										$rss->load('http://localhost/trabajos/?feed=job_feed'); // <-- Change feed to your site
+										$feed = array();
+										foreach ($rss->getElementsByTagName('item') as $node) {
+											$item = array ( 
+												'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+												'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+												'type' => $node->getElementsByTagName('type')->item(0)->nodeValue,
+												'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+												'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+											);
+											array_push($feed, $item);
+										}
 
-									    $limit = 4; // <-- Change the number of posts shown
-									    for ($x=0; $x<$limit; $x++) {
-									        $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
-									        $link = $feed[$x]['link'];
-									        $type = $feed[$x]['type'];
-									        $description = $feed[$x]['desc'];
-									        $description = substrwords($description, 150);
-									        $date = date('l F d, Y', strtotime($feed[$x]['date']));
-									        echo '<div class="col-xl-4">
+										$limit = 4; // <-- Change the number of posts shown
+										for ($x=0; $x<$limit; $x++) {
+											$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+											$link = $feed[$x]['link'];
+											$type = $feed[$x]['type'];
+											$description = $feed[$x]['desc'];
+											$description = substrwords($description, 150);
+											$date = date('l F d, Y', strtotime($feed[$x]['date']));
+											echo '<div class="col-xl-4">
 													<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
 														<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
 															<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(http://localhost/trabajos/wp-content/uploads/2019/06/page-title-background.jpg)">
@@ -113,11 +113,16 @@
 														</div>
 													</div>
 												  </div>';
-							    		    }
+											}
 									?>
 									</div>
 									<div class="row">
 										<div class="col-xl-4"></div><div class="col-xl-4"><center><a href="http://localhost/trabajos/vacantes/" target="_blank"><span class="btn btn-primary btn-wide">Ver todas las Vacantes</span></a></center></div><div class="col-xl-4"></div>
+									</div>
+									<div class="row">
+										<div class="col-xl-12">
+											
+										</div>
 									</div>
 								<!-- end:: Content -->
 								</div>
