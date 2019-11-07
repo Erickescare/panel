@@ -27,6 +27,7 @@
 </script>
 <script src="//code.tidio.co/msxordl9yk7qggydmvoogiokb1jflpee.js"></script>
 <!-- end::Global Config -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <!--begin:: Global Optional Vendors -->
 <script src="./assets/vendors/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
 <script src="./assets/vendors/general/block-ui/jquery.blockUI.js" type="text/javascript"></script>

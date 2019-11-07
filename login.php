@@ -97,6 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<title>Protexa | Login Page</title>
 		<meta name="description" content="Login page example">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="google-signin-client_id" content="610188305605-pi5hc2lvbpg843c4tfk0iitjk64ldqtb.apps.googleusercontent.com">
 		<!--begin::Fonts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
@@ -153,6 +154,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<link href="./assets/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Skins -->
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
+		<style type="text/css">
+			.abcRioButtonLightBlue{
+				width: 100% !important;
+			}
+			.abcRioButton{
+				width: 100% !important;
+			}
+		</style>
 	</head>
 	<!-- end::Head -->
 	<!-- begin::Body -->
@@ -189,6 +198,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 												</div>
 												<!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
 											</form>
+											<div class="g-signin2" data-onsuccess="onSignIn"></div>
+											<script>
+											  function onSignIn(googleUser) {
+												// Useful data for your client-side scripts:
+												var profile = googleUser.getBasicProfile();
+												console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+												console.log('Full Name: ' + profile.getName());
+												console.log('Given Name: ' + profile.getGivenName());
+												console.log('Family Name: ' + profile.getFamilyName());
+												console.log("Image URL: " + profile.getImageUrl());
+												console.log("Email: " + profile.getEmail());
+
+												// The ID token you need to pass to your backend:
+												var id_token = googleUser.getAuthResponse().id_token;
+												console.log("ID Token: " + id_token);
+											  }
+											</script>
 											<!--<form " action="">
 												<div class="form-group">
 													<input class="form-control" type="text" placeholder="Num. Empleado" name="usermane" autocomplete="on">
@@ -305,6 +331,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			};
 		</script>
 		<!-- end::Global Config -->
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<!--begin:: Global Mandatory Vendors -->
 		<script src="./assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"></script>
 		<script src="./assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>

@@ -651,6 +651,15 @@
 				</a>
 				<div class="kt-notification__custom kt-space-between">
 					<a href="./logout.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
+					<a href="#" onclick="signOut();">Sign out</a>
+					<script>
+					  function signOut() {
+					    var auth2 = gapi.auth2.getAuthInstance();
+					    auth2.signOut().then(function () {
+					      console.log('User signed out.');
+					    });
+					  }
+					</script>
 				</div>
 			</div>
 			<!--end: Navigation -->
