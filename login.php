@@ -156,10 +156,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
 		<style type="text/css">
 			.abcRioButtonLightBlue{
-				width: 100% !important;
+				/*width: 100% !important;*/
 			}
 			.abcRioButton{
-				width: 100% !important;
+				/*width: width: 375px !important;*/
 			}
 		</style>
 	</head>
@@ -184,7 +184,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 											<h3 class="kt-login__title">Ingresar</h3>
 										</div>
 										<div class="kt-login__form">
-											<form class="kt-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+											<!-- <form class="kt-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 												<div class="form-group <?php echo (!empty($id_err)) ? 'has-error' : ''; ?>">
 													<input placeholder="Num. Empleado" type="text" name="id" class="form-control" value="<?php echo $id; ?>">
 													<span class="help-block"><?php echo $id_err; ?></span>
@@ -196,25 +196,64 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 												<div class="kt-login__actions">
 													<button type="submit" class="btn btn-brand btn-pill btn-elevate">Iniciar sesión </button>
 												</div>
-												<!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
-											</form>
-											<div class="g-signin2" data-onsuccess="onSignIn"></div>
-											<script>
-											  function onSignIn(googleUser) {
-												// Useful data for your client-side scripts:
-												var profile = googleUser.getBasicProfile();
-												console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-												console.log('Full Name: ' + profile.getName());
-												console.log('Given Name: ' + profile.getGivenName());
-												console.log('Family Name: ' + profile.getFamilyName());
-												console.log("Image URL: " + profile.getImageUrl());
-												console.log("Email: " + profile.getEmail());
+												<p>Don't have an account? <a href="register.php">Sign up now</a>.</p> 
+											</form> -->
+											<div id="my-signin2"></div>
+											<!-- Show the user profile details -->
+											<div class="userContent" style="display: none;"></div>
+												<script>
+													// Render Google Sign-in button
+													function renderButton() {
+													  gapi.signin2.render('my-signin2', {
+													    'scope': 'profile email',
+													    'width': 370,
+													    'height': 50,
+													    'longtitle': true,
+													    'theme': 'light',
+													    'onsuccess': onSuccess,
+													    'onfailure': onFailure
+													  });
+													}
 
-												// The ID token you need to pass to your backend:
-												var id_token = googleUser.getAuthResponse().id_token;
-												console.log("ID Token: " + id_token);
-											  }
-											</script>
+													// Sign-in success callback
+													function onSuccess(googleUser) {
+													    // Get the Google profile data (basic)
+													    //var profile = googleUser.getBasicProfile();
+													    
+													    // Retrieve the Google account data
+													    gapi.client.load('oauth2', 'v2', function () {
+													        var request = gapi.client.oauth2.userinfo.get({
+													            'userId': 'me'
+													        });
+													        request.execute(function (resp) {
+													            // Display the user details
+													            var profileHTML = '<h3>Welcome '+resp.given_name+'! <a href="javascript:void(0);" onclick="signOut();">Sign out</a></h3>';
+													            profileHTML += '<img src="'+resp.picture+'"/><p><b>Google ID: </b>'+resp.id+'</p><p><b>Name: </b>'+resp.name+'</p><p><b>Email: </b>'+resp.email+'</p><p><b>Gender: </b>'+resp.gender+'</p><p><b>Locale: </b>'+resp.locale+'</p><p><b>Google Profile:</b> <a target="_blank" href="'+resp.link+'">click to view profile</a></p>';
+													            document.getElementsByClassName("userContent")[0].innerHTML = profileHTML;
+													            
+													            document.getElementById("gSignIn").style.display = "none";
+													            document.getElementsByClassName("userContent")[0].style.display = "block";
+													        });
+													    });
+													}
+
+													// Sign-in failure callback
+													function onFailure(error) {
+													    alert(error);
+													}
+
+													// Sign out the user
+													function signOut() {
+													    var auth2 = gapi.auth2.getAuthInstance();
+													    auth2.signOut().then(function () {
+													        document.getElementsByClassName("userContent")[0].innerHTML = '';
+													        document.getElementsByClassName("userContent")[0].style.display = "none";
+													        document.getElementById("gSignIn").style.display = "block";
+													    });
+													    
+													    auth2.disconnect();
+													}
+												</script>
 											<!--<form " action="">
 												<div class="form-group">
 													<input class="form-control" type="text" placeholder="Num. Empleado" name="usermane" autocomplete="on">
@@ -331,7 +370,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			};
 		</script>
 		<!-- end::Global Config -->
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://apis.google.com/js/platform.js?hl=es" async defer></script>
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<!--begin:: Global Mandatory Vendors -->
 		<script src="./assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"></script>
 		<script src="./assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
