@@ -234,12 +234,12 @@
 					<!-- begin:: Footer -->
 					<div class="kt-footer kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
 						<div class="kt-footer__copyright">
-							2019&nbsp;&copy;&nbsp;<a href="http://keenthemes.com/metronic" target="_blank" class="kt-link">Protexa TI</a>
+							2019&nbsp;&copy;&nbsp;<a href="http://protexa.com.mx" target="_blank" class="kt-link">Protexa TI</a>
 						</div>
 						<div class="kt-footer__menu">
-							<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Nosotros</a>
-							<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Sitio Protexa</a>
-							<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Contacto</a>
+							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Nosotros</a>
+							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Sitio Protexa</a>
+							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Contacto</a>
 						</div>
 					</div>
 
