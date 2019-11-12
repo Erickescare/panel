@@ -26,7 +26,7 @@
 			}
 			else
 			{
-					alert('Debe seleccionar una calificaci�n');
+					alert('Debe seleccionar una calificación');
 					return false;
 			}
 	}
