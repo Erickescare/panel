@@ -300,7 +300,7 @@
 		<div class="kt-container">
 			<div class="kt-footer__wrapper">
 				<div class="kt-footer__logo">
-					<a href="demo2/index.html">
+					<a href="./index.php">
 						<img alt="Logo" src="./assets/media/protexa/ico57.png">
 					</a>
 					<div class="kt-footer__copyright">
