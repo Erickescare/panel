@@ -1,4 +1,12 @@
+<?php
+include "dbConfig.php";
 
+$sql = "SELECT * FROM user_google";
+if($result = mysqli_query($db, $sql)){
+if(mysqli_num_rows($result) > 0){
+if($row = mysqli_fetch_array($result)){
+
+?>
 <div class="kt-header__topbar">
 	<!--begin: Search -->
 	<div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden-desktop" id="kt_quick_search_toggle">
