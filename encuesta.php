@@ -1,4 +1,10 @@
 <?php  $PageTitleMaster = '.: Encuesta de Servicio  :.'; $pageTitle = 'TI Soporte'; include('inc/head.php') ?>
+<style>
+	/****************** Estilos Especiales Sección *****************************/
+	.kt-header__bottom{
+		display: none !important;
+	}
+</style>
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
