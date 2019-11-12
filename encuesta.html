@@ -1,0 +1,182 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>.: Encuesta de Servicio  :.</title>
+</head>
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+
+function validateRadio (radios)
+{
+    for (i = 0; i < radios.length; ++ i)
+    {
+        if (radios [i].checked) return true;
+    }
+    return false;
+}
+
+function validar()
+{
+    if(validateRadio (document.forms["form1"]["serv_califica"]))
+    {
+        return true;
+    }
+    else
+    {
+        alert('Debe seleccionar una calificaci�n');
+        return false;
+    }
+}
+  </script>
+
+
+  
+<script type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+<!--
+
+#top {
+	width:700px;
+	height:120px;
+	background-color: #f3f3f3;
+	left: 50px;
+}
+
+#maintext {
+	top:76px;
+	width:700px;
+	background-color: #f3f3f3; /* gris claro casi blanco*/
+	right: 50px;
+	float: none;
+}
+body {
+	margin: 0px;
+	font-family: "Quattrocento Sans",sans-serif;
+	font-size:12px;
+	color: #000033;
+	background-repeat: repeat-x;
+}
+
+
+tr.titulos {
+	background-color: #D3DE42;
+	width: 600px;
+	color: #272727;
+	/*font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;*/
+	 font-family: "omnes-pro",sans-serif;
+	font-size:12px;
+}
+tr.enca1 {
+	color: #272727;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+tr.enca { font-family: 'Quattrocento Sans',sans-serif; font-size:20px;font-weight: bold;color:#0E6EE7; }
+td.servicio { font-family: 'Quattrocento Sans', sans-serif; font-size:20px;font-weight: bold;color:#5E5E5E; }
+
+.tabla{padding:0px;spacing:0px; cellpadding:0px; cellspacing:0px;
+       width:700px;}
+.header
+{
+  min-height: 80px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: #333333;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  background-color: #ffffff;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+
+-->
+</style>
+
+
+<body>
+<div id="wrapper">
+<div id="top"><img src="http://ti.protexa.com.mx/encuestasd/banner_encuesta.jpg" width="700" height="120" /></div>
+<div id="maintext">
+  
+<form name="form1" action="registrar.php" method= "POST" onsubmit="return validar(this)">
+<div class="header">
+    <h1></h1>
+
+  
+</div>
+ 
+<p>
+<P>
+<table class="tabla" > 
+<tr class="enca"><td width="155">Servicio:</td><td class="servicio" width="533">120027                       <input name="servicio" type="text" id="serv_sd" style="visibility:hidden" value="120027" size="45" /></td></tr>
+      <tr class="enca"><td>Descripci�n:</td><td class="servicio">TEST 
+        <input name="serv_sd2" type="text" id="serv_sd2" style="visibility:hidden" value="TEST" size="45" /></td></tr>
+      <tr> <td colspan="2"><input name="descripcion" type="text" id="serv_desc" style="visibility:hidden" value="TEST" size="45" /> </td></tr>
+ </table>
+  <p>
+  <P>
+  
+<table class="tabla" width="500px">
+<tr class="titulos"> <td colspan="10" > <p>Como calificar&iacute;a el servicio recibido</td>
+<tr class="enca1">
+    <td><input name="serv_califica" type="radio" value="1">1</td>
+    <td><input name="serv_califica" type="radio" value="2">2 </td>
+    <td><input name="serv_califica" type="radio" value="3">3</td>
+    <td><input name="serv_califica" type="radio" value="4">4</td>
+    <td><input name="serv_califica" type="radio" value="5">5</td>
+    <td><input name="serv_califica" type="radio" value="6">6</td>
+    <td><input name="serv_califica" type="radio" value="7">7</td>
+    <td><input name="serv_califica" type="radio" value="8">8</td>
+    <td><input name="serv_califica" type="radio" value="9">9</td>
+    <td><input name="serv_califica" type="radio" value="10">10</td>
+        
+</tr>
+<tr class="titulos"><td colspan="10" >Comentarios</td></tr>
+<tr><td colspan="10"><label for="serv_coments"></label><textarea name="serv_coments" id="serv_coments" cols="80" rows="5"></textarea></td></tr>
+  <tr><td colspan="10"><input type="hidden" name="serv_sd" value="" /><input type="submit" name="submit" value="Enviar"/></td></tr> 
+
+
+      
+  </table>
+
+
+  
+  </form>
+
+</div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>

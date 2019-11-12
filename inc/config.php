@@ -1,15 +1,26 @@
 <?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'panel');
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
-mysqli_set_charset($link, "utf8");
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+//Include Google Client Library for PHP autoload file
+require_once 'vendor/autoload.php';
+
+//Make object of Google API Client for call Google API
+$google_client = new Google_Client();
+
+//Set the OAuth 2.0 Client ID
+$google_client->setClientId('610188305605-d0svgbjvbilhnqmet072cojkbij8jiab.apps.googleusercontent.com');
+
+//Set the OAuth 2.0 Client Secret key
+$google_client->setClientSecret('ZpWzGahjeJmjZ2OQ0A3WpUdg');
+
+//Set the OAuth 2.0 Redirect URI
+$google_client->setRedirectUri('http://localhost');
+
+//
+$google_client->addScope('email');
+
+$google_client->addScope('profile');
+
+//start session on web page
+session_start();
 
 ?>

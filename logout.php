@@ -1,14 +1,17 @@
 <?php
-// Initialize the session
-session_start();
- 
-// Unset all of the session variables
-$_SESSION = array();
- 
-// Destroy the session.
+// Include configuration file
+require_once 'inc/config.php';
+
+// Remove token and user data from the session
+unset($_SESSION['token']);
+unset($_SESSION['userData']);
+
+// Reset OAuth access token
+$gClient->revokeToken();
+
+// Destroy entire session data
 session_destroy();
- 
-// Redirect to login page
-header("location: login.php");
-exit;
+
+// Redirect to homepage
+header("Location:index.php");
 ?>

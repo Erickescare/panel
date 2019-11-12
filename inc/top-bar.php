@@ -1,3 +1,12 @@
+<?php
+require_once "dbConfig.php";
+
+$sql = "SELECT * FROM user_google";
+if($result = mysqli_query($db, $sql)){
+if(mysqli_num_rows($result) > 0){
+if($row = mysqli_fetch_array($result)){
+
+?>
 <div class="kt-header__topbar">
 	<!--begin: Search -->
 	<div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden-desktop" id="kt_quick_search_toggle">
@@ -560,22 +569,22 @@
 	<!--begin: User bar -->
 	<div class="kt-header__topbar-item kt-header__topbar-item--user">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px" aria-expanded="false">
-			<span class="kt-header__topbar-welcome">Bienvenido,</span>
+			<span class="kt-header__topbar-welcome">Bienvenido, <?php echo $row['first_name']; ?></span>
 			<span class="kt-header__topbar-username"></span>
-			<img class="kt-hidden" alt="Pic" src="./assets/media/users/300_5.jpg">
+			<img class="" alt="Pic" src="<?php echo $row['picture']; ?>">
 			<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-			<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden-">RH</span>
+			<!-- <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden-">RH</span> -->
 		</div>
 		<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 			<!--begin: Head -->
 			<div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" style="background-image: url(./assets/media/misc/bg-1.jpg)">
 				<div class="kt-user-card__avatar">
-					<img class="kt-hidden" alt="Pic" src="./assets/media/users/300_25.jpg" />
+					<img class="" id="google-profile" alt="Pic" src="<?php echo $row['picture']; ?>" />
 					<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-					<span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">RH</span>
+					<!-- <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">RH</span> -->
 				</div>
 				<div class="kt-user-card__name">
-					<!-- Erick Escareño -->
+					<?php echo $row['first_name']; ?> <?php echo " " ?> <?php echo $row['last_name']; ?>
 				</div>
 				<div class="kt-user-card__badge">
 					<!-- <span class="btn btn-success btn-sm btn-bold btn-font-md">23 mensajes</span> -->
@@ -650,16 +659,7 @@
 					</div>
 				</a>
 				<div class="kt-notification__custom kt-space-between">
-					<a href="./logout.php" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Salir</a>
-					<a href="#" onclick="signOut();">Sign out</a>
-					<script>
-					  function signOut() {
-					    var auth2 = gapi.auth2.getAuthInstance();
-					    auth2.signOut().then(function () {
-					      console.log('User signed out.');
-					    });
-					  }
-					</script>
+					<a href="javascript:void(0);" class="btn btn-label btn-label-brand btn-sm btn-bold" onclick="signOut();">Salir</a>
 				</div>
 			</div>
 			<!--end: Navigation -->
@@ -667,3 +667,9 @@
 	</div>
 	<!--end: User bar -->
 </div>
+<?php 
+}
+mysqli_free_result($result);
+} 
+}
+?>

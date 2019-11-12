@@ -1,3 +1,26 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDMRj6vnDEZRY5glCpTiXLwrX7nox9O0PI",
+    authDomain: "intranet-protexa.firebaseapp.com",
+    databaseURL: "https://intranet-protexa.firebaseio.com",
+    projectId: "intranet-protexa",
+    storageBucket: "intranet-protexa.appspot.com",
+    messagingSenderId: "486515568586",
+    appId: "1:486515568586:web:706e1cb70bc6b85d85e933",
+    measurementId: "G-1R1N9RX70Q"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 <!-- begin::Global Config(global config for global JS sciprts) -->
 <script>
 	var KTAppOptions = {
@@ -25,6 +48,79 @@
 	//  	element.classList.remove("kt-menu__item--here");
 	// }
 </script>
+<script>
+// Render Google Sign-in button
+function renderButton() {
+    gapi.signin2.render('gSignIn', {
+        'scope': 'profile email',
+        'width': 380,
+        'height': 50,
+        'longtitle': false,
+        'theme': 'light',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+    });
+}
+
+// Sign-in success callback
+function onSuccess(googleUser) {
+    // Get the Google profile data (basic)
+    //var profile = googleUser.getBasicProfile();
+    
+    // Retrieve the Google account data
+    gapi.client.load('oauth2', 'v2', function () {
+        var request = gapi.client.oauth2.userinfo.get({
+            'userId': 'me'
+        });
+        request.execute(function (resp) {
+            // Display the user details
+            var profileHTML = '<h3>Bienvenido '+resp.given_name+'! <a href="javascript:void(0);" onclick="signOut();">Salir</a></h3>';
+            profileHTML += '<img class="center kt-userpic kt-userpic--lg kt-userpic--circle" src="'+resp.picture+'"/>';
+            //profileHTML += '<img class="center kt-userpic kt-userpic--lg kt-userpic--circle" src="'+resp.picture+'"/><p><b>Google ID: </b>'+resp.id+'</p><p><b>Name: </b>'+resp.name+'</p><p><b>Email: </b>'+resp.email+'</p><p><b>Gender: </b>'+resp.gender+'</p><p><b>Locale: </b>'+resp.locale+'</p><p><b>Google Profile:</b> <a target="_blank" href="'+resp.link+'">click to view profile</a></p><br><div class="center kt-spinner kt-spinner--lg kt-spinner--warning userContent"></div>';
+            profileHTML += '<div class="rueda kt-spinner kt-spinner--lg kt-spinner--warning"></div>';
+            document.getElementsByClassName("userContent")[0].innerHTML = profileHTML;
+            
+            document.getElementById("gSignIn").style.display = "none";
+            document.getElementsByClassName("userContent")[0].style.display = "block";
+            document.getElementsByClassName("kt-login__title")[0].style.display = "none";
+            
+            // Save user data
+            saveUserData(resp);
+
+            setTimeout(function(){
+            	location.href='index.php'; 
+            }, 1500);
+        });
+    });
+}
+
+// Sign-in failure callback
+function onFailure(error) {
+    alert("Se ha producido un error. Contacta con el administrador.");
+}
+
+// Sign out the user
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+        document.getElementsByClassName("userContent")[0].innerHTML = '';
+        document.getElementsByClassName("userContent")[0].style.display = "none";
+        document.getElementById("gSignIn").style.display = "block";
+
+    });
+    auth2.disconnect();
+
+    location.href='login.php';
+}
+function onLoad() {
+  gapi.load('auth2', function() {
+    gapi.auth2.init();
+  });
+}
+</script>
+<script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//code.tidio.co/msxordl9yk7qggydmvoogiokb1jflpee.js"></script>
 <!-- end::Global Config -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>

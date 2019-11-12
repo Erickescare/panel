@@ -20213,16 +20213,16 @@ strong {
   opacity: 0.8; }
 
 .kt-radio > span {
-  border: 1px solid #d1d7e2; }
+  border: 1px solid #ffb822; }
   .kt-radio > span:after {
-    border: solid #bfc7d7;
-    background: #bfc7d7; }
+    border: solid #ffb822;
+    background: #ffb822; }
 
 .kt-radio > input:disabled ~ span:after {
   border-color: #c8cfdd; }
 
 .kt-radio > input:checked ~ span {
-  border: 1px solid #c8cfdd; }
+  border: 1px solid #FF9800; }
 
 .kt-radio.kt-radio--bold > input:checked ~ span {
   border: 2px solid #c8cfdd; }

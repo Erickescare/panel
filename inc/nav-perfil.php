@@ -1,24 +1,26 @@
 <?php
-require_once "inc/config.php";
-$sql = "SELECT * FROM users";
-if($result = mysqli_query($link, $sql)){
+require_once "dbConfig.php";
+
+$sql = "SELECT * FROM user_google";
+if($result = mysqli_query($db, $sql)){
 if(mysqli_num_rows($result) > 0){
 if($row = mysqli_fetch_array($result)){
+
 ?>
 <!--begin::Widget -->
 	<div class="kt-widget kt-widget--user-profile-1">
 		<div class="kt-widget__head">
 			<div class="kt-widget__media">
-				<img src="<?php	echo $row['avatar'];?>" alt="image">
+				<img src="<?php	echo $row['picture'];?>" alt="image">
 			</div>
 			<div class="kt-widget__content">
 				<div class="kt-widget__section">
 					<a href="#" class="kt-widget__username">
-						<?php	echo $row['name']; echo " "; echo $row['apellidos']; ?>
+						<?php	echo $row['first_name']; echo " "; echo $row['last_name']; ?>
 						<i class="flaticon2-correct kt-font-success"></i>
 					</a>
 					<span class="kt-widget__subtitle">
-						<?php	echo $row['puesto'];?>
+						<?php	echo $row['oauth_provider'];?>
 					</span>
 				</div>
 				<div class="kt-widget__action">
@@ -35,7 +37,7 @@ if($row = mysqli_fetch_array($result)){
 				</div>
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Teléfono:</span>
-					<a href="tel:<?php echo $row['telefono'];?>" class="kt-widget__data"><?php echo $row['telefono'];?></a>
+					<a href="tel:<?php echo $row['oauth_uid'];?>" class="kt-widget__data"><?php echo $row['oauth_uid'];?></a>
 				</div>
 				<div class="kt-widget__info">
 					<span class="kt-widget__label">Ext.:</span>
