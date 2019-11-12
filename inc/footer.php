@@ -69,7 +69,7 @@
 						<a href="#">Sitio Protexa</a>
 						<a href="./logout.php">Salir <i class="flaticon-logout"></i></a>
 						<div class="kt-footer__version">
-							<a href="./versiones.php">Vr. 0.01 Alpha α</a>
+							<a>Vr. 0.01 Alpha α</a>
 						</div>
 					</div>
 				</div>
