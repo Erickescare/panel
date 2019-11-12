@@ -1,15 +1,16 @@
+<?php  $PageTitleMaster = '.: Encuesta de Servicio  :.'; $pageTitle = 'TI Soporte';?>
 <!DOCTYPE html>
 <html lang="es">
 	<!-- begin::Head -->
 	<head>
-		<!--begin::Base Path (base relative path for assets of this page) -->
-		<base href="../../../../">
-		<!--end::Base Path -->
-		<meta charset="utf-8" />
-		<title>.: Encuesta de Servicio  :.</title>
-		<meta name="description" content=".: Encuesta de Servicio  :.">
+		<base href="./">
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+		<title><?php echo $pageTitle ?> | Panel Protexa</title>
+		<meta name="description" content="Panel Protexa">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--begin::Fonts -->
+		<meta name="google-signin-client_id" content="610188305605-pi5hc2lvbpg843c4tfk0iitjk64ldqtb.apps.googleusercontent.com">
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
 			WebFont.load({
@@ -59,12 +60,16 @@
 		<!-- <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script> -->
 		<!--end::Fonts -->
 		<!--begin::Page Custom Styles(used by this page) -->
-		<link href="./assets/css/demo1/pages/general/invoices/invoice-1.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/pages/general/invoices/invoice-1.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Custom Styles -->
 		<!--begin:: Global Mandatory Vendors -->
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
 		<!--end:: Global Mandatory Vendors -->
 		<!--begin:: Global Optional Vendors -->
+		<link href="./assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
@@ -90,141 +95,148 @@
 		<link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
+		<style>
+		.disabled{
+		    pointer-events:none;
+		    opacity:0.7;
+		}
+		</style>
 
 		<!--end:: Global Optional Vendors -->
 
 		<!--begin::Global Theme Styles(used by all pages) -->
-		<link href="./assets/css/demo1/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 
 		<!--end::Global Theme Styles -->
 
 		<!--begin::Layout Skins(used by all pages) -->
-		<link href="./assets/css/demo1/skins/header/base/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/brand/dark.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/demo1/skins/aside/dark.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Skins -->
 	</head>
 	<!-- end::Head -->
 	<!-- begin::Body -->
-	<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--fixed kt-subheader--enabled kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
+	<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--fixed kt-subheader--enabled kt-subheader--solid kt-page--loading">
 		<!-- begin:: Page -->
 		<div class="kt-grid kt-grid--hor kt-grid--root">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 				<div class="kt-grid__item kt-grid__item--fluid" id="kt_wrapper">
 						<!-- begin:: Content -->
-						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-							<div class="kt-portlet">
-								<div class="kt-portlet__body kt-portlet__body--fit">
-									<div class="kt-invoice-1">
-										<div class="kt-invoice__wrapper">
-											<div class="kt-invoice__head" style="background-image: url(./assets/media/bg/bg-6.jpg);">
-												<div class="kt-invoice__container kt-invoice__container--centered">
-													<div class="kt-invoice__logo">
-														<a href="#">
-															<h1>Servicio 120027</h1>
-														</a>
-														<a href="#">
-															<img src="assets/media/protexa/230x70-2-B.png">
-														</a>
+						<div class="kt-grid__item kt-grid__item--fluid" id="kt_content">
+							<div class="kt-portlet__body kt-portlet__body--fit">
+								<div class="kt-invoice-1">
+									<div class="kt-invoice__wrapper">
+										<div class="kt-invoice__head" style="background-image: url(./assets/media/bg/bg-2.jpg);">
+											<div class="kt-invoice__container kt-invoice__container--centered">
+												<div class="kt-invoice__logo">
+													<a href="#">
+														<h1>Servicio 120027</h1>
+													</a>
+													<a href="#">
+														<img src="assets/media/protexa/230x70-2-B.png">
+													</a>
+												</div>
+												<div class="kt-invoice__items">
+													<div class="kt-invoice__item">
+														<span class="kt-invoice__subtitle">FECHA</span>
+														<span class="kt-invoice__text">Noviembre 12, 2019</span>
 													</div>
-													<div class="kt-invoice__items">
-														<div class="kt-invoice__item">
-															<span class="kt-invoice__subtitle">FECHA</span>
-															<span class="kt-invoice__text">Dec 12, 2017</span>
-														</div>
-														<div class="kt-invoice__item">
-															<span class="kt-invoice__subtitle">DESCRIPCIÓN</span>
-															<span class="kt-invoice__text">TEXTO BREVE DEL SERVICIO</span>
-														</div>
-														<div class="kt-invoice__item">
-															<span class="kt-invoice__subtitle">REALIZO</span>
-															<span class="kt-invoice__text">VANESA VIVES</span>
-														</div>
+													<div class="kt-invoice__item">
+														<span class="kt-invoice__subtitle">DESCRIPCIÓN</span>
+														<span class="kt-invoice__text">TEXTO BREVE DEL SERVICIO</span>
+													</div>
+													<div class="kt-invoice__item">
+														<span class="kt-invoice__subtitle">REALIZÓ</span>
+														<span class="kt-invoice__text">VANESA VIVES</span>
 													</div>
 												</div>
 											</div>
-											<div class="kt-invoice__body kt-invoice__body--centered">
-												<div class="kt-portlet">
-												<!--begin::Form-->
-												<form class="kt-form kt-form--label-right" id="kt_form_1" novalidate="novalidate">
-													<div class="kt-portlet__body">
-														<div class="form-group row">
-															<label class="col-form-label col-lg-3 col-sm-12">Descripción</label>
-															<div class="col-lg-7 col-md-9 col-sm-12">
-																<textarea class="form-control" disabled="disabled" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</textarea>
-																
-															</div>
+										</div>
+										<div class="kt-invoice__body kt-invoice__body--centered">
+											<div class="kt-portlet">
+											<!--begin::Form-->
+											<form class="kt-form kt-form--label-right" id="kt_form_1" novalidate="novalidate">
+												<div class="kt-portlet__body">
+													<div class="form-group row">
+														<label class="col-form-label col-lg-3 col-sm-12">Descripción</label>
+														<div class="col-lg-7 col-md-9 col-sm-12">
+															<textarea class="form-control" disabled="disabled" rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</textarea>
+															
 														</div>
-														<div class="form-group row">
-															<label class="col-form-label col-lg-3 col-sm-12">Como calificar&iacute;a el servicio recibido *</label>
-															<div class="col-lg-9 col-md-9 col-sm-12">
-																<div class="kt-radio-inline">
-																	<label class="kt-radio">
-																		<input type="radio" value="1" name="serv_califica"> 1
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="2" name="serv_califica"> 2 
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="3" name="serv_califica"> 3
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="4" name="serv_califica"> 4
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="5" name="serv_califica"> 5
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="6" name="serv_califica"> 6
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="7" name="serv_califica"> 7
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="8" name="serv_califica"> 8
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="9" name="serv_califica"> 9
-																		<span></span>
-																	</label>
-																	<label class="kt-radio">
-																		<input type="radio" value="10" name="serv_califica"> 10
-																		<span></span>
-																	</label>
-																</div>
-																<span class="form-text text-muted">Porfavor marque una casilla</span>
+													</div>
+													<div class="form-group row">
+														<label class="col-form-label col-lg-3 col-sm-12">Como calificar&iacute;a el servicio recibido *</label>
+														<div class="col-lg-9 col-md-9 col-sm-12">
+															<div class="kt-radio-inline">
+																<label class="kt-radio">
+																	<input type="radio" value="1" name="serv_califica"> 1
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="2" name="serv_califica"> 2 
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="3" name="serv_califica"> 3
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="4" name="serv_califica"> 4
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="5" name="serv_califica"> 5
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="6" name="serv_califica"> 6
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="7" name="serv_califica"> 7
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="8" name="serv_califica"> 8
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="9" name="serv_califica"> 9
+																	<span></span>
+																</label>
+																<label class="kt-radio">
+																	<input type="radio" value="10" name="serv_califica"> 10
+																	<span></span>
+																</label>
 															</div>
+															<span class="form-text text-muted">Porfavor marque una casilla</span>
 														</div>
-														<div class="form-group row">
-															<label class="col-form-label col-lg-3 col-sm-12">Comentarios</label>
-															<div class="col-lg-7 col-md-9 col-sm-12">
-																<textarea name="markdown" class="form-control" data-provide="markdown" rows="10"></textarea>
-																<span class="form-text text-muted">Ingrese comentarios acerca de:</span>
+													</div>
+													<div class="form-group row">
+														<label class="col-form-label col-lg-3 col-sm-12">Comentarios</label>
+														<div class="col-lg-7 col-md-9 col-sm-12">
+															<textarea name="markdown" class="form-control" data-provide="markdown" rows="10"></textarea>
+															<span class="form-text text-muted">Ingrese comentarios acerca de:</span>
+														</div>
+													</div>
+												</div>
+												<div class="kt-portlet__foot">
+													<div class="kt-form__actions">
+														<div class="row">
+															<div class="col-lg-9 ml-lg-auto">
+																<button type="submit" class="btn btn-brand">Enviar</button>
+																<button type="reset" class="btn btn-secondary">Cancelar</button>
 															</div>
 														</div>
 													</div>
-													<div class="kt-portlet__foot">
-														<div class="kt-form__actions">
-															<div class="row">
-																<div class="col-lg-9 ml-lg-auto">
-																	<button type="submit" class="btn btn-brand">Enviar</button>
-																	<button type="reset" class="btn btn-secondary">Cancelar</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-												<!--end::Form-->
-											</div>
+												</div>
+											</form>
+											<!--end::Form-->
 										</div>
 									</div>
 								</div>
@@ -232,18 +244,84 @@
 							</div>
 
 					<!-- begin:: Footer -->
-					<div class="kt-footer kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
-						<div class="kt-footer__copyright">
-							2019&nbsp;&copy;&nbsp;<a href="http://protexa.com.mx" target="_blank" class="kt-link">Protexa TI</a>
-						</div>
-						<div class="kt-footer__menu">
-							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Nosotros</a>
-							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Sitio Protexa</a>
-							<a href="http://protexa.com.mx" target="_blank" class="kt-footer__menu-link kt-link">Contacto</a>
+<div class="kt-footer  kt-footer--extended  kt-grid__item" id="kt_footer">
+	<!-- <div class="kt-footer__top">
+		<div class="kt-container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="kt-footer__section">
+						<h3 class="kt-footer__title">TI Protexa</h3>
+						<div class="kt-footer__content">
+							Whatever method you chosse,these nine will
+							make you re-think theway you craft healines
+							Why? Because they all have points in that are
+							worth from a point of view.
 						</div>
 					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="kt-footer__section">
+						<h3 class="kt-footer__title">Enlaces Interesantes</h3>
+						<div class="kt-footer__content">
+							<div class="kt-footer__nav">
+								<div class="kt-footer__nav-section">
+									<a href="#">Reportes Generales</a>
+									<a href="#">Dashboard Principal</a>
+									<a href="#">Mi Pefil</a>
+								</div>
+								<div class="kt-footer__nav-section">
+									<a href="#">Configuración</a>
+									<a href="#">Chat</a>
+									<a href="#">Custom Reportes</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="kt-footer__section">
+						<h3 class="kt-footer__title">Contacto Rápido</h3>
+						<div class="kt-footer__content">
+							<form action="" class="kt-footer__subscribe">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Email">
+									<div class="input-group-append">
+										<button class="btn btn-brand" type="button">Contacto</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="kt-footer__bottom">
+		<div class="kt-container">
+			<div class="kt-footer__wrapper">
+				<div class="kt-footer__logo">
+					<a href="demo2/index.html">
+						<img alt="Logo" src="./assets/media/protexa/ico57.png">
+					</a>
+					<div class="kt-footer__copyright">
+						2019&nbsp;&copy;&nbsp;
+						<a style="color: #ffb822;" href="#">Grupo Protexa</a>
+					</div>
 
-					<!-- end:: Footer -->
+				</div>
+				<div class="kt-footer__menu">
+					<a href="./soporte.php">Soporte</a>
+					<a href="#">Sitio Protexa</a>
+					<a href="./logout.php">Salir <i class="flaticon-logout"></i></a>
+					<div class="kt-footer__version">
+						<a>Vr. 0.07 Alpha α</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end:: Footer -->
 				</div>
 			</div>
 
@@ -341,7 +419,7 @@
 		<!--end:: Global Optional Vendors -->
 
 		<!--begin::Global Theme Bundle(used by all pages) -->
-		<script src="./assets/js/demo1/scripts.bundle.js" type="text/javascript"></script>
+		<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
 
 		<!--end::Global Theme Bundle -->
 	</body>
