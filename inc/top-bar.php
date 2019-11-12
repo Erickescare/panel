@@ -1,5 +1,5 @@
 <?php
-require_once "dbConfig.php";
+include "dbConfig.php";
 
 $sql = "SELECT * FROM user_google";
 if($result = mysqli_query($db, $sql)){
