@@ -36,7 +36,7 @@
 	MM_reloadPage(true);
 	//-->
 	</script>
-	<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+	<!-- <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script> -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 		<!-- begin:: Page -->
 		<!-- begin:: Header Mobile -->
