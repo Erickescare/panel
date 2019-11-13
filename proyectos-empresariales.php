@@ -1430,7 +1430,7 @@
 																<ul class="kt-nav">
 																	<li class="kt-nav__head">
 																		Opciones de exportación
-																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas..."></i>
 																	</li>
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__item">
@@ -1463,7 +1463,7 @@
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__foot">
 																		<a class="btn btn-label-danger btn-bold btn-sm" href="#">Plan de actualización</a>
-																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Aprende más</a>
+																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas...">Aprende más</a>
 																	</li>
 																</ul>
 																<!--end::Nav-->
@@ -1562,14 +1562,14 @@
 													</div>
 													<div class="kt-portlet__head-toolbar">
 														<a href="#" class="btn btn-label-brand btn-bold btn-sm dropdown-toggle" data-toggle="dropdown">
-															Latest
+															Último
 														</a>
 														<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right">
 															<!--begin::Nav-->
 															<ul class="kt-nav">
 																<li class="kt-nav__head">
 																	Opciones de exportación
-																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas..."></i>
 																</li>
 																<li class="kt-nav__separator"></li>
 																<li class="kt-nav__item">
@@ -1602,7 +1602,7 @@
 																<li class="kt-nav__separator"></li>
 																<li class="kt-nav__foot">
 																	<a class="btn btn-label-danger btn-bold btn-sm" href="#">Plan de actualización</a>
-																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Aprende más</a>
+																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas...">Aprende más</a>
 																</li>
 															</ul>
 															<!--end::Nav-->
@@ -1736,7 +1736,7 @@
 																			Visual Designer,Google Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-brand btn-bold">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-brand btn-bold">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1750,7 +1750,7 @@
 																			Product Designer, Apple Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-warning btn-bold">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-warning btn-bold">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1764,7 +1764,7 @@
 																			Web Developer, Facebook Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-danger btn-bold">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-danger btn-bold">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1778,7 +1778,7 @@
 																			Project Manager, Amazon Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-success btn-bold">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-success btn-bold">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1792,7 +1792,7 @@
 																			Visual Designer, Github Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-primary btn-bold">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-primary btn-bold">Seguir</a>
 																</div>
 															</div>
 														</div>
@@ -1810,7 +1810,7 @@
 																			Product Designer,Apple Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-success">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-success">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1824,7 +1824,7 @@
 																			Release Manager, Loop Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-brand">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-brand">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1838,7 +1838,7 @@
 																			Web Developer, Facebook Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-danger">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-danger">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1852,7 +1852,7 @@
 																			Project Manager, Amazon Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-success">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-success">Seguir</a>
 																</div>
 																<div class="kt-widget4__item">
 																	<div class="kt-widget4__pic kt-widget4__pic--pic">
@@ -1866,7 +1866,7 @@
 																			Web Developer, Facebook Inc
 																		</p>
 																	</div>
-																	<a href="#" class="btn btn-sm btn-label-info">Follow</a>
+																	<a href="#" class="btn btn-sm btn-label-info">Seguir</a>
 																</div>
 															</div>
 														</div>
@@ -1886,14 +1886,14 @@
 													</div>
 													<div class="kt-portlet__head-toolbar">
 														<a href="#" class="btn btn-label-brand btn-bold btn-sm dropdown-toggle" data-toggle="dropdown">
-															Today
+															Hoy
 														</a>
 														<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
 															<!--begin::Nav-->
 															<ul class="kt-nav">
 																<li class="kt-nav__head">
 																	Opciones de exportación
-																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas..."></i>
 																</li>
 																<li class="kt-nav__separator"></li>
 																<li class="kt-nav__item">
@@ -1926,7 +1926,7 @@
 																<li class="kt-nav__separator"></li>
 																<li class="kt-nav__foot">
 																	<a class="btn btn-label-danger btn-bold btn-sm" href="#">Plan de actualización</a>
-																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Aprende más</a>
+																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas...">Aprende más</a>
 																</li>
 															</ul>
 															<!--end::Nav-->
@@ -2029,7 +2029,7 @@
 																<ul class="kt-nav">
 																	<li class="kt-nav__head">
 																		Opciones de exportación
-																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas..."></i>
 																	</li>
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__item">
@@ -2062,7 +2062,7 @@
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__foot">
 																		<a class="btn btn-label-danger btn-bold btn-sm" href="#">Plan de actualización</a>
-																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Aprende más</a>
+																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas...">Aprende más</a>
 																	</li>
 																</ul>
 																<!--end::Nav-->
@@ -2096,7 +2096,7 @@
 																<ul class="kt-nav">
 																	<li class="kt-nav__head">
 																		Opciones de exportación
-																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
+																		<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas..."></i>
 																	</li>
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__item">
@@ -2129,7 +2129,7 @@
 																	<li class="kt-nav__separator"></li>
 																	<li class="kt-nav__foot">
 																		<a class="btn btn-label-danger btn-bold btn-sm" href="#">Plan de actualización</a>
-																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Aprende más</a>
+																		<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haz click para aprender mas...">Aprende más</a>
 																	</li>
 																</ul>
 																<!--end::Nav-->

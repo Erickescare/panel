@@ -560,7 +560,7 @@
 	<!--begin: User bar -->
 	<div class="kt-header__topbar-item kt-header__topbar-item--user">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,10px" aria-expanded="false">
-			<span class="kt-header__topbar-welcome">Bienvenido, <?php echo $row['first_name']; ?></span>
+			<span class="kt-header__topbar-welcome">Bienvenido, <!-- <?php echo $row['first_name']; ?> --></span>
 			<span class="kt-header__topbar-username"></span>
 			<img class="" alt="Pic" src="<?php echo $row['picture']; ?>">
 			<!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
