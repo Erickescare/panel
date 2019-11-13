@@ -12,7 +12,9 @@
 	<!-- begin: Header Menu -->
 	<div class="kt-header__bottom">
 		<div class="kt-container">
+			<!-- Menu Principal -->
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/index.php') include('inc/main-menu.php'); ?>
+			<!-- Menu Recursos Humanos -->
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/panel-rh.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/perfil.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/mi-salida.php') include('inc/main-menu-rh.php'); ?>
@@ -23,6 +25,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/vacantes.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/mensajes.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/noticias-cc.php') include('inc/main-menu-rh.php'); ?>
+			<!-- Menu Admin -->
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/admin/index.php') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/admin/') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/panel/eventos-cc.php') include('inc/main-menu-rh.php'); ?>
@@ -31,6 +34,7 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/perfil.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/mi-salida.php') include('inc/main-menu-rh.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/editar-perfil.php') include('inc/main-menu-rh.php'); ?>
+			<!-- Menu Soporte -->
 			<?php if ($_SERVER["REQUEST_URI"] == '/soporte.php') include('inc/main-menu-soporte.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/tickets.php') include('inc/main-menu-soporte.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/vacantes.php') include('inc/main-menu-rh.php'); ?>
@@ -39,6 +43,8 @@
 			<?php if ($_SERVER["REQUEST_URI"] == '/admin/index.php') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/admin/') include('inc/main-menu-admin.php'); ?>
 			<?php if ($_SERVER["REQUEST_URI"] == '/eventos-cc.php') include('inc/main-menu-rh.php'); ?>
+			<!-- Menu Proyectos Empresariales -->
+			<?php if ($_SERVER["REQUEST_URI"] == '/panel/proyectos-empresariales.php') include('inc/main-menu-proyectos.php'); ?>
 		</div>
 	</div>
 	<!-- end: Header Menu -->

@@ -19,6 +19,12 @@
 						</a>
 					</li>
 					<li class="kt-nav__item">
+						<a class="kt-nav__link active" href="./proyectos-empresariales.php">
+							<span class="kt-nav__link-icon"><i class="flaticon-list"></i></span>
+							<span class="kt-nav__link-text">Proyectos Empresariales</span>
+						</a>
+					</li>
+					<li class="kt-nav__item">
 						<a class="kt-nav__link active" href="./soporte.php">
 							<span class="kt-nav__link-icon"><i class="flaticon-letter-g"></i></span>
 							<span class="kt-nav__link-text">Soporte Google</span>
