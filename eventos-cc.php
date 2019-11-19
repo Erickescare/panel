@@ -1,13 +1,13 @@
 <?php $PageTitleMaster = 'Recursos Humanos'; $pageTitle = 'Eventos'; include('inc/head.php') ?>
 <style type="text/css">
 	.borderevetos{
-	    border-bottom-style: inset;
-	    margin-top: 15px;
-	    padding-top: 5px;
-	    padding-bottom: 20px;
-	    text-align: justify;
-	    align-content: center;
-	    vertical-align: middle;
+		border-bottom-style: inset;
+		margin-top: 15px;
+		padding-top: 5px;
+		padding-bottom: 20px;
+		text-align: justify;
+		align-content: center;
+		vertical-align: middle;
 	}
 </style>
 	<!-- end::Head -->
