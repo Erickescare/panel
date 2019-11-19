@@ -111,7 +111,26 @@
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 		<!-- begin:: Page -->
 		<!-- begin:: Header Mobile -->
-		<?php include('inc/header-mobile.php') ?>
+		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+			<div class="kt-header-mobile__logo">
+				<a href="./index.php">
+					<img alt="Logo" src="./assets/media/protexa/ico57.png" />
+				</a>
+			</div>
+			<div class="kt-header__brand kt-header__brand-nav">
+				<div class="dropdown">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#ffb822;border:0;padding: 0.75rem 1.5rem;color:#ebedf2;">
+						.: Encuesta de Servicio :.
+					</button>
+				</div>
+			</div>
+			<div class="kt-header-mobile__toolbar">
+				<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
+				<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
+			</div>
+		</div>
+
+
 		<!-- end:: Header Mobile -->
 		<div class="kt-grid kt-grid--hor kt-grid--root">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
@@ -247,9 +266,6 @@
 			<div class="kt-container">
 				<div class="kt-footer__wrapper">
 					<div class="kt-footer__logo">
-						<a href="./index.php">
-							<img alt="Logo" src="./assets/media/protexa/ico57.png">
-						</a>
 						<div class="kt-footer__copyright">
 							2019&nbsp;&copy;&nbsp;
 							<a style="color: #ffb822;" href="#">Grupo Protexa</a>
