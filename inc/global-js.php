@@ -121,7 +121,7 @@ function onLoad() {
 <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
 <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="//code.tidio.co/msxordl9yk7qggydmvoogiokb1jflpee.js"></script>
+<!-- <script src="//code.tidio.co/msxordl9yk7qggydmvoogiokb1jflpee.js"></script> -->
 <!-- end::Global Config -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <!--begin:: Global Optional Vendors -->

@@ -1,4 +1,69 @@
-<?php  $PageTitleMaster = '.: Encuesta de Servicio  :.'; $pageTitle = 'TI Soporte'; include('inc/head.php') ?>
+<!DOCTYPE html>
+<html lang="mx">
+	<head>
+		<base href="./">
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+		<title>Encuesta de Servicio | Panel Protexa</title>
+		<meta name="description" content="Panel Protexa">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="google-signin-client_id" content="610188305605-pi5hc2lvbpg843c4tfk0iitjk64ldqtb.apps.googleusercontent.com">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					"families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]
+				},
+				active: function() {
+					sessionStorage.fonts = true;
+				}
+			});
+		</script>
+		<link href="./assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/custom/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/pages/general/login/login-1.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="./assets/media/protexa/ico72.png" />
+		<style>
+		.disabled{
+		    pointer-events:none;
+		    opacity:0.7;
+		}
+		</style>
+
+		<?php 
+		$activePage = basename($_SERVER['PHP_SELF'], ".php");
+		//$pagina_anterior = basename($_SERVER['HTTP_REFERER']);
+		?>
+	</head>
 <style>
 	/****************** Estilos Especiales Sección *****************************/
 	.kt-header__bottom{
@@ -52,7 +117,29 @@
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
 					<!-- begin:: Header -->
-					<?php include('inc/header.php') ?>
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on">
+						<div class="kt-header__top">
+							<div class="kt-container">
+								<!-- begin:: Brand -->
+								<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
+									<div class="kt-header__brand-logo">
+										<a href="./index.php">
+											<img alt="Logo" src="./assets/media/protexa/LogoFB.png" width="125px" class="kt-header__brand-logo-default" />
+											<img alt="Logo" src="./assets/media/protexa/ico72.png" width="45px" class="kt-header__brand-logo-sticky" />
+										</a>
+									</div>
+									<div class="kt-header__brand-nav">
+										<div class="dropdown">
+											<h3 class="kt-font-warning">.: Encuesta de Servicio :.</h3>
+										</div>
+									</div>
+								</div>
+								<!-- end:: Brand -->
+								<!-- begin:: Header Topbar -->
+								<!-- end:: Header Topbar -->
+							</div>
+						</div>
+					</div>
 					<!-- end:: Header -->
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-grid--stretch">
 						<div class="kt-container kt-body  kt-grid kt-grid--ver" id="kt_body">
@@ -154,11 +241,32 @@
 		</div>
 
 	<!-- begin:: Footer -->
-	<?php include('inc/footer.php') ?>
+	<!-- begin:: Footer -->
+	<div class="kt-footer  kt-footer--extended  kt-grid__item" id="kt_footer">
+		<div class="kt-footer__bottom">
+			<div class="kt-container">
+				<div class="kt-footer__wrapper">
+					<div class="kt-footer__logo">
+						<a href="./index.php">
+							<img alt="Logo" src="./assets/media/protexa/ico57.png">
+						</a>
+						<div class="kt-footer__copyright">
+							2019&nbsp;&copy;&nbsp;
+							<a style="color: #ffb822;" href="#">Grupo Protexa</a>
+						</div>
+
+					</div>
+					<div class="kt-footer__menu">
+						<a href="https://protexa.com.mx">Sitio Protexa</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:: Footer -->
 	<!-- end:: Footer -->     
 	</div>
 	<!-- end:: Page -->
-	<?php include('inc/quick-panel.php') ?>
 	<!-- begin::Scrolltop -->
 	<div id="kt_scrolltop" class="kt-scrolltop">
 	<i class="fa fa-arrow-up"></i>
