@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generador de Firma Protexa</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  </head>
+<body>
+<div class="container">
+<h1>Generador de Firma Protexa</h1>
+<form action="sig.php" method="post">
+<fieldset>
+
+<div class="clearfix">
+            <label for="fullname">Nombre Completo:</label>
+            <div class="input">
+              <input class="xlarge" id="fullname" name="fullname" size="30" type="text" placeholder="Nombre y Apellido">
+            </div>
+          </div>
+
+<div class="clearfix">
+            <label for="title">Cargo:</label>
+            <div class="input">
+              <input class="xlarge" id="title" name="title" size="30" type="text" placeholder="i.e. Senior Consultant">
+            </div>
+          </div>
+          
+<div class="clearfix">
+            <label for="mobile">Telefono:</label>
+            <div class="input">
+              <input class="xlarge" id="mobile" name="mobile" size="30" type="text" placeholder="9999 999999">
+            </div>
+          </div>
+          
+<div class="clearfix">
+            <label for="ext">Ext.:</label>
+            <div class="input">
+              <input class="xlarge" id="ext" name="ext" size="30" type="text" placeholder="41444">
+            </div>
+          </div>  
+          
+<div class="clearfix">
+            <label for="email">Email:</label>
+            <div class="input">
+              <input class="xlarge" id="email" name="email" size="30" type="text" placeholder="first.last@protexa.com.mx">
+            </div>
+          </div>    
+<div class="actions">
+<input type="submit" class="btn large primary" value="Generate"/>
+</div>
+</fieldset>
+</form>
+</div>
+
+</body>
+</html>
