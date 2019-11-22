@@ -1,6 +1,6 @@
 <?php
 // Incluir archivo de configuración
-require_once "inc/config.php";
+include "dbConfig.php";
  
 // Definir variables e inicializar con valores vacíos.
 $name = $apellidos = $ciudad = $telefono = $email = $puesto = "";
@@ -67,15 +67,15 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 	// Verifique los errores de entrada antes de insertar en la base de datos
 	if(empty($name_err) && empty($apellidos_err) && empty($ciudad_err) && empty($telefono_err) && empty($email_err)){
 		// Prepare una declaración de actualización
-		$sql = "UPDATE users SET name=?, apellidos=?, ciudad=?, telefono=?, email=?, puesto=? WHERE id=?";
+		$sql = "UPDATE user_google SET first_name=?, last_name=?, telefono=?, email=?, gender=?, WHERE id=?";
 		 
-		if($stmt = mysqli_prepare($link, $sql)){
+		if($stmt = mysqli_prepare($db, $sql)){
 			// Vincula las variables a la declaración preparada como parámetros
-			mysqli_stmt_bind_param($stmt, "ssssssi", $param_name, $param_apellidos, $param_ciudad, $param_telefono,  $param_email, $param_puesto, $param_id);
+			mysqli_stmt_bind_param($stmt, "ssssi", $param_name, $param_apellidos, $param_ciudad, $param_telefono, $param_id);
 			
 			// Establecer parámetros
-			$param_name = $name;
-			$param_apellidos = $apellidos;
+			$param_name = $first_name;
+			$param_apellidos = $last_name;
 			$param_ciudad = $ciudad;
 			$param_telefono = $telefono;
 			$param_email = $email;
@@ -104,8 +104,8 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 		$id =  trim($_GET["id"]);
 		
 		// Prepare una declaración de selección
-		$sql = "SELECT * FROM users WHERE id = ?";
-		if($stmt = mysqli_prepare($link, $sql)){
+		$sql = "SELECT * FROM user_google WHERE id = ?";
+		if($stmt = mysqli_prepare($db, $sql)){
 			// Vincula las variables a la declaración preparada como parámetros
 			mysqli_stmt_bind_param($stmt, "i", $param_id);
 			
@@ -122,13 +122,14 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 					$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 					
 					// Recuperar valor de campo individual
-					$name = $row["name"];
-					$apellidos = $row["apellidos"];
-					$ciudad = $row["ciudad"];
-					$telefono = $row["telefono"];
+					$name = $row["first_name"];
+					$apellidos = $row["last_name"];
+					$id_google = $row["oauth_uid"];
+					// $ciudad = $row["ciudad"];
+					//$telefono = $row["telefono"];
 					$email = $row["email"];
-					$avatar = $row["avatar"];
-					$puesto = $row["puesto"];
+					$avatar = $row["picture"];
+					// $puesto = $row["puesto"];
 				} else{
 					// La URL no contiene una identificación válida. Redireccionar a la página de error
 					header("location: error.php");
@@ -240,9 +241,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 																	<span class="help-block"><?php echo $apellidos_err;?></span>
 																</div>
 																<div class="form-group row <?php echo (!empty($ciudad_err)) ? 'has-error' : ''; ?>">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Ciudad</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">ID Google</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<input type="text" name="ciudad" class="form-control" value="<?php echo $ciudad; ?>">
+																		<input type="text" name="id_google" class="form-control" value="<?php echo $id_google; ?>" readonly="">
 																	</div>
 																	<span class="help-block"><?php echo $puesto_err;?></span>
 																</div>

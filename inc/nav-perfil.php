@@ -16,11 +16,11 @@ if($row = mysqli_fetch_array($result)){
 			<div class="kt-widget__content">
 				<div class="kt-widget__section">
 					<a href="#" class="kt-widget__username">
-						<?php	echo $row['first_name']; echo " "; echo $row['last_name']; ?>
+						<?php echo $row['first_name']; echo " "; echo $row['last_name']; ?>
 						<i class="flaticon2-correct kt-font-success"></i>
 					</a>
-					<span class="kt-widget__subtitle">
-						<?php	echo $row['oauth_provider'];?>
+					<span class="kt-widget__subtitle" style="text-transform: capitalize;">
+						<?php echo $row['oauth_provider'];?>
 					</span>
 				</div>
 				<div class="kt-widget__action">
@@ -36,12 +36,12 @@ if($row = mysqli_fetch_array($result)){
 					<a href="mailto:<?php echo $row['email'];?>" class="kt-widget__data"><?php echo $row['email'];?></a>
 				</div>
 				<div class="kt-widget__info">
-					<span class="kt-widget__label">Teléfono:</span>
-					<a href="tel:<?php echo $row['oauth_uid'];?>" class="kt-widget__data"><?php echo $row['oauth_uid'];?></a>
-				</div>
-				<div class="kt-widget__info">
 					<span class="kt-widget__label">Ext.:</span>
 					<span class="kt-widget__data">2603</span>
+				</div>
+				<div class="kt-widget__info">
+					<span class="kt-widget__label" style="text-transform: capitalize;">ID <?php echo $row['oauth_provider'];?>:</span>
+					<a href="tel:<?php echo $row['oauth_uid'];?>" class="kt-widget__data"><?php echo $row['oauth_uid'];?></a>
 				</div>
 			</div>
 			<div class="kt-widget__items">
