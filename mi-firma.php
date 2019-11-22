@@ -163,7 +163,7 @@
                                 <div class="col-lg-2"></div>
                                 <div class="col-lg-10">
                                   <button type="submit" class="btn btn-success">Generar</button>
-                                  <button type="reset" class="btn btn-secondary">Cancel</button>
+                                  <button type="reset" class="btn btn-danger">Borrar</button>
                                 </div>
                               </div>
                             </div>
