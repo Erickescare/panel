@@ -76,7 +76,7 @@ if($row = mysqli_fetch_array($result)){
 						</span>
 					</span>
 				</a>
-				<a href="./editar-perfil.php?id=41444" class="kt-widget__item <?= ($activePage == 'editar-perfil') ? 'kt-widget__item--active':''; ?>">
+				<a href="./editar-perfil.php?id=1" class="kt-widget__item <?= ($activePage == 'editar-perfil') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -106,7 +106,7 @@ if($row = mysqli_fetch_array($result)){
 						</span>
 						</spandiv>
 				</a> -->
-				<a href="./cambiar-contrasena.php?id=41444" class="kt-widget__item <?= ($activePage == 'cambiar-contrasena') ? 'kt-widget__item--active':''; ?>">
+				<a href="./cambiar-contrasena.php?id=1" class="kt-widget__item <?= ($activePage == 'cambiar-contrasena') ? 'kt-widget__item--active':''; ?>">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -138,7 +138,7 @@ if($row = mysqli_fetch_array($result)){
 						</span>
 					</span>
 				</a>
-				<a href="./servicios-vacaciones.php?id=41444" class="kt-widget__item <?= ($activePage == 'servicios-vacaciones') ? 'kt-widget__item--active':''; ?>" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
+				<a href="./servicios-vacaciones.php?id=1" class="kt-widget__item <?= ($activePage == 'servicios-vacaciones') ? 'kt-widget__item--active':''; ?>" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -182,7 +182,7 @@ if($row = mysqli_fetch_array($result)){
 						</span>
 					</span>
 				</a>
-				<a href="#" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
+				<a href="mi-firma.php" class="kt-widget__item" data-toggle="kt-tooltip" title="Próximamente..." data-placement="right">
 					<span class="kt-widget__section">
 						<span class="kt-widget__icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -196,7 +196,7 @@ if($row = mysqli_fetch_array($result)){
 							Mi Firma Electronica Protexa
 						</span>
 					</span>
-					<span class="kt-badge kt-badge--unified-brand kt-badge--inline kt-badge--bolder">New</span>
+					<span class="kt-badge kt-badge--unified-brand kt-badge--inline kt-badge--bolder">Nuevo</span>
 				</a>
 			</div>
 		</div>
