@@ -20,14 +20,26 @@
 				}
 			});
 		</script>
-		
+		<link href="./assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
-
+		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
-		
+		<link href="./assets/vendors/general/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
@@ -61,6 +73,40 @@
 	<!-- end::Head -->
 	<!-- begin::Body -->
 	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+	function validateRadio (radios)
+	{
+			for (i = 0; i < radios.length; ++ i)
+			{
+					if (radios [i].checked) return true;
+			}
+			return false;
+	}
+
+	function validar()
+	{
+			if(validateRadio (document.forms["form1"]["serv_califica"]))
+			{
+					return true;
+			}
+			else
+			{
+					alert('Debe seleccionar una calificación');
+					return false;
+			}
+	}
+	</script>
+		
+	<script type="text/javascript">
+	<!--
+	function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+		if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+			document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+		else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+	}
+	MM_reloadPage(true);
+	//-->
+	</script>
 	<!-- <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script> -->
 	<body class="kt-page--loading-enabled kt-page--loading kt-page--fixed kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 		<!-- begin:: Page -->
@@ -187,7 +233,7 @@
 												<div class="form-group row">
 													<label class="col-form-label col-lg-3 col-sm-12">Comentarios</label>
 													<div class="col-lg-7 col-md-9 col-sm-12">
-														<textarea name="markdown" class="form-control" rows="10"></textarea>
+														<textarea name="markdown" class="form-control" data-provide="markdown" rows="10"></textarea>
 														<span class="form-text text-muted">Ingrese comentarios acerca de:</span>
 													</div>
 												</div>
@@ -245,9 +291,9 @@
 	<!-- begin::Global Config(global config for global JS sciprts) -->
 	<!-- end::Global Config -->
 	<!--begin:: Global Mandatory Vendors -->
-
+	<?php include('inc/mansoryjs.php') ?>
 	<!--end:: Global Mandatory Vendors -->
-
+	<?php include('inc/global-js.php') ?>
 	<!--end:: Global Optional Vendors -->
 	<!--begin::Global Theme Bundle(used by all pages) -->
 	<script src="./assets/js/scripts.bundle.js" type="text/javascript"></script>
