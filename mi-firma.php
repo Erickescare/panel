@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
-    <title>Encuesta de Servicio | Panel Protexa</title>
+    <title>Mi Firma Protexa | Panel Protexa</title>
     <meta name="description" content="Panel Protexa">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-signin-client_id" content="610188305605-pi5hc2lvbpg843c4tfk0iitjk64ldqtb.apps.googleusercontent.com">
