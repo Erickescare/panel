@@ -36,7 +36,71 @@
                         <i class="la la-close"></i>
                       </button>
                       <!--End:: App Aside Mobile Toggle-->
-                      
+                      <!--Begin:: App Aside-->
+                      <div class="kt-grid__item kt-app__toggle kt-app__aside" id="kt_user_profile_aside">
+                        <!--begin:: Widgets/Applications/User/Profile1-->
+                        <div class="kt-portlet kt-portlet--height-fluid-">
+                          <div class="kt-portlet__head  kt-portlet__head--noborder">
+                            <div class="kt-portlet__head-label">
+                              <h3 class="kt-portlet__head-title">
+                              </h3>
+                            </div>
+                            <div class="kt-portlet__head-toolbar">
+                              <a href="#" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown">
+                                <i class="flaticon-more-1"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right dropdown-menu-fit dropdown-menu-md">
+                                <!--begin::Nav-->
+                                <ul class="kt-nav">
+                                  <li class="kt-nav__head">
+                                    Opciones
+                                    <i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Haga clic para obtener más información..."></i>
+                                  </li>
+                                  <li class="kt-nav__separator"></li>
+                                  <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                      <i class="kt-nav__link-icon flaticon2-drop"></i>
+                                      <span class="kt-nav__link-text">Actividad</span>
+                                    </a>
+                                  </li>
+                                  <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                      <i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+                                      <span class="kt-nav__link-text">Preguntas frecuentes</span>
+                                    </a>
+                                  </li>
+                                  <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                      <i class="kt-nav__link-icon flaticon2-link"></i>
+                                      <span class="kt-nav__link-text">Ajustes</span>
+                                    </a>
+                                  </li>
+                                  <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                      <i class="kt-nav__link-icon flaticon2-new-email"></i>
+                                      <span class="kt-nav__link-text">Apoyo</span>
+                                      <span class="kt-nav__link-badge">
+                                        <span class="kt-badge kt-badge--success">5</span>
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li class="kt-nav__separator"></li>
+                                  <li class="kt-nav__foot">
+                                    <a class="btn btn-label-danger btn-bold btn-sm" href="#">Reclamo</a>
+                                    <a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Haga clic para obtener más información...">Saber más</a>
+                                  </li>
+                                </ul>
+                                <!--end::Nav-->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kt-portlet__body kt-portlet__body--fit-y">
+                            <?php include ('inc/nav-perfil.php'); ?>
+                          </div>
+                        </div>
+                        <!--end:: Widgets/Applications/User/Profile1-->
+                      </div>
+                      <!--End:: App Aside-->
                       <!--Begin:: App Content-->
 
                       <!--begin::Portlet-->
