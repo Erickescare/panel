@@ -95,7 +95,7 @@
                             </div>
                           </div>
                           <div class="kt-portlet__body kt-portlet__body--fit-y">
-                            <?php include ('inc/nav-perfil.php'); ?>
+                            <!-- <?php include ('inc/nav-perfil.php'); ?> -->
                           </div>
                         </div>
                         <!--end:: Widgets/Applications/User/Profile1-->
