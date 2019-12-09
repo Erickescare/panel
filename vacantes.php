@@ -68,7 +68,7 @@
 											array_push($feed, $item);
 										}
 
-										$limit = 4; // <-- Change the number of posts shown
+										$limit = 3; // <-- Change the number of posts shown
 										for ($x=0; $x<$limit; $x++) {
 											$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
 											$link = $feed[$x]['link'];
@@ -119,57 +119,6 @@
 									</div>
 									<div class="row">
 										<div class="col-xl-4"></div><div class="col-xl-4"><center><a href="http://localhost/trabajos/vacantes/" target="_blank"><span class="btn btn-primary btn-wide">Ver todas las Vacantes</span></a></center></div><div class="col-xl-4"></div>
-									</div>
-									<div class="row">
-										<div class="col-xl-4">
-											<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
-												<div class="grid-content" data-id="4643">
-											    <div class="job-item " style="height: 189px;">
-		                        <div class="job-image">
-					                    <div class="img-avatar"><img alt="Corporativo Monterrey" src="http://localhost/trabajos/wp-content/uploads/2019/06/ico144-60x60.png" srcset="http://localhost/trabajos/wp-content/uploads/2019/06/ico144-120x120.png 2x" class="avatar avatar-60 photo" height="60" width="60"></div>                                            
-					                    <div class="company iwj-job-page">
-		                            <h6>
-	                                Corporativo Monterrey                            
-	                              </h6>
-			                        </div>
-	                          </div>
-		                        <div class="job-content-wrap">
-							                <div class="job-info yes-logo">
-							                    <h3 class="job-title">
-							                        <a href="http://localhost/trabajos/job/senior-process-analyst/">Senior BmPro</a>
-							                    </h3>
-							                    <div class="info-company">
-			                              <div class="address"><i class="ion-android-pin"></i><span itemprop="jobLocation" itemscope="" itemtype="http://schema.org/Place">
-							                    <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-							                        <span itemprop="addressLocality">Monterrey</span>
-							                        <span itemprop="addressRegion" style="display: none;">Monterrey</span>
-							                        <span itemprop="postalCode" style="display: none;">Monterrey</span>
-							                        <span itemprop="streetAddress" style="display: none;">Monterrey</span>
-							                    </span>
-				                					</span></div>
-	                                  <div class="company"><i class="fa fa-suitcase"></i>
-					                                Corporativo Monterrey</div>
-	                                  <div class="categories iwj-job-page">
-		                                <i class="fa fa-suitcase theme-color"></i>
-		                                <span><a href="http://localhost/trabajos/cat/bancario/">Bancario</a>, <a href="http://localhost/trabajos/cat/finanzas-y-negocios/">Finanzas y negocios</a>, <a href="http://localhost/trabajos/cat/ingenieria/">Ingenieria</a></span>
-				                            </div>			                                                
-	                                  <div class="time-ago"><i class="fa fa-calendar theme-color"></i>hace 1 año</div>
-	                                  </div>
-								                    <div class="job-type tiempo-completo">
-	                                    <a class="type-name" href="http://localhost/trabajos/type/tiempo-completo/" style="color: #dd9933; border-color: #dd9933; background-color: #dd9933">Tiempo completo</a>
-	                                  </div>
-									                </div>
-	                         		    <div class="job-skill iwj-job-page">
-					                        <div class="skills">
-	                                  <a href="http://localhost/trabajos/skill/business-development/">
-	                                  <i class="ion-pricetag"></i>Business Development</a>
-	                                </div>
-					                    </div>
-	                          </div>
-											    </div>
-												</div>
-											</div>
-										</div>
 									</div>
 								<!-- end:: Content -->
 								</div>
